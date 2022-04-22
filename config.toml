@@ -1,3 +1,4 @@
 baseURL = 'https://raphaele-rodellar.fr/'
 languageCode = 'fr-FR'
 title = 'Raphaële Rodellar'
+disableKinds = ['taxonomy', 'term', 'RSS']

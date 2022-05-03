@@ -47,7 +47,7 @@
     <div>
       <div class="col-12">
         <p>
-          Copyright 2022 - Raphaële Rodellar - Réfléxologue plantaire
+          &copy; {{ with .Site.Copyright | default .Site.Title }} {{ . | safeHTML }} {{ now.Format "2006"}} {{ end }}
         </p>
       </div>
     </div>

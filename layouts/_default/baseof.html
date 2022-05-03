@@ -1,14 +1,18 @@
 <!DOCTYPE html>
-<html lang="fr">
-    {{- partial "head.html" . -}}
+<html lang="{{ site.LanguageCode | default "en" }}">
+  {{- partial "head.html" . -}}
 
-    <body>
-        {{- partial "header.html" . -}}
+  <body>
+    <header>
+      {{- partial "header.html" . -}}
+    </header>
 
-        <main>
-            {{- block "main" . }}{{- end }}
-        </main>
+    <main>
+        {{- block "main" . }}{{- end }}
+    </main>
 
-        {{- partial "footer.html" . -}}
-    </body>
+    <footer>
+      {{- partial "footer.html" . -}}
+    </footer>
+  </body>
 </html>

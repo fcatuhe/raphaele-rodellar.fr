@@ -3,14 +3,14 @@
 -------------------------------------------------------  */
 @font-face {
   font-family: "Bastia";
-  src: url("fonts/BastiaBold/Bastia-Bold.eot") format("embedded-opentype"), url("fonts/BastiaBold/Bastia-Bold.woff2") format("woff2"), url("fonts/BastiaBold/Bastia-Bold.woff") format("woff"), url("fonts/BastiaBold/Bastia-Bold.ttf") format("truetype");
+  src: url("../fonts/Bastia/Bastia-Bold.eot") format("embedded-opentype"), url("../fonts/Bastia/Bastia-Bold.woff2") format("woff2"), url("../fonts/Bastia/Bastia-Bold.woff") format("woff"), url("../fonts/Bastia/Bastia-Bold.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Montserrat";
-  src: url("fonts/Montserrat/Montserrat-Regular.eot") format("embedded-opentype"), url("fonts/Montserrat/Montserrat-Regular.woff2") format("woff2"), url("fonts/Montserrat/Montserrat-Regular.woff") format("woff"), url("fonts/Montserrat/Montserrat-Regular.ttf") format("truetype");
+  src: url("../fonts/Montserrat/Montserrat-Regular.eot") format("embedded-opentype"), url("../fonts/Montserrat/Montserrat-Regular.woff2") format("woff2"), url("../fonts/Montserrat/Montserrat-Regular.woff") format("woff"), url("../fonts/Montserrat/Montserrat-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -160,7 +160,7 @@ body .intro {
   }
 }
 body .intro .about {
-  background-image: url("img/raphaele-rodellar-reflexologie-plantaire-bordeaux.jpg");
+  background-image: url("../images/raphaele-rodellar-reflexologie-plantaire-bordeaux.jpg");
   background-size: cover;
   height: 100%;
   background-position: center;

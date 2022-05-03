@@ -5,7 +5,7 @@
 <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end }}">
 <meta name="author" content="{{ .Site.Params.author }}">
 
-{{ $production := eq (getenv "HUGO_ENV") "production" | or (eq site.Params.env "production") }}
+{{ $production := eq (getenv "HUGO_ENV") "production" }}
 {{ if $production }}
   <meta name="robots" content="index, follow">
 {{ else }}

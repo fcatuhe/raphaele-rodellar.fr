@@ -1,4 +1,4 @@
-baseURL = 'https://raphaele-rodellar.fr/'
+baseURL = 'https://staging.raphaele-rodellar.fr/'
 languageCode = 'fr'
 title = 'Raphaële Rodellar • Réflexologie plantaire thérapeutique'
 disableKinds = ['taxonomy', 'term', 'RSS']

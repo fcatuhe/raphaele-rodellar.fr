@@ -1,25 +1,25 @@
 <div class="container fat-footer">
   <div class="row">
     <div class="title">Raphaële Rodellar</div>
-    <div class="col-12 col-md-6">
+    <div class="col-12 col-md-6 col-lg-3 col-xl-2">
       <ul>
         <li>
-          <a href="">Philosophie</a>
+          <a aria-current="page" href="#section1">Philosophie</a>
         </li>
         <li>
-          <a href="">Pour qui ?</a>
+          <a aria-current="page" href="#section2">Pour qui ?</a>
         </li>
         <li>
-          <a href="">Principe</a>
+          <a aria-current="page" href="#section3">Principe</a>
         </li>
         <li>
-          <a href="">En pratique</a>
+          <a aria-current="page" href="#section4">En pratique</a>
         </li>
         <li>
-          <a href="">À propos</a>
+          <a aria-current="page" href="#section5">À propos</a>
         </li>
         <li>
-          <a href="">Contact</a>
+          <a aria-current="page" href="#section6">Contact</a>
         </li>
         <li>
           <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
@@ -28,16 +28,22 @@
         </li>
       </ul>
     </div>
-    <div class="col-12 col-md-6">
+    <div class="col-12 col-md-6 col-lg-4  text-left text-xl-center">
+      <a href="https://patoumatic.fr/raphaele" target="_blank" class="btn-cta">Réserver votre
+        séance</a>
+    </div>
+    <div class="col-12 col-md-12 col-lg-5 col-xl-6">
       <p>
-        La réflexologie plantaire ne pose pas de diagnostic et ne se substitue pas au traitement
+        La réflexologie plantaire ne pose pas de diagnostic, ne se substitue pas au traitement
         prescrit par votre médecin, ne remplace pas une consultation médicale.
       </p>
-      <p>Ici, pas de cookies déposés, on préfère les manger <i class="fa-solid fa-cookie-bite"></i></p>
-      <p>Ce site est une histoire de famille. <i class="fa-solid fa-heart"></i> Il a été conçu et
+      <p>Ici, pas de cookies déposés, on préfère les manger. <i class="fa-solid fa-cookie-bite"></i></p>
+      <p>Ce site est une histoire de famille <i class="fa-solid fa-heart"></i> Il a été conçu et
         développé avec amour, patience,
-        créativité, enthousiasme et ingéniosité par ma cousine Carine et mon conjoint François. Un grand
-        merci à eux pour cela et pour tout le reste !</p>
+        créativité et enthousiasme par
+        <a href="https://iloveweb.fr" target="_blank">Carine</a>, ma cousine, et François, mon conjoint. Un grand
+        merci à eux pour cela et pour tout le reste !
+      </p>
     </div>
 
   </div>
@@ -47,27 +53,32 @@
     <div>
       <div class="col-12">
         <p>
-          &copy; {{ with .Site.Copyright | default .Site.Title }} {{ . | safeHTML }} {{ now.Format "2006"}} {{ end }}
+          Copyright {{ now.Format "2006"}} - {{ with .Site.Copyright | default .Site.Title }} {{ . | safeHTML }} {{ end }} - <a
+            href="https://www.instagram.com/raphaelerodellar/" target="_blank"><i
+              class="fa-brands fa-instagram"></i></a>
         </p>
       </div>
     </div>
   </div>
 </div>
 
+<div class="dark-backdrop"></div>
+
+<!-- modale mentions légales -->
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      <div class="modal-footer">
+        <button type="button" class="btn" data-bs-dismiss="modal"><i class="fa-solid fa-circle-xmark"></i></button>
       </div>
       <div class="modal-body">
-        ...
+        <p>le nom de l’hébergeur</p>
+        <p>Raphaële Rodellar</p>
+        <p>8 rue Saint-Joseph, 33000 Bordeaux</p>
+        <p>raphaele@hey.com</p>
+        <p>06 70 93 50 51</p>
       </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
+
     </div>
   </div>
 </div>

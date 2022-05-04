@@ -62,6 +62,13 @@ body a.btn-cta:hover {
   box-shadow: 0 0 #f99006;
   transition: all 0.3s linear;
 }
+body .btn:focus {
+  box-shadow: none;
+}
+body span.fat {
+  font-weight: bold;
+  display: inline;
+}
 body p {
   margin: 0;
   padding-bottom: 10px;
@@ -77,12 +84,11 @@ body p span.fat {
 body p.highlighted {
   padding-bottom: 0;
   box-shadow: inset 0 -11px 0 rgba(255, 176, 180, 0.5098039216);
-  display: inline-block;
+  display: inline;
 }
 body p span.highlighted {
   padding-bottom: 0;
   box-shadow: inset 0 -17px 0 rgba(255, 176, 180, 0.5098039216);
-  display: inline-block;
 }
 body p span.highlighted-little {
   box-shadow: inset 0 -11px 0 rgba(255, 176, 180, 0.5098039216);
@@ -126,11 +132,12 @@ body h1 {
 }
 body h2 {
   font-size: 8vw;
-  padding-bottom: 4vh;
+  padding-bottom: 2vh;
 }
 @media screen and (min-width: 768px) {
   body h2 {
     font-size: 6vw;
+    padding-bottom: 4vh;
   }
 }
 @media screen and (min-width: 992px) {
@@ -149,32 +156,42 @@ body .intro {
 }
 @media screen and (min-width: 992px) {
   body .intro {
-    padding-top: 8vh;
-    padding-bottom: 10vh;
+    margin-top: 8vh;
   }
 }
 @media screen and (min-width: 1200px) {
   body .intro {
-    padding-top: 0;
-    padding-bottom: 12vh;
+    margin-top: 0;
+    margin-bottom: 12vh;
   }
 }
 body .intro .about {
-  background-image: url("../images/raphaele-rodellar-reflexologie-plantaire-bordeaux.jpg");
+  background-image: url("../images/raphaele-rodellar-therapeute-reflexologue-bordeaux.jpg");
   background-size: cover;
-  height: 100%;
+  height: 350px;
   background-position: center;
   background-repeat: no-repeat;
 }
+@media screen and (min-width: 768px) {
+  body .intro .about {
+    height: 100%;
+  }
+}
+body .intro .content {
+  padding-top: 2vh;
+}
+@media screen and (min-width: 768px) {
+  body .intro .content {
+    padding-top: 0;
+  }
+}
 body #section1 {
-  padding-top: 8vh;
-  padding-bottom: 8vh;
+  margin-top: 4vh;
   position: relative;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 992px) {
   body #section1 {
-    padding-top: 0;
-    padding-bottom: 12vh;
+    margin-top: 10vh;
   }
 }
 body #section1 .row {
@@ -182,13 +199,22 @@ body #section1 .row {
   -ms-flex-align: center;
   align-items: center;
 }
+body #section1 .row .content p:last-of-type {
+  text-align: center;
+}
 @media screen and (min-width: 1200px) {
-  body #section1 .row a.btn-cta {
+  body #section1 .row .content p a.btn-cta {
     margin-top: 4vh;
   }
 }
 body #section2 {
   position: relative;
+  margin-top: 4vh;
+}
+@media screen and (min-width: 992px) {
+  body #section2 {
+    margin-top: 10vh;
+  }
 }
 body #section2 h2.outline {
   padding: 0;
@@ -210,7 +236,55 @@ body #section2 .content {
 }
 body #section2 .content .item-title {
   padding-top: 6vh;
-  padding-bottom: 6vh;
+  padding-bottom: 4vh;
+}
+body #section2 .content .item-title:first-of-type {
+  -webkit-box-ordinal-group: 0;
+  /*OLD - iOS 6-, Safari 3.1-6 */
+  -moz-box-ordinal-group: 0;
+  /*OLD - Firefox 19- */
+  -ms-flex-order: 0;
+  /*TWEENER - IE 10 */
+  -webkit-order: 0;
+  /*NEW - Chrome */
+  order: 0;
+}
+@media screen and (min-width: 768px) {
+  body #section2 .content .item-title:first-of-type {
+    -webkit-box-ordinal-group: 0;
+    /*OLD - iOS 6-, Safari 3.1-6 */
+    -moz-box-ordinal-group: 0;
+    /*OLD - Firefox 19- */
+    -ms-flex-order: 0;
+    /*TWEENER - IE 10 */
+    -webkit-order: 0;
+    /*NEW - Chrome */
+    order: 0;
+  }
+}
+body #section2 .content .item-title.last {
+  -webkit-box-ordinal-group: 2;
+  /*OLD - iOS 6-, Safari 3.1-6 */
+  -moz-box-ordinal-group: 2;
+  /*OLD - Firefox 19- */
+  -ms-flex-order: 2;
+  /*TWEENER - IE 10 */
+  -webkit-order: 2;
+  /*NEW - Chrome */
+  order: 2;
+}
+@media screen and (min-width: 768px) {
+  body #section2 .content .item-title.last {
+    -webkit-box-ordinal-group: 3;
+    /*OLD - iOS 6-, Safari 3.1-6 */
+    -moz-box-ordinal-group: 3;
+    /*OLD - Firefox 19- */
+    -ms-flex-order: 3;
+    /*TWEENER - IE 10 */
+    -webkit-order: 3;
+    /*NEW - Chrome */
+    order: 3;
+  }
 }
 @media screen and (min-width: 992px) {
   body #section2 .content .item-title .wrap {
@@ -228,6 +302,58 @@ body #section2 .content .item {
   background: rgba(242, 83, 11, 0.1607843137);
   padding-top: 6vh;
   padding-bottom: 6vh;
+  -webkit-box-ordinal-group: 1;
+  /*OLD - iOS 6-, Safari 3.1-6 */
+  -moz-box-ordinal-group: 1;
+  /*OLD - Firefox 19- */
+  -ms-flex-order: 1;
+  /*TWEENER - IE 10 */
+  -webkit-order: 1;
+  /*NEW - Chrome */
+  order: 1;
+}
+@media screen and (min-width: 768px) {
+  body #section2 .content .item {
+    -webkit-box-ordinal-group: 0;
+    /*OLD - iOS 6-, Safari 3.1-6 */
+    -moz-box-ordinal-group: 0;
+    /*OLD - Firefox 19- */
+    -ms-flex-order: 0;
+    /*TWEENER - IE 10 */
+    -webkit-order: 0;
+    /*NEW - Chrome */
+    order: 0;
+  }
+}
+body #section2 .content .item.last {
+  -webkit-box-ordinal-group: 4;
+  /*OLD - iOS 6-, Safari 3.1-6 */
+  -moz-box-ordinal-group: 4;
+  /*OLD - Firefox 19- */
+  -ms-flex-order: 4;
+  /*TWEENER - IE 10 */
+  -webkit-order: 4;
+  /*NEW - Chrome */
+  order: 4;
+}
+@media screen and (min-width: 768px) {
+  body #section2 .content .item.last {
+    -webkit-box-ordinal-group: 2;
+    /*OLD - iOS 6-, Safari 3.1-6 */
+    -moz-box-ordinal-group: 2;
+    /*OLD - Firefox 19- */
+    -ms-flex-order: 2;
+    /*TWEENER - IE 10 */
+    -webkit-order: 2;
+    /*NEW - Chrome */
+    order: 2;
+  }
+}
+body #section2 .content .item li {
+  padding-bottom: 5px;
+}
+body #section2 .content .item li:last-of-type {
+  padding-bottom: 0;
 }
 @media screen and (min-width: 992px) {
   body #section2 .content .item .wrap {
@@ -242,29 +368,105 @@ body #section2 .content .item {
 }
 body #section2 .action {
   text-align: center;
-  margin-top: 40px;
+  margin-top: 1.5vh;
+}
+@media screen and (min-width: 768px) {
+  body #section2 .action {
+    margin-top: 40px;
+  }
 }
 body #section3 {
   position: relative;
-  padding-bottom: 10vh;
-  padding-top: 10vh;
+  margin-bottom: 4vh;
+  margin-top: 4vh;
+}
+@media screen and (min-width: 992px) {
+  body #section3 {
+    margin-bottom: 10vh;
+    margin-top: 10vh;
+  }
 }
 @media screen and (min-width: 1200px) {
   body #section3 {
-    padding-top: 14vh;
-    padding-bottom: 14vh;
+    margin-top: 14vh;
+    margin-bottom: 14vh;
+  }
+}
+@media screen and (min-width: 768px) {
+  body #section3 .row {
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
   }
 }
 body #section3 span.highlighted {
   box-shadow: inset 0 -11px 0 rgba(255, 176, 180, 0.51);
   display: inline;
 }
+body #section4 .col-12:first-of-type {
+  -webkit-box-ordinal-group: 1;
+  /*OLD - iOS 6-, Safari 3.1-6 */
+  -moz-box-ordinal-group: 1;
+  /*OLD - Firefox 19- */
+  -ms-flex-order: 1;
+  /*TWEENER - IE 10 */
+  -webkit-order: 1;
+  /*NEW - Chrome */
+  order: 1;
+  padding-top: 3vh;
+}
+@media screen and (min-width: 768px) {
+  body #section4 .col-12:first-of-type {
+    -webkit-box-ordinal-group: 0;
+    /*OLD - iOS 6-, Safari 3.1-6 */
+    -moz-box-ordinal-group: 0;
+    /*OLD - Firefox 19- */
+    -ms-flex-order: 0;
+    /*TWEENER - IE 10 */
+    -webkit-order: 0;
+    /*NEW - Chrome */
+    order: 0;
+    padding-top: 0;
+  }
+}
+body #section4 .col-12:last-of-type {
+  -webkit-box-ordinal-group: 0;
+  /*OLD - iOS 6-, Safari 3.1-6 */
+  -moz-box-ordinal-group: 0;
+  /*OLD - Firefox 19- */
+  -ms-flex-order: 0;
+  /*TWEENER - IE 10 */
+  -webkit-order: 0;
+  /*NEW - Chrome */
+  order: 0;
+}
+@media screen and (min-width: 768px) {
+  body #section4 .col-12:last-of-type {
+    -webkit-box-ordinal-group: 0;
+    /*OLD - iOS 6-, Safari 3.1-6 */
+    -moz-box-ordinal-group: 0;
+    /*OLD - Firefox 19- */
+    -ms-flex-order: 0;
+    /*TWEENER - IE 10 */
+    -webkit-order: 0;
+    /*NEW - Chrome */
+    order: 0;
+  }
+}
+body #section4 .col-12:last-of-type p:last-of-type {
+  text-align: center;
+}
 body #section4 .about {
-  background-image: url("img/raphaele-rodellar-reflexologie-plantaire-bordeaux-3.jpg");
+  background-image: url("../images/raphaele-rodellar-therapeute-reflexologue-bordeaux-2.jpg");
   background-size: cover;
-  height: 100%;
-  background-position: center;
+  height: 450px;
+  background-position: bottom center;
   background-repeat: no-repeat;
+}
+@media screen and (min-width: 768px) {
+  body #section4 .about {
+    height: 100%;
+  }
 }
 body #section4 h2.two {
   padding-bottom: 3vh;
@@ -274,9 +476,27 @@ body #section4 i {
   color: #f2530b;
   padding-right: 5px;
 }
+body #section4 a:not(.btn-cta) {
+  color: #414042;
+  text-decoration: none;
+}
+body #section4 a:not(.btn-cta):hover {
+  color: #414042;
+  text-decoration: none;
+}
 body #section5 {
-  padding-top: 10vh;
+  margin-top: 4vh;
   position: relative;
+}
+@media screen and (min-width: 992px) {
+  body #section5 {
+    margin-top: 10vh;
+  }
+}
+@media screen and (min-width: 1200px) {
+  body #section5 {
+    margin-top: 14vh;
+  }
 }
 body #section5 .row {
   -webkit-align-items: center;
@@ -284,12 +504,19 @@ body #section5 .row {
   align-items: center;
 }
 body #section6 {
-  margin-top: 10vh;
+  margin-top: 4vh;
   padding-top: 20px;
   padding-bottom: 20px;
   background: #3b04dc;
   color: white;
   position: relative;
+}
+@media screen and (min-width: 992px) {
+  body #section6 {
+    margin-top: 10vh;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
 }
 body #section6 p,
 body #section6 a {
@@ -304,9 +531,50 @@ body #section6 a:hover {
 body .modal {
   top: 40%;
 }
+body .modal .modal-body {
+  padding-top: 0;
+}
+body .modal .modal-footer {
+  border-top: 0;
+  padding: 0;
+}
+body .modal .modal-footer .btn {
+  color: #f2530b;
+  margin: 0;
+}
+body .dark-backdrop {
+  -webkit-transition: opacity 0.3s linear;
+  -moz-transition: opacity 0.3s linear;
+  -o-transition: opacity 0.3s linear;
+  transition: opacity 0.3s linear;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  top: 60px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+@media screen and (min-width: 992px) {
+  body .dark-backdrop {
+    display: none;
+  }
+}
+body .dark-backdrop.in {
+  opacity: 1;
+  z-index: 4;
+}
 
 header {
   position: relative;
+}
+header nav.navbar-expand-lg .navbar-brand {
+  font-family: "Bastia";
+  color: #f2530b;
+  font-size: 20px;
+  padding: 10px 0;
+  margin: 0;
 }
 header nav.navbar-expand-lg .navbar-burger {
   position: relative;
@@ -377,6 +645,37 @@ header nav.navbar-expand-lg .navbar-collapse {
   -webkit-align-items: baseline;
   -ms-flex-align: baseline;
   align-items: baseline;
+  position: absolute;
+  top: 60px;
+  bottom: 0;
+  left: -100%;
+  max-width: 300px;
+  width: 100%;
+  min-height: 100vh;
+  transition: all 0.4s ease;
+  padding: 3vh 2vh;
+  background: white;
+  z-index: 999;
+}
+@media screen and (min-width: 992px) {
+  header nav.navbar-expand-lg .navbar-collapse {
+    padding: 0;
+  }
+}
+@media screen and (min-width: 992px) {
+  header nav.navbar-expand-lg .navbar-collapse {
+    position: relative;
+    top: inherit;
+    bottom: inherit;
+    left: inherit;
+    min-height: inherit;
+    max-width: inherit;
+    background: transparent;
+  }
+}
+header nav.navbar-expand-lg .navbar-collapse.show {
+  left: 0;
+  z-index: 99;
 }
 header nav.navbar-expand-lg .navbar-collapse a.navbar-brand {
   font-family: "Bastia";
@@ -400,23 +699,74 @@ header nav.navbar-expand-lg .navbar-collapse ul.navbar-nav li.nav-item a.nav-lin
   color: #f2530b;
   font-size: 14px;
   text-transform: uppercase;
-  margin: 0;
-  padding: 0 20px;
-}
-header nav.navbar-expand-lg .navbar-collapse ul.navbar-nav li.nav-item a.nav-link.active {
-  font-weight: bold;
+  padding: 0 0 4vh 0;
+  position: relative;
+  transition: all 0.5s;
 }
 @media screen and (min-width: 992px) {
   header nav.navbar-expand-lg .navbar-collapse ul.navbar-nav li.nav-item a.nav-link {
-    font-size: 17px;
-    padding: 0 15px;
+    font-size: 14px;
+    padding: 0;
+    margin: 0 10px;
+  }
+  header nav.navbar-expand-lg .navbar-collapse ul.navbar-nav li.nav-item a.nav-link:after {
+    transition: all 0.5s;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0%;
+    content: "";
+    background: #f99006;
+    height: 1.5px;
+  }
+  header nav.navbar-expand-lg .navbar-collapse ul.navbar-nav li.nav-item a.nav-link.active:after {
+    width: 100%;
+  }
+  header nav.navbar-expand-lg .navbar-collapse ul.navbar-nav li.nav-item a.nav-link:hover:after {
+    width: 100%;
   }
 }
-header nav.navbar-expand-lg .navbar-collapse ul.navbar-nav li.nav-item:first-of-type a.nav-link {
-  padding-left: 0;
+@media screen and (min-width: 1400px) {
+  header nav.navbar-expand-lg .navbar-collapse ul.navbar-nav li.nav-item a.nav-link {
+    font-size: 17px;
+    padding: 0;
+    margin: 0 20px;
+  }
 }
-header nav.navbar-expand-lg .navbar-collapse ul.navbar-nav li.nav-item:last-of-type a.nav-link {
-  padding-right: 0;
+header nav.navbar-expand-lg .navbar-collapse ul.navbar-nav li.nav-item a.social {
+  color: #f2530b;
+  font-size: 21px;
+}
+@media screen and (min-width: 992px) {
+  header nav.navbar-expand-lg .navbar-collapse ul.navbar-nav li.nav-item a.social {
+    margin-left: 10px;
+    vertical-align: middle;
+  }
+}
+@media screen and (min-width: 1400px) {
+  header nav.navbar-expand-lg .navbar-collapse ul.navbar-nav li.nav-item a.social {
+    margin-left: 20px;
+  }
+}
+@media screen and (min-width: 992px) {
+  header nav.navbar-expand-lg .navbar-collapse ul.navbar-nav li.nav-item:first-of-type a.nav-link {
+    margin-left: 0;
+  }
+}
+@media screen and (min-width: 992px) {
+  header nav.navbar-expand-lg .navbar-collapse ul.navbar-nav li.nav-item:last-of-type {
+    line-height: 18px;
+  }
+  header nav.navbar-expand-lg .navbar-collapse ul.navbar-nav li.nav-item:last-of-type a.nav-link {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 1400px) {
+  header nav.navbar-expand-lg .navbar-collapse ul.navbar-nav li.nav-item:last-of-type {
+    line-height: 23px;
+  }
 }
 header nav.navbar-expand-lg.sticked {
   top: 0;
@@ -428,8 +778,20 @@ header nav.navbar-expand-lg.sticked {
   z-index: 9999;
 }
 header .purpose {
-  padding-top: 8vh;
-  padding-bottom: 8vh;
+  padding-top: 3vh;
+  padding-bottom: 3vh;
+}
+@media screen and (min-width: 768px) {
+  header .purpose {
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+  }
+}
+@media screen and (min-width: 992px) {
+  header .purpose {
+    padding-top: 8vh;
+    padding-bottom: 8vh;
+  }
 }
 header .purpose .content {
   margin: 0 auto;
@@ -514,12 +876,18 @@ footer .fat-footer .title {
 footer .fat-footer ul {
   list-style: none;
   padding: 0;
-  margin: 0;
+  margin: 0 0 20px 0;
 }
 footer .fat-footer ul li {
-  padding: 0 10px 5px 10px;
+  padding: 0 10px 5px 0;
 }
-footer .fat-footer ul li a, footer .fat-footer ul li button {
+@media screen and (min-width: 992px) {
+  footer .fat-footer ul li {
+    padding: 0 10px 5px 10px;
+  }
+}
+footer .fat-footer ul li a,
+footer .fat-footer ul li button {
   text-decoration: none;
   color: #414042;
   padding: 0;
@@ -533,11 +901,25 @@ footer .fat-footer p:last-of-type {
 footer .fat-footer p i {
   color: #f2530b;
 }
-footer .fat-footer a {
+footer .fat-footer a:not(.btn-cta) {
   display: inline-block;
-  padding-bottom: 10px;
   text-decoration: none;
   color: #414042;
+}
+footer .fat-footer a.btn-cta {
+  margin-top: 0;
+  margin-bottom: 25px;
+}
+@media screen and (min-width: 768px) {
+  footer .fat-footer a.btn-cta {
+    margin-top: 0;
+  }
+}
+@media screen and (min-width: 992px) {
+  footer .fat-footer a.btn-cta {
+    margin-top: 10px;
+    margin-bottom: 0;
+  }
 }
 footer .thin-footer {
   background-color: #f2530b;
@@ -546,6 +928,10 @@ footer .thin-footer {
   padding-top: 10px;
   padding-bottom: 10px;
   font-size: 12px;
+}
+footer .thin-footer a {
+  font-size: 16px;
+  color: #ffb0b4;
 }
 
 /*# sourceMappingURL=style.css.map */

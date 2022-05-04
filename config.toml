@@ -1,9 +1,9 @@
 baseURL = 'https://staging.raphaele-rodellar.fr/'
 languageCode = 'fr'
-title = 'Raphaële Rodellar • Réflexologie plantaire thérapeutique'
-copyright = 'Raphaële Rodellar'
+title = 'Raphaële Rodellar Thérapeute Réflexologue Bordeaux'
+copyright = 'Raphaële Rodellar - Réflexologue plantaire thérapeutique'
 disableKinds = ['taxonomy', 'term', 'RSS']
 
 [params]
   author = "Raphaële Rodellar"
-  description = "Raphaële Rodellar • Réflexologie plantaire thérapeutique"
+  description = "Se mettre à l'écoute de son corps, se relâcher, se relaxer, se recharger, ... Venez profiter de tous les bienfaits de la réflexologie plantaire !"

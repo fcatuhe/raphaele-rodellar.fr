@@ -1,0 +1,495 @@
+body {
+    font-family: $Montserrat;
+    font-size: 16px;
+    color: $black;
+    overflow-x: hidden;
+
+
+
+    a.btn-cta {
+        font-weight: bold;
+        display: inline-block;
+        margin-top: 15px;
+        text-transform: uppercase;
+        padding: 15px 25px;
+        text-decoration: none;
+        color: $orange;
+        @include radius(300px);
+        box-shadow: 5px 5px $orange;
+        background-color: $blue;
+        border-color: $blue;
+        transition: all 0.3s linear;
+
+        &:hover {
+            box-shadow: 0 0 $orange;
+            transition: all 0.3s linear;
+        }
+    }
+
+    .btn {
+        &:focus {
+            box-shadow: none;
+        }
+    }
+
+
+    span.fat {
+        font-weight: bold;
+        display: inline;
+    }
+
+
+    p {
+        margin: 0;
+        padding-bottom: 10px;
+        font-size: 16px;
+
+        &:last-of-type {
+            padding-bottom: 0;
+        }
+
+        span.fat {
+            font-weight: bold;
+            display: inline;
+        }
+
+        &.highlighted {
+            padding-bottom: 0;
+            box-shadow: inset 0 -11px 0 $lightPink;
+            display: inline;
+
+        }
+
+        span {
+            &.highlighted {
+                padding-bottom: 0;
+                box-shadow: inset 0 -17px 0 $lightPink;
+                // display: inline-block;
+            }
+
+            &.highlighted-little {
+                box-shadow: inset 0 -11px 0 $lightPink;
+            }
+        }
+    }
+
+    span.highlighted {
+        box-shadow: inset 0 -11px 0 $lightPink;
+    }
+
+    h1,
+    h2,
+    h3 {
+        font-family: $Bastia;
+        margin-bottom: 0;
+    }
+
+    h1,
+    h2 {
+        span {
+            display: block;
+            color: $orange;
+
+            &:nth-of-type(2) {
+                color: $corail;
+            }
+
+            &:last-of-type {
+                color: $pink;
+            }
+        }
+    }
+
+    h1 {
+        font-size: 10vw;
+        padding-bottom: 2vh;
+
+        @media screen and (min-width: $break-medium) {
+            font-size: 6vw;
+        }
+
+        @media screen and (min-width: $break-large) {
+            font-size: 75px;
+            padding-bottom: 6vh;
+        }
+    }
+
+    h2 {
+        font-size: 8vw;
+        padding-bottom: 2vh;
+
+        @media screen and (min-width: $break-medium) {
+            font-size: 6vw;
+            padding-bottom: 4vh;
+        }
+
+        @media screen and (min-width: $break-large) {
+            font-size: 65px;
+            padding-bottom: 0;
+        }
+    }
+
+    h3 {
+        padding-bottom: 2vh;
+    }
+
+    .intro {
+        padding-top: 0;
+        padding-bottom: 0;
+        position: relative;
+
+        @media screen and (min-width: $break-large) {
+            margin-top: 8vh;
+        }
+
+        @media screen and (min-width: $break-extra-large) {
+            margin-top: 0;
+            margin-bottom: 12vh;
+        }
+
+        .about {
+            background-image: url('../images/raphaele-rodellar-therapeute-reflexologue-bordeaux.jpg');
+            background-size: cover;
+            height: 350px;
+            background-position: center;
+            background-repeat: no-repeat;
+
+            @media screen and (min-width: $break-medium) {
+                height: 100%;
+            }
+
+        }
+
+        .content {
+            padding-top: 2vh;
+
+            @media screen and (min-width: $break-medium) {
+                padding-top: 0;
+            }
+
+        }
+    }
+
+    #section1 {
+        margin-top: 4vh;
+        position: relative;
+
+        @media screen and (min-width: $break-large) {
+            margin-top: 10vh;
+        }
+
+        .row {
+            @include alignItems(center);
+
+            .content {
+                p {
+                    &:last-of-type {
+                        text-align: center;
+                    }
+
+                    a.btn-cta {
+                        @media screen and (min-width: $break-extra-large) {
+                            margin-top: 4vh;
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+
+    #section2 {
+        position: relative;
+        margin-top: 4vh;
+
+        @media screen and (min-width: $break-large) {
+            margin-top: 10vh;
+        }
+
+        h2.outline {
+            padding: 0;
+
+            span {
+                color: $corail;
+
+                &:nth-of-type(2) {
+                    color: $corail;
+                }
+
+                &:last-of-type {
+                    color: $corail;
+                }
+            }
+        }
+
+        .content {
+            @include alignItems(center);
+            background: $veryLightPink;
+
+            .item-title {
+                padding-top: 6vh;
+                padding-bottom: 4vh;
+
+                &:first-of-type {
+                    @include order(0);
+
+                    @media screen and (min-width: $break-medium) {
+                        @include order(0);
+                    }
+                }
+
+                &.last {
+                    @include order(2);
+
+                    @media screen and (min-width: $break-medium) {
+                        @include order(3);
+                    }
+                }
+
+                .wrap {
+
+                    @media screen and (min-width: $break-large) {
+                        max-width: 80%;
+                        margin: 0 auto;
+                    }
+
+                    @media screen and (min-width: $break-extra-large) {
+                        max-width: 68%;
+                    }
+                }
+
+            }
+
+            .item {
+                color: $corail;
+                background: $lightCorail;
+                padding-top: 6vh;
+                padding-bottom: 6vh;
+                @include order(1);
+
+                @media screen and (min-width: $break-medium) {
+                    @include order(0);
+                }
+
+                &.last {
+                    @include order(4);
+
+                    @media screen and (min-width: $break-medium) {
+                        @include order(2);
+                    }
+                }
+                li{
+                    padding-bottom: 5px;
+                    &:last-of-type{
+                        padding-bottom: 0;
+                    }
+                }
+                .wrap {
+
+                    @media screen and (min-width: $break-large) {
+                        max-width: 80%;
+                        margin: 0 auto;
+                    }
+
+                    @media screen and (min-width: $break-extra-large) {
+                        max-width: 68%;
+                    }
+                }
+            }
+        }
+
+        .action {
+            text-align: center;
+            margin-top: 1.5vh;
+
+            @media screen and (min-width: $break-medium) {
+                margin-top: 40px;
+
+            }
+        }
+
+    }
+
+    #section3 {
+        position: relative;
+        margin-bottom: 4vh;
+        margin-top: 4vh;
+
+        @media screen and (min-width: $break-large) {
+            margin-bottom: 10vh;
+            margin-top: 10vh;
+        }
+
+        @media screen and (min-width: $break-extra-large) {
+            margin-top: 14vh;
+            margin-bottom: 14vh;
+        }
+
+        .row {
+            @media screen and (min-width: $break-medium) {
+                @include alignItems(center);
+            }
+        }
+
+        span.highlighted {
+            // box-shadow: inset 0 -11px 0 rgb(255 176 180 / 51%);
+            display: inline;
+        }
+
+
+    }
+
+    #section4 {
+        .col-12 {
+            &:first-of-type {
+                @include order(1);
+                padding-top: 3vh;
+
+                @media screen and (min-width: $break-medium) {
+                    @include order(0);
+                    padding-top: 0;
+                }
+            }
+
+            &:last-of-type {
+                @include order(0);
+
+                @media screen and (min-width: $break-medium) {
+                    @include order(0);
+                }
+
+                p {
+                    &:last-of-type {
+                        text-align: center;
+                    }
+                }
+            }
+        }
+
+        .about {
+            background-image: url('../images/raphaele-rodellar-therapeute-reflexologue-bordeaux-2.jpg');
+            background-size: cover;
+            height: 450px;
+            background-position: bottom center;
+            background-repeat: no-repeat;
+
+            @media screen and (min-width: $break-medium) {
+                height: 100%;
+            }
+        }
+
+        h2.two {
+            padding-bottom: 3vh;
+            color: $orange;
+        }
+
+        i {
+            color: $corail;
+            padding-right: 5px;
+        }
+
+        a:not(.btn-cta) {
+            color: $black;
+            text-decoration: none;
+
+            &:hover {
+                color: $black;
+                text-decoration: none;
+            }
+        }
+
+
+    }
+
+
+
+    #section5 {
+        margin-top: 4vh;
+        position: relative;
+
+        @media screen and (min-width: $break-large) {
+            margin-top: 10vh;
+        }
+
+        @media screen and (min-width: $break-extra-large) {
+            margin-top: 14vh;
+        }
+
+        .row {
+            @include alignItems (center);
+        }
+
+    }
+
+    #section6 {
+        margin-top: 4vh;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        background: $blue;
+        color: white;
+        position: relative;
+
+        @media screen and (min-width: $break-large) {
+            margin-top: 10vh;
+            padding-top: 40px;
+            padding-bottom: 40px;
+        }
+
+        p,
+        a {
+            color: white;
+            text-align: center;
+            text-decoration: none;
+
+            &:hover {
+                text-decoration: none;
+            }
+        }
+
+
+
+    }
+
+    .modal {
+        top: 40%;
+
+        .modal-body {
+            padding-top: 0;
+        }
+
+        .modal-footer {
+            border-top: 0;
+            padding: 0;
+
+            .btn {
+                color: $corail;
+                margin: 0;
+            }
+        }
+
+    }
+
+    .dark-backdrop {
+        -webkit-transition: opacity 0.3s linear;
+        -moz-transition: opacity 0.3s linear;
+        -o-transition: opacity 0.3s linear;
+        transition: opacity 0.3s linear;
+        opacity: 0;
+        background-color: rgba(0, 0, 0, 0.6);
+        position: fixed;
+        top: 60px;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+        @media screen and (min-width: $break-large) {
+            display: none;
+        }
+        &.in {
+            opacity: 1;
+            z-index: 4;
+        }
+
+    }
+
+}

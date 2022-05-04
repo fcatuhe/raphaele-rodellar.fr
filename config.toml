@@ -1,7 +1,7 @@
 baseURL = 'https://staging.raphaele-rodellar.fr/'
 languageCode = 'fr'
 title = 'Raphaële Rodellar Thérapeute Réflexologue Bordeaux'
-copyright = 'Raphaële Rodellar - Réflexologue plantaire thérapeutique'
+copyright = 'Raphaële Rodellar - Réflexologie plantaire thérapeutique'
 disableKinds = ['taxonomy', 'term', 'RSS']
 
 [params]

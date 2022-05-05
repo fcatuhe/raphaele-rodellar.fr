@@ -5,15 +5,18 @@ on:
     branches:
       - main
   pull_request:
+    branches:
+      - main
 
 jobs:
-  deploy:
+  staging-deploy:
     runs-on: ubuntu-latest
+    if: github.repository == 'fcatuhe/raphaele-rodellar.fr'
     steps:
       - uses: actions/checkout@v2
-        with:
-          submodules: true # Fetch Hugo themes (true OR recursive)
-          fetch-depth: 0 # Fetch all history for .GitInfo and .Lastmod
+        # with:
+        #   submodules: true # Fetch Hugo themes (true OR recursive)
+        #   fetch-depth: 0 # Fetch all history for .GitInfo and .Lastmod
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
@@ -22,13 +25,13 @@ jobs:
           extended: true
 
       - name: Build
-        run: hugo --minify
-        env:
-          HUGO_ENV: staging
+        run: hugo -e staging --minify
+        # env:
+        #   HUGO_ENV: staging
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
-        if: github.ref == 'refs/heads/main'
+        # if: github.ref == 'refs/heads/main'
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public

@@ -7,7 +7,7 @@
 
 <link rel="icon" type="image/x-icon" href="images/R-Bastia-Favicon.ico" />
 
-{{ $production := eq (getenv "HUGO_ENV") "production" }} {{ if $production }}
+{{ if hugo.IsProduction }}
 <meta name="robots" content="index, follow" />
 {{ else }}
 <meta name="robots" content="noindex, nofollow" />

@@ -12,7 +12,7 @@ $(document).ready(function () {
     //scroller (scrollTop) vers la coordonnée haute de l'élement ciblé (offset().top)
     $('html,body').animate(
       {
-        scrollTop: $(cible).offset().top - 150,
+        scrollTop: $(cible).offset().top - 80,
       },
       speed
     )
@@ -24,18 +24,17 @@ $(document).ready(function () {
     //get current sroll position
     var scrollPosition = $(window).scrollTop()
     //get the position of the containers
-    var one = $('#section1').offset().top + 70
-    two = $('#section2').offset().top - 250
-    three = $('#section3').offset().top - 200
+    one = $('#intro').offset().top - 200
+    two = $('#section1').offset().top - 250
+    three = $('#section2').offset().top - 200
     four = $('#section4').offset().top - 200
     five = $('#section5').offset().top - 200
-    six = $('#section6').offset().top - 200
+
     var nav1 = $('#nav1'),
       nav2 = $('#nav2'),
       nav3 = $('#nav3')
     nav4 = $('#nav4')
     nav5 = $('#nav5')
-    nav6 = $('#nav6')
     //if the scroll position is the same as the position of the container specified, add the "active" class to the corresponding nav element
     if (scrollPosition < one) {
       $('.nav-item').find('a.nav-link').removeClass('active')
@@ -64,11 +63,6 @@ $(document).ready(function () {
     if (scrollPosition >= five) {
       $('.nav-item').not('#nav5').find('a.nav-link').removeClass('active')
       nav5.find('a.nav-link').addClass('active')
-    }
-
-    if (scrollPosition >= six) {
-      $('.nav-item').not('#nav6').find('a.nav-link').removeClass('active')
-      nav6.find('a.nav-link').addClass('active')
     }
   })
 

@@ -2,7 +2,6 @@ body {
   font-family: $Montserrat;
   font-size: 16px;
   color: $black;
-  overflow-x: hidden;
 
   a.btn-cta {
     font-weight: bold;
@@ -23,53 +22,46 @@ body {
       transition: all 0.3s linear;
     }
   }
-
   .btn {
     &:focus {
       box-shadow: none;
     }
   }
-
   span.fat {
-    font-weight: bold;
-    display: inline;
+    &.fat {
+      font-weight: bold;
+      display: inline;
+    }
+    &.highlighted {
+      box-shadow: inset 0 -11px 0 $lightPink;
+    }
   }
-
   p {
     margin: 0;
     padding-bottom: 10px;
     font-size: 16px;
-
     &:last-of-type {
       padding-bottom: 0;
     }
-
     span.fat {
       font-weight: bold;
       display: inline;
     }
-
     &.highlighted {
       padding-bottom: 0;
       box-shadow: inset 0 -11px 0 $lightPink;
       display: inline;
     }
-
     span {
       &.highlighted {
         padding-bottom: 0;
         box-shadow: inset 0 -17px 0 $lightPink;
         // display: inline-block;
       }
-
       &.highlighted-little {
         box-shadow: inset 0 -11px 0 $lightPink;
       }
     }
-  }
-
-  span.highlighted {
-    box-shadow: inset 0 -11px 0 $lightPink;
   }
 
   h1,
@@ -132,14 +124,39 @@ body {
     padding-top: 0;
     padding-bottom: 0;
     position: relative;
-
-    @media screen and (min-width: $break-large) {
-      margin-top: 8vh;
-    }
-
+    // @media screen and (min-width: $break-large) {
+    //     margin-top: 8vh;
+    // }
     @media screen and (min-width: $break-extra-large) {
       margin-top: 0;
-      margin-bottom: 12vh;
+      margin-bottom: 100px;
+    }
+    .bullet {
+      position: absolute;
+      top: -118px;
+      left: -170px;
+      @media screen and (min-width: $break-medium) {
+        left: -230px;
+      }
+      @media screen and (min-width: $break-large) {
+        top: -325px;
+      }
+      @media screen and (min-width: $break-end) {
+        top: -325px;
+        left: 0;
+      }
+
+      img {
+        @include rotate(97deg);
+        max-width: 230px;
+        height: auto;
+        @media screen and (min-width: $break-medium) {
+          max-width: 100%;
+        }
+        @media screen and (min-width: $break-large) {
+          max-width: 100%;
+        }
+      }
     }
 
     .about {
@@ -148,29 +165,60 @@ body {
       height: 350px;
       background-position: center;
       background-repeat: no-repeat;
-
       @media screen and (min-width: $break-medium) {
+        height: 650px;
+      }
+      @media screen and (min-width: $break-large) {
         height: 100%;
       }
     }
 
     .content {
-      padding-top: 2vh;
+      padding-top: 40px;
 
-      @media screen and (min-width: $break-medium) {
+      @media screen and (min-width: $break-large) {
         padding-top: 0;
       }
     }
   }
 
   #section1 {
-    margin-top: 4vh;
+    margin-top: 40px;
     position: relative;
-
     @media screen and (min-width: $break-large) {
-      margin-top: 10vh;
+      margin-top: 80px;
     }
-
+    .wave {
+      position: absolute;
+      top: 0;
+      right: 10px;
+      @media screen and (min-width: $break-large) {
+        left: 0;
+        top: -20px;
+        right: inherit;
+      }
+      @media screen and (min-width: $break-extra-large) {
+        top: -80px;
+      }
+      @media screen and (min-width: $break-end) {
+        top: -180px;
+        left: inherit;
+        right: 10px;
+      }
+      img {
+        margin: 0 0 0 auto;
+        display: block;
+        @include rotate(-5deg);
+        max-width: 130px;
+        height: auto;
+        @media screen and (min-width: $break-medium) {
+          max-width: 280px;
+        }
+        @media screen and (min-width: $break-large) {
+          max-width: 320px;
+        }
+      }
+    }
     .row {
       @include alignItems(center);
 
@@ -181,6 +229,8 @@ body {
           }
 
           a.btn-cta {
+            margin-top: 30px;
+
             @media screen and (min-width: $break-extra-large) {
               margin-top: 4vh;
             }
@@ -192,12 +242,10 @@ body {
 
   #section2 {
     position: relative;
-    margin-top: 4vh;
-
+    margin-top: 40px;
     @media screen and (min-width: $break-large) {
-      margin-top: 10vh;
+      margin-top: 80px;
     }
-
     h2.outline {
       padding: 0;
 
@@ -213,10 +261,10 @@ body {
         }
       }
     }
-
     .content {
       @include alignItems(center);
       background: $veryLightPink;
+      position: relative;
 
       .item-title {
         padding-top: 6vh;
@@ -268,12 +316,15 @@ body {
             @include order(2);
           }
         }
+
         li {
           padding-bottom: 5px;
+
           &:last-of-type {
             padding-bottom: 0;
           }
         }
+
         .wrap {
           @media screen and (min-width: $break-large) {
             max-width: 80%;
@@ -286,45 +337,29 @@ body {
         }
       }
     }
-
     .action {
       text-align: center;
       margin-top: 1.5vh;
-
       @media screen and (min-width: $break-medium) {
-        margin-top: 40px;
+        margin-top: 20px;
       }
     }
   }
-
-  #section3 {
+  #section4 {
+    margin-bottom: 40px;
+    margin-top: 40px;
     position: relative;
-    margin-bottom: 4vh;
-    margin-top: 4vh;
 
     @media screen and (min-width: $break-large) {
-      margin-bottom: 10vh;
-      margin-top: 10vh;
+      margin-bottom: 80px;
+      margin-top: 80px;
     }
 
     @media screen and (min-width: $break-extra-large) {
-      margin-top: 14vh;
-      margin-bottom: 14vh;
+      margin-top: 100px;
+      margin-bottom: 100px;
     }
 
-    .row {
-      @media screen and (min-width: $break-medium) {
-        @include alignItems(center);
-      }
-    }
-
-    span.highlighted {
-      // box-shadow: inset 0 -11px 0 rgb(255 176 180 / 51%);
-      display: inline;
-    }
-  }
-
-  #section4 {
     .col-12 {
       &:first-of-type {
         @include order(1);
@@ -359,6 +394,9 @@ body {
       background-repeat: no-repeat;
 
       @media screen and (min-width: $break-medium) {
+        height: 650px;
+      }
+      @media screen and (min-width: $break-large) {
         height: 100%;
       }
     }
@@ -382,27 +420,74 @@ body {
         text-decoration: none;
       }
     }
+    a.btn-cta {
+      margin-top: 30px;
+    }
+    .content {
+      @media screen and (min-width: $break-medium) {
+        padding-top: 40px;
+      }
+    }
   }
 
   #section5 {
-    margin-top: 4vh;
+    margin-top: 40px;
     position: relative;
-
+    @media screen and (min-width: $break-medium) {
+      margin-top: 60px;
+    }
     @media screen and (min-width: $break-large) {
-      margin-top: 10vh;
+      margin-top: 80px;
     }
 
     @media screen and (min-width: $break-extra-large) {
-      margin-top: 14vh;
+      margin-top: 100px;
     }
 
-    .row {
-      @include alignItems(center);
+    .wave {
+      position: absolute;
+      top: -75px;
+      right: 18px;
+      @media screen and (min-width: $break-medium) {
+        top: -45px;
+        right: 25px;
+      }
+      @media screen and (min-width: $break-large) {
+        left: 10px;
+        right: inherit;
+      }
+      @media screen and (min-width: $break-super-large) {
+        top: -90px;
+      }
+      @media screen and (min-width: $break-end) {
+        top: -180px;
+        left: inherit;
+        right: 40px;
+      }
+      img {
+        max-width: 130px;
+        height: auto;
+        @include rotate(21deg);
+        @media screen and (min-width: $break-medium) {
+          max-width: 220px;
+        }
+        @media screen and (min-width: $break-large) {
+          max-width: 260px;
+        }
+      }
+    }
+
+    .container {
+      position: relative;
+
+      .row {
+        @include alignItems(center);
+      }
     }
   }
 
   #section6 {
-    margin-top: 4vh;
+    margin-top: 40px;
     padding-top: 20px;
     padding-bottom: 20px;
     background: $blue;
@@ -410,7 +495,7 @@ body {
     position: relative;
 
     @media screen and (min-width: $break-large) {
-      margin-top: 10vh;
+      margin-top: 80px;
       padding-top: 40px;
       padding-bottom: 40px;
     }
@@ -453,14 +538,16 @@ body {
     opacity: 0;
     background-color: rgba(0, 0, 0, 0.6);
     position: fixed;
-    top: 60px;
+    top: 75.5px;
     right: 0;
     bottom: 0;
     left: 0;
     z-index: -1;
+
     @media screen and (min-width: $break-large) {
       display: none;
     }
+
     &.in {
       opacity: 1;
       z-index: 4;

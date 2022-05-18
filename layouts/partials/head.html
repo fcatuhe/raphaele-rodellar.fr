@@ -7,6 +7,13 @@
 
 <link rel="icon" type="image/x-icon" href="images/R-Bastia-Favicon.ico" />
 
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="{{ .Site.Params.siteName }}" />
+<meta property="og:url" content="{{ .Site.BaseURL }}" />
+<meta property="og:title" content="{{ .Site.Title }}" />
+<meta property="og:description" content="{{ .Site.Params.description }}" />
+<!-- <meta property="og:image" content="{{ .Site.BaseURL }}images/xxx.jpg" /> -->
+
 {{ if hugo.IsProduction }}
 <meta name="robots" content="index, follow" />
 {{ else }}

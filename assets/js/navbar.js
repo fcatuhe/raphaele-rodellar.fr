@@ -1,26 +1,32 @@
 $(document).ready(function () {
-  //////////////// menu sticky
-  var nav = $('nav')
-  var hauteurMenu = nav.height()
-
-  //comportement du menu en mobil :rendre opaque le site quand on ouvre le menu en mobil
-  // affichage de la flèche scroll bottom de la bannière top de la home
-  // quand le menu n'est pas déployé
   $('.navbar-burger').on('click', function (e) {
     $('#burger').toggleClass('open')
-    if ($('.navbar-menu').hasClass('show')) {
+    $('.dark-backdrop').toggleClass('in')
+    // if ($('.navbar-menu').hasClass('show')) {
+    //   closeMenu();
+    //   console.log('fermer');
+    // } else {
+    //   openMenu();
+    //   console.log('ouvrir');
+    // }
+  })
+
+  $('.dark-backdrop').on('click', function (e) {
+    if ($('.dark-backdrop').hasClass('in')) {
+      $('#burger').toggleClass('open')
       closeMenu()
-    } else {
-      openMenu()
+      // console.log('fermer avec darkdiv')
     }
   })
 
-  //ok condition open and close
   $('.nav-link').on('click', function (e) {
     if ($('.navbar-menu').hasClass('show')) {
+      $('#burger').toggleClass('open')
       closeMenu()
+      // console.log('fermer avec nav')
     } else {
       openMenu()
+      // console.log('ouvrir avec nav')
     }
   })
 
@@ -33,6 +39,10 @@ $(document).ready(function () {
     $('.navbar-menu').removeClass('show')
     $('.dark-backdrop').removeClass('in')
   }
+
+  //////////////// menu sticky
+  var nav = $('nav')
+  var hauteurMenu = nav.height()
 
   $(window).on('resize', function (e) {
     if (window.innerWidth > 992) {

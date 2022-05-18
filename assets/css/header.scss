@@ -5,7 +5,7 @@ header {
     .navbar-brand {
       font-family: $Bastia;
       color: $corail;
-      font-size: 20px;
+      font-size: 25px;
       padding: 10px 0;
       margin: 0;
     }
@@ -43,10 +43,23 @@ header {
 
           &:nth-child(1) {
             top: 7px;
+            -webkit-transition: 0.5s ease-in-out;
+            -moz-transition: 0.5s ease-in-out;
+            -o-transition: 0.5s ease-in-out;
+            transition: 0.5s ease-in-out;
           }
-
+          &:nth-child(2) {
+            -webkit-transition: 0.1s ease-in-out;
+            -moz-transition: 0.1s ease-in-out;
+            -o-transition: 0.1s ease-in-out;
+            transition: 0.1s ease-in-out;
+          }
           &:nth-child(3) {
             top: 14px;
+            -webkit-transition: 0.5s ease-in-out;
+            -moz-transition: 0.5s ease-in-out;
+            -o-transition: 0.5s ease-in-out;
+            transition: 0.5s ease-in-out;
           }
         }
 
@@ -55,24 +68,31 @@ header {
             &:nth-child(1) {
               top: 10px;
               width: 30px;
-              -webkit-transform: rotate(135deg);
-              -moz-transform: rotate(135deg);
-              -o-transform: rotate(135deg);
-              transform: rotate(135deg);
+
+              @include rotate(135deg);
+              -webkit-transition: 0.5s ease-in-out;
+              -moz-transition: 0.5s ease-in-out;
+              -o-transition: 0.5s ease-in-out;
+              transition: 0.5s ease-in-out;
             }
 
             &:nth-child(2) {
               opacity: 0;
               left: -60px;
+              -webkit-transition: 0s ease-in-out;
+              -moz-transition: 0s ease-in-out;
+              -o-transition: 0s ease-in-out;
+              transition: 0s ease-in-out;
             }
 
             &:nth-child(3) {
               width: 30px;
               top: 10px;
-              -webkit-transform: rotate(-135deg);
-              -moz-transform: rotate(-135deg);
-              -o-transform: rotate(-135deg);
-              transform: rotate(-135deg);
+              @include rotate(-135deg);
+              -webkit-transition: 0.5s ease-in-out;
+              -moz-transition: 0.5s ease-in-out;
+              -o-transition: 0.5s ease-in-out;
+              transition: 0.5s ease-in-out;
             }
           }
         }
@@ -140,12 +160,10 @@ header {
             padding: 0 0 4vh 0;
             position: relative;
             transition: all 0.5s;
-
             @media screen and (min-width: $break-large) {
               font-size: 14px;
               padding: 0;
               margin: 0 10px;
-
               &:after {
                 transition: all 0.5s;
                 position: absolute;
@@ -156,15 +174,13 @@ header {
                 width: 0%;
                 content: '';
                 background: $orange;
-                height: 1.5px;
+                height: 2px;
               }
-
               &.active {
                 &:after {
                   width: 100%;
                 }
               }
-
               &:hover {
                 &:after {
                   width: 100%;
@@ -178,16 +194,60 @@ header {
               margin: 0 20px;
             }
           }
+
           a.social {
             color: $corail;
             font-size: 21px;
 
             @media screen and (min-width: $break-large) {
               margin-left: 10px;
-              vertical-align: middle;
+              line-height: 18px;
             }
+
             @media screen and (min-width: $break-super-large) {
               margin-left: 20px;
+            }
+          }
+          &.spe {
+            a.nav-link {
+              @media screen and (min-width: $break-large) {
+                position: relative;
+                &:before,
+                &:after {
+                  content: '';
+                  border-top: 0.5px solid $corail;
+                  position: relative;
+                  display: block;
+                  width: 10px;
+                  margin: auto;
+                  transition: all 0.5s;
+                }
+                &:before {
+                  top: 0;
+                  transform: rotate(120deg) translateY(-50%) translateX(-50%);
+                }
+                &:after {
+                  top: 0;
+                  transform: rotate(-60deg) translateY(-50%) translateX(-50%);
+                  transition: none;
+                  position: relative;
+                  bottom: 0;
+                  left: inherit;
+                  right: inherit;
+                  margin: auto;
+                  width: 10px;
+
+                  background: none;
+                  height: auto;
+                }
+                &:hover {
+                  &:before,
+                  &:after {
+                    width: 0;
+                    transition: all 0.5s;
+                  }
+                }
+              }
             }
           }
           &:first-of-type {
@@ -200,13 +260,9 @@ header {
 
           &:last-of-type {
             @media screen and (min-width: $break-large) {
-              line-height: 18px;
               a.nav-link {
                 margin-right: 0;
               }
-            }
-            @media screen and (min-width: $break-super-large) {
-              line-height: 23px;
             }
           }
         }
@@ -225,17 +281,25 @@ header {
   }
 
   .purpose {
-    padding-top: 3vh;
-    padding-bottom: 3vh;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    position: relative;
 
     @media screen and (min-width: $break-medium) {
-      padding-top: 5vh;
-      padding-bottom: 5vh;
+      padding-top: 60px;
+      padding-bottom: 60px;
     }
 
-    @media screen and (min-width: $break-large) {
-      padding-top: 8vh;
-      padding-bottom: 8vh;
+    // @media screen and (min-width: $break-large) {
+    //     padding-top: 80px;
+    //     padding-bottom: 80px;
+
+    // }
+
+    a.btn-cta {
+      position: absolute;
+      right: 0;
+      top: 0;
     }
 
     .content {
@@ -255,8 +319,8 @@ header {
         }
 
         @media screen and (min-width: $break-large) {
-          font-size: 70px;
-          margin-bottom: 5vh;
+          font-size: 68px;
+          margin-bottom: 30px;
         }
 
         i {
@@ -300,9 +364,8 @@ header {
       z-index: -9;
 
       img {
-        max-width: 320px;
+        max-width: 300px;
         height: auto;
-        @include rotate(-15deg);
       }
     }
   }

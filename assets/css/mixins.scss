@@ -197,8 +197,8 @@
 }
 
 /* Usage
-      @include gradient(#07c, #06f, vertical);
-      */
+    @include gradient(#07c, #06f, vertical);
+    */
 
 /// Background Horizontal
 /// @param {Color} $startColor [#3C3C3C] - Start Color
@@ -372,11 +372,11 @@
 }
 
 /* Usage
-      @include placeholder {
-        font-style:italic;
-        color: white;
-        font-weight:100;
-      }*/
+    @include placeholder {
+      font-style:italic;
+      color: white;
+      font-weight:100;
+    }*/
 
 // Size
 @mixin size($width, $height) {

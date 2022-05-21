@@ -2,6 +2,9 @@ body {
   font-family: $Montserrat;
   font-size: 16px;
   color: $black;
+  main {
+    overflow-x: hidden;
+  }
 
   a.btn-cta {
     font-weight: bold;
@@ -131,33 +134,35 @@ body {
       margin-top: 0;
       margin-bottom: 100px;
     }
-    .bullet {
-      position: absolute;
-      top: -118px;
-      left: -170px;
-      @media screen and (min-width: $break-medium) {
-        left: -230px;
-      }
-      @media screen and (min-width: $break-large) {
-        top: -325px;
-      }
-      @media screen and (min-width: $break-end) {
-        top: -325px;
-        left: 0;
-      }
+    // .bullet {
+    //     display: none;
+    //     @media screen and (min-width: $break-medium) {
+    //         left: -230px;
+    //         display: block;
+    //         position: absolute;
+    //         top: -118px;
+    //         left: -160px;
+    //     }
+    //     @media screen and (min-width: $break-large) {
+    //         top: -325px;
+    //     }
+    //     @media screen and (min-width: $break-end) {
+    //         top: -325px;
+    //         left: 0;
+    //     }
 
-      img {
-        @include rotate(97deg);
-        max-width: 230px;
-        height: auto;
-        @media screen and (min-width: $break-medium) {
-          max-width: 100%;
-        }
-        @media screen and (min-width: $break-large) {
-          max-width: 100%;
-        }
-      }
-    }
+    //     img {
+    //         @include rotate(97deg);
+    //         max-width: 230px;
+    //         height: auto;
+    //         @media screen and (min-width: $break-medium) {
+    //             max-width: 100%;
+    //         }
+    //         @media screen and (min-width: $break-large) {
+    //             max-width: 100%;
+    //         }
+    //     }
+    // }
 
     .about {
       background-image: url('../images/raphaele-rodellar-reflexologie-plantaire-bordeaux.jpg');
@@ -190,15 +195,29 @@ body {
     }
     .wave {
       position: absolute;
-      top: 0;
-      right: 10px;
+      top: -80px;
+      right: -200px;
+      @media screen and (min-width: $break-small) {
+        top: -60px;
+      }
+      @media screen and (min-width: $break-medium) {
+        right: -100px;
+      }
       @media screen and (min-width: $break-large) {
         left: 0;
-        top: -20px;
+        // top:-20px;
         right: inherit;
+        top: -150px;
       }
       @media screen and (min-width: $break-extra-large) {
-        top: -80px;
+        left: inherit;
+        right: -200px;
+        bottom: -80px;
+        top: inherit;
+        z-index: 99;
+      }
+      @media screen and (min-width: $break-super-large) {
+        right: -100px;
       }
       @media screen and (min-width: $break-end) {
         top: -180px;
@@ -206,17 +225,18 @@ body {
         right: 10px;
       }
       img {
-        margin: 0 0 0 auto;
-        display: block;
+        // margin: 0 0 0 auto;
+        // display: block;
         @include rotate(-5deg);
-        max-width: 130px;
-        height: auto;
-        @media screen and (min-width: $break-medium) {
-          max-width: 280px;
-        }
-        @media screen and (min-width: $break-large) {
-          max-width: 320px;
-        }
+        //max-width:130px;
+
+        // @media screen and (min-width: $break-medium) {
+        //     max-width:280px;
+        //     height: auto;
+        // }
+        // @media screen and (min-width: $break-large) {
+        //     max-width:320px;
+        // }
       }
     }
     .row {
@@ -446,34 +466,36 @@ body {
 
     .wave {
       position: absolute;
-      top: -75px;
-      right: 18px;
+      top: -120px;
+      left: -200px;
       @media screen and (min-width: $break-medium) {
-        top: -45px;
-        right: 25px;
+        // top: -45px;
+        // left:inherit;
+        // right:25px;
+        left: -100px;
       }
-      @media screen and (min-width: $break-large) {
-        left: 10px;
-        right: inherit;
-      }
+      // @media screen and (min-width: $break-large) {
+      //     left:10px;
+      //     right:inherit;
+      // }
       @media screen and (min-width: $break-super-large) {
-        top: -90px;
+        top: -200px;
       }
       @media screen and (min-width: $break-end) {
-        top: -180px;
-        left: inherit;
-        right: 40px;
+        top: -200px;
+        left: 80px;
       }
       img {
-        max-width: 130px;
-        height: auto;
+        //max-width: 130px;
+
         @include rotate(21deg);
         @media screen and (min-width: $break-medium) {
-          max-width: 220px;
+          // height: auto;
+          // max-width:220px;
         }
-        @media screen and (min-width: $break-large) {
-          max-width: 260px;
-        }
+        // @media screen and (min-width: $break-large) {
+        //     max-width:260px;
+        // }
       }
     }
 
@@ -550,7 +572,7 @@ body {
 
     &.in {
       opacity: 1;
-      z-index: 4;
+      z-index: 999;
     }
   }
 }

@@ -2,17 +2,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 
 <title>{{ .Site.Title }}</title>
-<meta name="description" content="{{ .Site.Params.description }}" />
+<meta name="title" property="og:title" content="{{ .Site.Title }}" />
+<meta name="description" property="og:description" content="{{ .Site.Params.description }}" />
+<meta name="image" property="og:image" content="{{ .Site.BaseURL }}images/og_image.jpg" />
 <meta name="author" content="{{ .Site.Params.author }}" />
-
-<link rel="icon" type="image/x-icon" href="images/R-Bastia-Favicon.ico" />
-
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="{{ .Site.Params.siteName }}" />
 <meta property="og:url" content="{{ .Site.BaseURL }}" />
-<meta property="og:title" content="{{ .Site.Title }}" />
-<meta property="og:description" content="{{ .Site.Params.description }}" />
-<meta property="og:image" content="{{ .Site.BaseURL }}images/og_image.jpg" />
+
+<link rel="icon" type="image/x-icon" href="images/R-Bastia-Favicon.ico" />
 
 {{ if hugo.IsProduction }}
 <meta name="robots" content="index, follow" />

@@ -1,2 +1,2 @@
-baseURL = 'https://staging.raphaele-rodellar.fr/'
+# baseURL = 'https://staging.raphaele-rodellar.fr/'
 staticDir = ['static', 'static_staging']

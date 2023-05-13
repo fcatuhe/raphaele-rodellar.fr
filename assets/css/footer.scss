@@ -1,5 +1,5 @@
 footer {
-  background-color: $lightPink;
+  background-color: $pink-light;
 
   .fat-footer {
     padding-bottom: 30px;
@@ -7,8 +7,8 @@ footer {
 
     .title {
       text-align: center;
-      font-family: $Bastia;
-      color: $corail;
+      font-family: 'Ranille';
+      color: $coral;
       padding-bottom: 20px;
       font-size: 22px;
     }
@@ -28,7 +28,7 @@ footer {
         a,
         button {
           text-decoration: none;
-          color: $black;
+          // color: $dark;
           padding: 0;
         }
       }
@@ -42,14 +42,14 @@ footer {
       }
 
       i {
-        color: $corail;
+        color: $coral;
       }
     }
 
     a:not(.btn-cta) {
       display: inline-block;
       text-decoration: none;
-      color: $black;
+      // color: $dark;
     }
 
     a.btn-cta {
@@ -65,8 +65,8 @@ footer {
     }
   }
 
-  .thin-footer {
-    background-color: $corail;
+  .-thin-footer {
+    background-color: $coral;
     color: $pink;
     text-align: center;
     padding-top: 10px;

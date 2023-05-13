@@ -5,3 +5,12 @@ $break-large: 992px;
 $break-extra-large: 1200px;
 $break-super-large: 1400px;
 $break-end: 1900px;
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px,
+);

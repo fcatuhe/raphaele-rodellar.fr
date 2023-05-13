@@ -1,17 +1,51 @@
-/*  ------------->>> VARIABLES <<<---------------------  */
+$coral: #e9492c;
+$green: #0a7571;
+$green-light: #6abea2;
+$pink: #f08a8d;
+$blue: #3056a3;
+$pink-light: #fae1e1;
+$cream: #f7efdc;
 
-//COLORS
+.text-coral {
+  color: $coral;
+}
+.text-green {
+  color: $green;
+}
+.text-green-light {
+  color: $green-light;
+}
+.text-pink {
+  color: $pink;
+}
+.text-blue {
+  color: $blue;
+}
+.text-pink-light {
+  color: $pink-light;
+}
+.text-cream {
+  color: $cream;
+}
 
-//$black: #525c6e;
-$black: #414042;
-$white: #fff;
-$blue: #3b04dc;
-
-$pink: #ffb0b4;
-$lightPink: #ffb0b482;
-$veryLightPink: #ffb0b43b;
-
-$orange: #f99006;
-
-$corail: #f2530b;
-$lightCorail: #f2530b29;
+.bg-coral {
+  background-color: $coral;
+}
+.bg-green {
+  background-color: $green;
+}
+.bg-green-light {
+  background-color: $green-light;
+}
+.bg-pink {
+  background-color: $pink;
+}
+.bg-blue {
+  background-color: $blue;
+}
+.bg-pink-light {
+  background-color: $pink-light;
+}
+.bg-cream {
+  background-color: $cream;
+}

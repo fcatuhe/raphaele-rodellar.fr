@@ -27,7 +27,7 @@ h2,
 }
 
 .highlight {
-  box-shadow: inset 0 -0.5em 0 $pink-light;
+  box-shadow: inset 0 -0.5em 0 color(pink-light);
   padding-bottom: 0;
   display: inline;
 }
@@ -39,15 +39,15 @@ h2,
   @include rfs(0.25rem, letter-spacing);
   text-transform: uppercase;
   text-decoration: none;
-  color: $pink;
+  color: color(pink);
   border-radius: 3rem;
-  box-shadow: 0.25rem 0.25rem $pink;
-  background-color: $blue;
-  border-color: $blue;
+  box-shadow: 0.25rem 0.25rem color(pink);
+  background-color: color(blue);
+  border-color: color(blue);
   transition: all 0.3s linear;
 
   &:hover {
-    box-shadow: 0 0 $pink;
+    box-shadow: 0 0 color(pink);
     transition: all 0.3s linear;
   }
 }

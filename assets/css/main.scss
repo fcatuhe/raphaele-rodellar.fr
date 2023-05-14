@@ -1,9 +1,9 @@
-@import 'colors.scss';
-@import 'breakpoints.scss';
-@import 'header.scss';
-@import 'footer.scss';
+@import '../../vendor/rfs/scss';
+@import 'breakpoints';
 
 @import 'fonts';
+
+@import 'colors';
 @import 'nav';
 
 body {
@@ -20,13 +20,10 @@ section {
 
 h1,
 h2,
-h3 {
+.h1,
+.h2 {
   font-family: 'Ranille';
-}
-
-h1,
-h2 {
-  font-size: 4rem;
+  @include font-size(4rem);
 }
 
 .highlight {
@@ -37,12 +34,13 @@ h2 {
 
 .btn-cta {
   font-family: 'Gotham Black';
-  letter-spacing: 4px;
+  @include padding(1rem 1.5rem);
+  @include font-size(1rem);
+  @include rfs(0.25rem, letter-spacing);
   text-transform: uppercase;
-  padding: 1rem 1.5rem;
   text-decoration: none;
   color: $pink;
-  border-radius: 300px;
+  border-radius: 3rem;
   box-shadow: 0.25rem 0.25rem $pink;
   background-color: $blue;
   border-color: $blue;
@@ -57,28 +55,17 @@ h2 {
 #raphaele {
   background-image: url('/images/raphaele-rodellar-reflexologie-plantaire-bordeaux.jpg');
   background-size: cover;
-  height: 350px;
   background-position: center;
   background-repeat: no-repeat;
-  @media screen and (min-width: $break-medium) {
-    height: 650px;
-  }
-  @media screen and (min-width: $break-large) {
-    height: 100%;
-  }
+  height: 100%;
+  min-height: 50vh;
 }
 
 #practice {
   background-image: url('../images/raphaele-rodellar-therapeute-reflexologue-bordeaux.jpg');
   background-size: cover;
-  height: 450px;
   background-position: bottom center;
   background-repeat: no-repeat;
-
-  @media screen and (min-width: $break-medium) {
-    height: 650px;
-  }
-  @media screen and (min-width: $break-large) {
-    height: 100%;
-  }
+  height: 100%;
+  min-height: 50vh;
 }

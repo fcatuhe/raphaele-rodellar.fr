@@ -2,20 +2,28 @@
 @import 'breakpoints';
 
 @import 'fonts';
-
 @import 'colors';
-@import 'nav';
+
+@import 'navbar';
 
 body {
   font-family: 'Montserrat';
 }
 
+$navbar-height: 3.5rem;
+.navbar {
+  height: $navbar-height;
+  .offcanvas-backdrop,
+  .offcanvas-start {
+    margin-top: $navbar-height;
+  }
+}
 main {
-  padding-top: 4rem;
+  padding-top: $navbar-height;
   overflow-x: hidden;
 }
 section {
-  scroll-margin-top: 4rem;
+  scroll-margin-top: $navbar-height;
 }
 
 h1,

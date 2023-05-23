@@ -76,7 +76,7 @@
         <div class="d-flex justify-content-center align-items-center column-gap-2">
           <span>Copyright {{ now.Format "2006"}}</span>
           <span>•</span>
-          {{ with .Site.Copyright | default .Site.Title }} {{ . | safeHTML }} {{ end }}
+          <span>{{ with .Site.Copyright | default .Site.Title }} {{ . | safeHTML }} {{ end }}</span>
           <span>•</span>
           <a class="fs-5 text-pink-light" href="https://www.instagram.com/raphaelerodellar/" target="instagram"
             ><i class="fa-brands fa-instagram"></i

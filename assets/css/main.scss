@@ -26,6 +26,11 @@ section {
   scroll-margin-top: $navbar-height;
 }
 
+.py-6 {
+  padding-top: 6rem !important;
+  padding-bottom: 6rem !important;
+}
+
 h1,
 h2,
 .h1,
@@ -65,7 +70,7 @@ h2,
 }
 
 #raphaele {
-  background-image: url('/images/raphaele-rodellar-reflexologie-plantaire-bordeaux.jpg');
+  background-image: url('/images/raphaele_rodellar_reflexologie_plantaire_bordeaux.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -74,7 +79,7 @@ h2,
 }
 
 #practice {
-  background-image: url('/images/raphaele-rodellar-therapeute-reflexologue-bordeaux.jpg');
+  background-image: url('/images/raphaele_rodellar_therapeute_reflexologue_bordeaux.jpg');
   background-size: cover;
   background-position: bottom center;
   background-repeat: no-repeat;

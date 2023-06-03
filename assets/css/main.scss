@@ -60,6 +60,7 @@ h2,
 }
 
 .btn-cta {
+  display: inline-block;
   font-family: 'Gotham Black';
   @include padding(1rem 1.5rem);
   @include font-size(1rem);
@@ -85,7 +86,10 @@ h2,
   background-position: center;
   background-repeat: no-repeat;
   height: 100%;
-  min-height: 50vh;
+  min-height: 80vw;
+  @media (min-width: map-get($grid-breakpoints, 'lg')) {
+    min-height: 50vh;
+  }
 }
 
 #practice {
@@ -94,7 +98,10 @@ h2,
   background-position: bottom center;
   background-repeat: no-repeat;
   height: 100%;
-  min-height: 50vh;
+  min-height: 80vw;
+  @media (min-width: map-get($grid-breakpoints, 'lg')) {
+    min-height: 50vh;
+  }
 }
 
 .header {

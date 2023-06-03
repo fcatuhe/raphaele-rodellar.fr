@@ -25,8 +25,13 @@ main {
 section {
   scroll-margin-top: $height-navbar;
 }
+
 .height-navbar {
   height: $height-navbar;
+}
+
+.width-logo {
+  @include rfs(40rem, width);
 }
 
 .py-lg-6 {

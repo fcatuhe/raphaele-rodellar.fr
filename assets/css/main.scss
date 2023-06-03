@@ -10,20 +10,35 @@ body {
   font-family: 'Montserrat';
 }
 
-$navbar-height: 3.5rem;
+$height-navbar: 3.5rem;
 .navbar {
-  height: $navbar-height;
+  height: $height-navbar;
   .offcanvas-backdrop,
   .offcanvas-start {
-    margin-top: $navbar-height;
+    margin-top: $height-navbar;
   }
 }
 main {
-  padding-top: $navbar-height;
+  padding-top: $height-navbar;
   overflow-x: hidden;
 }
 section {
-  scroll-margin-top: $navbar-height;
+  scroll-margin-top: $height-navbar;
+}
+
+.height-navbar {
+  height: $height-navbar;
+}
+
+.width-logo {
+  @include rfs(40rem, width);
+}
+
+.py-lg-6 {
+  @media (min-width: map-get($grid-breakpoints, 'lg')) {
+    padding-top: 6rem !important;
+    padding-bottom: 6rem !important;
+  }
 }
 
 h1,
@@ -65,7 +80,7 @@ h2,
 }
 
 #raphaele {
-  background-image: url('/images/raphaele-rodellar-reflexologie-plantaire-bordeaux.jpg');
+  background-image: url('/images/raphaele_rodellar_reflexologie_plantaire_bordeaux.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -74,10 +89,144 @@ h2,
 }
 
 #practice {
-  background-image: url('/images/raphaele-rodellar-therapeute-reflexologue-bordeaux.jpg');
+  background-image: url('/images/raphaele_rodellar_therapeute_reflexologue_bordeaux.jpg');
   background-size: cover;
   background-position: bottom center;
   background-repeat: no-repeat;
   height: 100%;
   min-height: 50vh;
+}
+
+.header {
+  &-shape-pink-light {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 15vw;
+  }
+  &-dot-coral {
+    position: absolute;
+    bottom: 3.5vw;
+    left: 10vw;
+    width: 8vw;
+  }
+  &-shape-blue {
+    position: absolute;
+    bottom: -8vw;
+    left: 0;
+    width: 25vw;
+    transform: rotateY(0.5turn);
+  }
+}
+.section4 {
+  &-shape-green-light {
+    position: absolute;
+    top: -13.5vw;
+    right: -7vw;
+    width: 18vw;
+    transform: rotateX(0.5turn) rotate(-65deg);
+  }
+  &-shape-blue {
+    position: absolute;
+    top: -11vw;
+    right: -1vw;
+    width: 25vw;
+    transform: rotate(-5deg);
+  }
+  &-dot-coral {
+    position: absolute;
+    top: 0.5vw;
+    right: 6.5vw;
+    width: 8vw;
+  }
+  &-shapelet-pink-light {
+    position: absolute;
+    top: 0;
+    right: -3vw;
+    width: 12vw;
+    transform: rotate(20deg);
+  }
+  @media (min-width: map-get($grid-breakpoints, 'sm')) {
+    &-shape-green-light {
+      top: -9.5vw;
+    }
+    &-shape-blue {
+      top: -7vw;
+    }
+    &-dot-coral {
+      top: 4.5vw;
+    }
+    &-shapelet-pink-light {
+      top: 4vw;
+    }
+  }
+  @media (min-width: map-get($grid-breakpoints, 'lg')) {
+    &-shape-green-light {
+      top: -13.5vw;
+    }
+    &-shape-blue {
+      top: -11vw;
+    }
+    &-dot-coral {
+      top: 0.5vw;
+    }
+    &-shapelet-pink-light {
+      top: 0;
+    }
+  }
+}
+.section5 {
+  &-shape-blue {
+    position: absolute;
+    bottom: -8vw;
+    left: -3vw;
+    width: 25vw;
+    transform: rotate(155deg);
+  }
+  &-dot-coral {
+    position: absolute;
+    bottom: -5vw;
+    left: 15vw;
+    width: 8vw;
+  }
+  &-shape-green-light {
+    position: absolute;
+    bottom: -13vw;
+    left: -3vw;
+    width: 18vw;
+    transform: rotateX(0.5turn) rotate(130deg);
+  }
+  @media (min-width: map-get($grid-breakpoints, 'sm')) {
+    &-shape-blue {
+      bottom: -13vw;
+    }
+    &-dot-coral {
+      bottom: -10vw;
+    }
+    &-shape-green-light {
+      bottom: -18vw;
+    }
+  }
+  @media (min-width: map-get($grid-breakpoints, 'lg')) {
+    &-shape-blue {
+      bottom: -4vw;
+    }
+    &-dot-coral {
+      bottom: -1vw;
+    }
+    &-shape-green-light {
+      bottom: -9vw;
+    }
+  }
+  @media (min-width: map-get($grid-breakpoints, 'xxl')) {
+    &-shape-blue {
+      bottom: -8vw;
+    }
+    &-dot-coral {
+      bottom: -5vw;
+    }
+    &-shape-green-light {
+      bottom: -13vw;
+    }
+  }
 }

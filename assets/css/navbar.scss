@@ -1,4 +1,7 @@
 .navbar {
+  --bs-navbar-padding-y: 0;
+  --bs-navbar-brand-padding-y: 0;
+
   --bs-navbar-color: #e9492c;
   --bs-navbar-hover-color: #e9492c;
   --bs-navbar-active-color: #e9492c;

@@ -30,8 +30,14 @@ section {
   height: $height-navbar;
 }
 
-.width-logo {
-  @include rfs(40rem, width);
+.height-logo {
+  @include rfs(7rem, height);
+  @media (min-width: map-get($grid-breakpoints, 'sm')) {
+    @include rfs(5rem, height);
+  }
+  @media (min-width: map-get($grid-breakpoints, 'lg')) {
+    @include rfs(4rem, height);
+  }
 }
 
 .py-lg-6 {

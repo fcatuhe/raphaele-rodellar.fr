@@ -65,6 +65,6 @@ configure :development do
 end
 
 configure :production do
-  config[:host] = ENV.fetch(HOST, 'https://raphaele-rodellar.fr')
+  config[:host] = ENV.fetch('HOST', 'https://raphaele-rodellar.fr')
   # config[:robots_content] = 'index, follow'
 end

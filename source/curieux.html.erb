@@ -1,0 +1,84 @@
+---
+title: Soyons curieux !
+---
+
+<div class="container content">
+  <h1>Soyons curieux !</h1/>
+
+  <div class="my-4">
+    <form id="newsletterSubscriptionForm" class="row needs-validation" novalidate action="http://localhost:3000/newsletters/3/subscribers" accept-charset="UTF-8" method="post">
+      <div class="col-12 col-md-6 col-lg-3">
+        <label for="subscriber_email" class="form-label">Email</label>
+        <input type="email" class="form-control" name="subscriber[email]" id="subscriber_email" required>
+        <div class="invalid-feedback">
+          Saisissez votre email
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-3">
+        <label for="subscriber_last_name" class="form-label">Nom</label>
+        <input type="text" class="form-control" name="subscriber[last_name]" id="subscriber_last_name" required>
+        <div class="invalid-feedback">
+          Saisissez votre nom
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-3">
+        <label for="subscriber_first_name" class="form-label">Prénom</label>
+        <input type="text" class="form-control" name="subscriber[first_name]" id="subscriber_first_name" required>
+        <div class="invalid-feedback">
+          Saisissez votre prénom
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-3">
+        <div class='form-label'> </div>
+        <button class="btn btn-rr-primary" type="submit">S'inscrire</button>
+      </div>
+    </form>
+  </div>
+
+  <div class="modal fade" id="subscriptionSuccessModal" tabindex="-1">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-body">
+          <p>Merci, votre inscription a bien été prise en compte</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-bs-dismiss="modal">OK</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  (() => {
+    'use strict'
+
+    const subscriptionSuccessModal = new bootstrap.Modal('#subscriptionSuccessModal', {  })
+    // subscriptionSuccessModal.show()
+
+    const form = document.getElementById('newsletterSubscriptionForm')
+
+    form.addEventListener('submit', event => {
+      event.preventDefault()
+      event.stopPropagation()
+
+      if (form.checkValidity()) {
+        const formData = new FormData(form);
+
+        fetch(form.action, { method: form.method, body: formData}).then(
+          response => {
+            if (response.status == 201) {
+              subscriptionSuccessModal.show()
+
+              form.reset()
+              form.classList.remove('was-validated')
+            } else {
+            }
+          }
+        )
+      } else {
+        form.classList.add('was-validated')
+      }
+    }, false)
+  })()
+</script>

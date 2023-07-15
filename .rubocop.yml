@@ -1,0 +1,18 @@
+require:
+  - rubocop-performance
+  - rubocop-rake
+
+AllCops:
+  NewCops: enable
+Layout/LineLength:
+  Max: 120
+Naming/VariableNumber:
+  EnforcedStyle: snake_case
+Style/ClassAndModuleChildren:
+  Enabled: false
+Style/Documentation:
+  Enabled: false
+Style/FrozenStringLiteralComment:
+  Enabled: false
+Style/SymbolArray:
+  MinSize: 4

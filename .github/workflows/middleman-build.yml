@@ -1,0 +1,23 @@
+name: Middleman build
+
+on:
+  pull_request:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          bundler-cache: true # runs 'bundle install' and caches installed gems automatically
+      - name: Build with Middleman
+        run: bundle exec rake build
+        env:
+          NO_CONTRACTS: true
+          HOST: ${{ steps.pages.outputs.base_url }}

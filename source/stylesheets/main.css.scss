@@ -1,4 +1,4 @@
-@import '../../vendor/rfs/scss';
+@import 'vendor/rfs/scss';
 @import 'breakpoints';
 
 @import 'fonts';
@@ -53,6 +53,12 @@ h2,
 .h2 {
   font-family: 'Ranille';
   @include font-size(4rem);
+  .content & {
+    margin: 1.5rem;
+    text-align: center;
+    @include font-size(3rem);
+    color: color(blue);
+  }
 }
 
 .ls-2 {
@@ -87,7 +93,7 @@ h2,
 }
 
 #raphaele {
-  background-image: url('/images/raphaele_rodellar_reflexologie_plantaire_bordeaux.jpg');
+  background-image: image-url('raphaele_rodellar_reflexologie_plantaire_bordeaux.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -99,7 +105,7 @@ h2,
 }
 
 #practice {
-  background-image: url('/images/raphaele_rodellar_therapeute_reflexologue_bordeaux.jpg');
+  background-image: image-url('raphaele_rodellar_therapeute_reflexologue_bordeaux.jpg');
   background-size: cover;
   background-position: bottom center;
   background-repeat: no-repeat;

@@ -1,4 +1,4 @@
-name: Middleman build
+name: Build Middleman site
 
 on:
   pull_request:

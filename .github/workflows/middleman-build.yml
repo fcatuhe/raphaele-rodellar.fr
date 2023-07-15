@@ -17,7 +17,7 @@ jobs:
         with:
           bundler-cache: true # runs 'bundle install' and caches installed gems automatically
       - name: Build with Middleman
-        run: bundle exec rake build
+        run: middleman build
         env:
           NO_CONTRACTS: true
           HOST: ${{ steps.pages.outputs.base_url }}

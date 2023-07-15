@@ -143,7 +143,8 @@ GEM
     webrick (1.8.1)
 
 PLATFORMS
-  x86_64-darwin-21
+  x86_64-darwin-22
+  x86_64-linux
 
 DEPENDENCIES
   middleman (~> 4.5)
@@ -155,5 +156,8 @@ DEPENDENCIES
   tzinfo-data
   wdm (~> 0.1)
 
+RUBY VERSION
+   ruby 3.2.2p53
+
 BUNDLED WITH
-   2.3.3
+   2.4.17

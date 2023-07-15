@@ -32,7 +32,7 @@ jobs:
         id: pages
         uses: actions/configure-pages@v3
       - name: Build with Middleman
-        run: middleman build
+        run: bundle exec middleman build
         env:
           NO_CONTRACTS: true
           HOST: ${{ steps.pages.outputs.base_url }}

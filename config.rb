@@ -8,6 +8,7 @@ activate :autoprefixer do |prefix|
 end
 
 activate :directory_indexes
+page '/404.html', directory_index: false
 
 # activate :relative_assets
 # set :relative_links, true
@@ -64,7 +65,7 @@ end
 configure :development do
   config[:base_url] = ENV.fetch('BASE_URL', 'http://localhost:4567')
   config[:robots_content] = 'noindex, nofollow'
-  config[:newsletter_subscription_url] = 'http://localhost:3000/newsletters/3/subscribers'
+  config[:newsletter_subscription_url] = 'https://santé-vous.fr/newsletters/2/subscribers'
 end
 
 configure :staging do

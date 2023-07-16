@@ -1,8 +1,10 @@
 <nav id="navbar" class="navbar navbar-expand-lg bg-white fixed-top">
   <div class="container-fluid">
-    <a class="navbar-brand d-lg-none" data-bs-dismiss="offcanvas" href="<%= site_url('#') %>">
-      <img src="/images/logo_raphaele_rodellar.png" alt="Logo Raphaële Rodellar" class="height-navbar" />
-    </a>
+    <div data-bs-toggle="offcanvas">
+      <a class="navbar-brand d-lg-none" href="<%= root_url_or_scroll_to_top(current_page.url) %>">
+        <%= image_tag('logo_raphaele_rodellar.png', alt: 'Raphaële Rodellar', class: 'height-navbar') %>
+      </a>
+    </div>
     <div
       class="navbar-toggler d-lg-none navbar-burger"
       data-bs-target="#navbarNav"
@@ -43,10 +45,9 @@
           <li class="nav-item d-none d-lg-block">
             <a
               class="nav-link navbar-brand no-scrollspy p-lg-0 mx-lg-3"
-              data-bs-dismiss="offcanvas"
-              href="<%= site_url('#') %>"
+              href="<%= root_url_or_scroll_to_top(current_page.url) %>"
             >
-              <img src="/images/logo_raphaele_rodellar.png" alt="Raphaële Rodellar" class="height-navbar" />
+              <%= image_tag('logo_raphaele_rodellar.png', alt: 'Raphaële Rodellar', class: 'height-navbar') %>
             </a>
           </li>
           <li class="nav-item">

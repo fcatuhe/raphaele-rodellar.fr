@@ -2,7 +2,7 @@ const subscriptionSuccessAlert = document.getElementById('subscriptionSuccessAle
 
 subscriptionSuccessAlert.addEventListener('close.bs.alert', (event) => {
   event.preventDefault()
-  // event.stopPropagation()
+
   subscriptionSuccessAlert.classList.add('d-none')
 })
 
@@ -12,7 +12,8 @@ form.addEventListener(
   'submit',
   (event) => {
     event.preventDefault()
-    // event.stopPropagation()
+
+    subscriptionSuccessAlert.classList.add('d-none')
 
     if (form.checkValidity()) {
       const formData = new FormData(form)
@@ -24,6 +25,7 @@ form.addEventListener(
           form.reset()
           form.classList.remove('was-validated')
         } else {
+          // TODO: FC 16jul23 display error message
         }
       })
     } else {

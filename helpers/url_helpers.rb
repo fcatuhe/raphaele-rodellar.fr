@@ -10,12 +10,7 @@ module UrlHelpers
   alias site_url absolute_url
 
   def root_url_or_scroll_to_top(current_page_url)
-    if current_page_url == '/'
-      site_url('#')
-    else
-      site_url
-    end
-
+    current_page_url == '/' ? site_url('#') : site_url
   end
 
   def image_url(image_filename)

@@ -62,16 +62,17 @@ configure :build do
   activate :asset_hash
 end
 
+# Default variables
+config[:robots_content] = 'noindex, nofollow'
+config[:newsletter_subscription_url] = 'https://santé-vous.fr/newsletters/2/subscribers'
+
+# Per environment variables and overrides
 configure :development do
   config[:base_url] = ENV.fetch('BASE_URL', 'http://localhost:4567')
-  config[:robots_content] = 'noindex, nofollow'
-  config[:newsletter_subscription_url] = 'https://santé-vous.fr/newsletters/2/subscribers'
 end
 
 configure :staging do
   config[:base_url] = ENV.fetch('BASE_URL', 'https://staging.raphaele-rodellar.fr')
-  config[:robots_content] = 'noindex, nofollow'
-  config[:newsletter_subscription_url] = 'https://santé-vous.fr/newsletters/2/subscribers'
 end
 
 configure :production do

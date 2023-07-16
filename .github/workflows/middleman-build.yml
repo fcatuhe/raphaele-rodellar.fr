@@ -9,6 +9,8 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      Test: 'test successful'
     steps:
       - name: Checkout
         uses: actions/checkout@v3
@@ -16,6 +18,14 @@ jobs:
         uses: ruby/setup-ruby@v1
         with:
           bundler-cache: true # runs 'bundle install' and caches installed gems automatically
+      - name: Display Environment
+        run: echo "$ENVIRONMENT"
+      - name: Display Test variable
+        run: echo "$Test"
+      - name: Display Environment explicit
+        run: echo "$ENV_VAR"
+        env:
+          ENV_VAR: ${{ vars.ENVIRONMENT }}
       - name: Build with Middleman
         run: bundle exec middleman build -e $ENVIRONMENT
         env:

@@ -1,16 +1,28 @@
-name: Build Middleman site
+name: Deploy Middleman site to Staging
 
 on:
-  pull_request:
+  push:
     branches:
       - main
   workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
 
 env:
   ENVIRONMENT: ${{ vars.ENVIRONMENT }}
 
 jobs:
-  build:
+  deploy:
+    environment:
+      name: staging
+      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -29,3 +41,10 @@ jobs:
         env:
           BASE_URL: ${{ steps.pages.outputs.base_url }}
           NO_CONTRACTS: true
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v1
+        with:
+          path: build
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v2

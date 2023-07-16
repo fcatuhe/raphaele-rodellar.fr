@@ -1,0 +1,36 @@
+$colors: (
+  coral: #e9492c,
+  green: #0a7571,
+  green-light: #6abea2,
+  pink: #f08a8d,
+  blue: #3056a3,
+  pink-light: #fae1e1,
+  cream: #f7efdc,
+);
+
+@function color($name) {
+  @return map-get($colors, $name);
+}
+
+@each $name, $color in $colors {
+  .text-#{$name} {
+    color: $color;
+  }
+  .bg-#{$name} {
+    background-color: $color;
+  }
+}
+
+.btn-rr-primary {
+  --bs-btn-font-weight: 600;
+  --bs-btn-color: var(--bs-white);
+  --bs-btn-bg: #3056a3;
+  --bs-btn-border-color: #3056a3;
+  --bs-btn-hover-color: #3056a3;
+  --bs-btn-hover-bg: #{shade-color(#3056a3, 10%)};
+  --bs-btn-hover-border-color: #{shade-color(#3056a3, 10%)};
+  --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+  --bs-btn-active-color: var(--bs-btn-hover-color);
+  --bs-btn-active-bg: #{shade-color(#3056a3, 20%)};
+  --bs-btn-active-border-color: #{shade-color(#3056a3, 20%)};
+}

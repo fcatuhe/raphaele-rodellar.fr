@@ -1,6 +1,6 @@
 <nav id="navbar" class="navbar navbar-expand-lg bg-white fixed-top">
   <div class="container-fluid">
-    <a class="navbar-brand d-lg-none" data-bs-dismiss="offcanvas" href="#">
+    <a class="navbar-brand d-lg-none" data-bs-dismiss="offcanvas" href="<%= site_url('#') %>">
       <img src="/images/logo_raphaele_rodellar.png" alt="Logo Raphaële Rodellar" class="height-navbar" />
     </a>
     <div
@@ -26,24 +26,38 @@
             >
           </li>
           <li class="nav-item">
-            <a class="nav-link p-lg-0 me-lg-2 me-xl-3" aria-current="page" href="#section1">Philosophie</a>
+            <a class="nav-link p-lg-0 me-lg-2 me-xl-3" aria-current="page" href="<%= site_url('#section1') %>"
+              >Philosophie</a
+            >
           </li>
           <li class="nav-item">
-            <a class="nav-link p-lg-0 mx-lg-2 mx-xl-3" aria-current="page" href="#section2">Principe</a>
+            <a class="nav-link p-lg-0 mx-lg-2 mx-xl-3" aria-current="page" href="<%= site_url('#section2') %>"
+              >Principe</a
+            >
           </li>
           <li class="nav-item">
-            <a class="nav-link p-lg-0 mx-lg-2 mx-xl-3" aria-current="page" href="#section3">Pour qui ?</a>
+            <a class="nav-link p-lg-0 mx-lg-2 mx-xl-3" aria-current="page" href="<%= site_url('#section3') %>"
+              >Pour qui ?</a
+            >
           </li>
           <li class="nav-item d-none d-lg-block">
-            <a class="nav-link navbar-brand no-scrollspy p-lg-0 mx-lg-3" data-bs-dismiss="offcanvas" href="#">
+            <a
+              class="nav-link navbar-brand no-scrollspy p-lg-0 mx-lg-3"
+              data-bs-dismiss="offcanvas"
+              href="<%= site_url('#') %>"
+            >
               <img src="/images/logo_raphaele_rodellar.png" alt="Raphaële Rodellar" class="height-navbar" />
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link p-lg-0 mx-lg-2 mx-xl-3" aria-current="page" href="#section4">En pratique</a>
+            <a class="nav-link p-lg-0 mx-lg-2 mx-xl-3" aria-current="page" href="<%= site_url('#section4') %>"
+              >En pratique</a
+            >
           </li>
           <li class="nav-item">
-            <a class="nav-link p-lg-0 mx-lg-2 mx-xl-3" aria-current="page" href="#section5">À propos</a>
+            <a class="nav-link p-lg-0 mx-lg-2 mx-xl-3" aria-current="page" href="<%= site_url('#section5') %>"
+              >À propos</a
+            >
           </li>
           <li class="nav-item d-none d-lg-block mx-lg-2 mx-xl-3 ramps">
             <a

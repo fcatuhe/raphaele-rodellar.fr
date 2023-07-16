@@ -39,8 +39,8 @@ jobs:
       - name: Build with Middleman
         run: bundle exec middleman build -e $ENVIRONMENT
         env:
-          NO_CONTRACTS: true
           BASE_URL: ${{ steps.pages.outputs.base_url }}
+          NO_CONTRACTS: true
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:

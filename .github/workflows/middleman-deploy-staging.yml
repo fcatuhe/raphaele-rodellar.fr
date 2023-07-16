@@ -1,9 +1,7 @@
-name: Deploy Middleman site to Pages
+name: Deploy Middleman site to Staging
 
 on:
   push:
-    branches:
-      - main
   workflow_dispatch:
 
 permissions:
@@ -19,7 +17,8 @@ env:
   ENVIRONMENT: ${{ vars.ENVIRONMENT }}
 
 jobs:
-  deploy:
+  deploy-staging:
+    if: github.repository == 'fcatuhe/staging.raphaele-rodellar.fr'
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}

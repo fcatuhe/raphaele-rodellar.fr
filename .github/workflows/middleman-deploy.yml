@@ -32,10 +32,10 @@ jobs:
         id: pages
         uses: actions/configure-pages@v3
       - name: Build with Middleman
-        run: bundle exec middleman build
+        run: bundle exec middleman build -e $ENVIRONMENT
         env:
           NO_CONTRACTS: true
-          HOST: ${{ steps.pages.outputs.base_url }}
+          BASE_URL: ${{ steps.pages.outputs.base_url }}
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:

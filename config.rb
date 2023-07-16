@@ -7,8 +7,8 @@ end
 
 activate :directory_indexes
 
-activate :relative_assets
-set :relative_links, true
+# activate :relative_assets
+# set :relative_links, true
 
 activate :livereload
 
@@ -43,11 +43,11 @@ page '/*.txt', layout: false
 # Methods defined in the helpers block are available in templates
 # https://middlemanapp.com/basics/helper-methods/
 
-helpers do
-  def image_url(image_filename)
-    "#{config[:host]}/#{image_path(image_filename)}"
-  end
-end
+# helpers do
+#   def some_helper
+#     'Helping'
+#   end
+# end
 
 # Build-specific configuration
 # https://middlemanapp.com/advanced/configuration/#environment-specific-settings
@@ -60,11 +60,16 @@ configure :build do
 end
 
 configure :development do
-  config[:host] = 'http://localhost:4567'
-  # config[:robots_content] = 'noindex, nofollow'
+  config[:base_url] = ENV.fetch('BASE_URL', 'http://localhost:4567')
+  config[:robots_content] = 'noindex, nofollow'
+end
+
+configure :staging do
+  config[:base_url] = ENV.fetch('BASE_URL', 'https://staging.raphaele-rodellar.fr')
+  config[:robots_content] = 'noindex, nofollow'
 end
 
 configure :production do
-  config[:host] = ENV.fetch('HOST', 'https://raphaele-rodellar.fr')
-  # config[:robots_content] = 'index, follow'
+  config[:base_url] = ENV.fetch('BASE_URL', 'https://raphaele-rodellar.fr')
+  config[:robots_content] = 'index, follow'
 end

@@ -249,3 +249,34 @@ h2,
     }
   }
 }
+
+.btn-rr-primary {
+  --bs-btn-color: var(--bs-white);
+  --bs-btn-bg: #{color(blue)};
+  --bs-btn-border-color: #{color(blue)};
+  --bs-btn-hover-color: var(--bs-white);
+  --bs-btn-hover-bg: #{shade-color(color(blue), 10%)};
+  --bs-btn-hover-border-color: #{shade-color(color(blue), 10%)};
+  // --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+  --bs-btn-active-color: var(--bs-btn-hover-color);
+  --bs-btn-active-bg: #{shade-color(color(blue), 20%)};
+  --bs-btn-active-border-color: #{shade-color(color(blue), 20%)};
+}
+
+.alert {
+  --bs-alert-padding-y: 0.5rem;
+  &-success {
+    --bs-alert-color: #{shade-color(color(green), 20%)};
+    --bs-alert-link-color: #{shade-color(color(green), 20%)};
+    --bs-alert-border-color: #{tint-color(color(green-light), 70%)};
+    --bs-alert-bg: #{tint-color(color(green-light), 70%)};
+  }
+  &-dismissible .btn-close {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+  }
+
+  .btn-close {
+    --bs-btn-close-bg: none;
+  }
+}

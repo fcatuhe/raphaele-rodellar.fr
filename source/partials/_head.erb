@@ -31,4 +31,6 @@
 
 <script src="https://kit.fontawesome.com/e91391ba95.js" crossorigin="anonymous"></script>
 
-<%= javascript_include_tag 'main' %>
+<% if content_for?(:assets) %>
+  <%= yield_content :assets %>
+<% end %>

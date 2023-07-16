@@ -1,9 +1,7 @@
 name: Deploy Middleman site to Pages
 
 on:
-  push:
-    branches:
-      - main
+  push: # restrict branches in github-pages environment
   workflow_dispatch:
 
 permissions:

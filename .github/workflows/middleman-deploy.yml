@@ -20,6 +20,7 @@ env:
 
 jobs:
   deploy:
+    if: github.repository == 'fcatuhe/raphaele-rodellar.fr'
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}

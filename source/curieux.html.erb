@@ -3,15 +3,19 @@ title: Soyons curieux !
 ---
 
 <div class="container content">
-  <h1>Soyons curieux !</h1/>
+  <h1>Restons en contact !</h1/>
+
+  <p>
+    Pour vous inscrire à ma newsletter, renseignez vos coordonnées ci-dessous.
+  </p>
 
   <div class="my-4">
-    <form id="newsletterSubscriptionForm" class="row needs-validation" novalidate action="http://localhost:3000/newsletters/3/subscribers" accept-charset="UTF-8" method="post">
+    <form id="newsletterSubscriptionForm" class="row g-3 needs-validation" novalidate action="<%= config[:newsletter_subscription_url] %>" accept-charset="UTF-8" method="post">
       <div class="col-12 col-md-6 col-lg-3">
-        <label for="subscriber_email" class="form-label">Email</label>
-        <input type="email" class="form-control" name="subscriber[email]" id="subscriber_email" required>
+        <label for="subscriber_first_name" class="form-label">Prénom</label>
+        <input type="text" class="form-control" name="subscriber[first_name]" id="subscriber_first_name" required>
         <div class="invalid-feedback">
-          Saisissez votre email
+          Saisissez votre prénom
         </div>
       </div>
       <div class="col-12 col-md-6 col-lg-3">
@@ -22,63 +26,36 @@ title: Soyons curieux !
         </div>
       </div>
       <div class="col-12 col-md-6 col-lg-3">
-        <label for="subscriber_first_name" class="form-label">Prénom</label>
-        <input type="text" class="form-control" name="subscriber[first_name]" id="subscriber_first_name" required>
+        <label for="subscriber_email" class="form-label">Email</label>
+        <input type="email" class="form-control" name="subscriber[email]" id="subscriber_email" required>
         <div class="invalid-feedback">
-          Saisissez votre prénom
+          Saisissez votre email
         </div>
       </div>
-      <div class="col-12 col-md-6 col-lg-3">
-        <div class='form-label'> </div>
+      <div class="col-12 col-md-6 col-lg-3 d-grid">
+        <div class='form-label d-none d-md-block'> </div>
         <button class="btn btn-rr-primary" type="submit">S'inscrire</button>
+        <div class="valid-feedback">
+          <div class="d-none d-md-block"> </div>
+        </div>
       </div>
     </form>
   </div>
 
-  <div class="modal fade" id="subscriptionSuccessModal" tabindex="-1">
-    <div class="modal-dialog modal-sm">
-      <div class="modal-content">
-        <div class="modal-body">
-          <p>Merci, votre inscription a bien été prise en compte</p>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-primary" data-bs-dismiss="modal">OK</button>
-        </div>
-      </div>
-    </div>
+  <div id="subscriptionSuccessAlert" class="d-none alert alert-success alert-dismissible fade show" role="alert">
+    Merci, votre inscription a bien été prise en compte. A bientôt !
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
+      <i class="fa-solid fa-circle-xmark text-coral d-block"></i>
+    </button>
   </div>
+
+  <p class="fst-italic">
+    Vos coordonnées ne seront utilisées pour rien d'autre.
+  </p>
 </div>
 
-<script>
-  (() => {
-    'use strict'
+<div class="py-5"></div>
 
-    const subscriptionSuccessModal = new bootstrap.Modal('#subscriptionSuccessModal', {  })
-    // subscriptionSuccessModal.show()
-
-    const form = document.getElementById('newsletterSubscriptionForm')
-
-    form.addEventListener('submit', event => {
-      event.preventDefault()
-      event.stopPropagation()
-
-      if (form.checkValidity()) {
-        const formData = new FormData(form);
-
-        fetch(form.action, { method: form.method, body: formData}).then(
-          response => {
-            if (response.status == 201) {
-              subscriptionSuccessModal.show()
-
-              form.reset()
-              form.classList.remove('was-validated')
-            } else {
-            }
-          }
-        )
-      } else {
-        form.classList.add('was-validated')
-      }
-    }, false)
-  })()
-</script>
+<% content_for :assets do %>
+  <%= javascript_include_tag 'curious', defer: true %>
+<% end %>

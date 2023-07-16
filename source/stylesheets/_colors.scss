@@ -21,16 +21,12 @@ $colors: (
   }
 }
 
-.btn-rr-primary {
-  --bs-btn-font-weight: 600;
-  --bs-btn-color: var(--bs-white);
-  --bs-btn-bg: #3056a3;
-  --bs-btn-border-color: #3056a3;
-  --bs-btn-hover-color: #3056a3;
-  --bs-btn-hover-bg: #{shade-color(#3056a3, 10%)};
-  --bs-btn-hover-border-color: #{shade-color(#3056a3, 10%)};
-  --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
-  --bs-btn-active-color: var(--bs-btn-hover-color);
-  --bs-btn-active-bg: #{shade-color(#3056a3, 20%)};
-  --bs-btn-active-border-color: #{shade-color(#3056a3, 20%)};
+// Tint a color: mix a color with white
+@function tint-color($color, $weight) {
+  @return mix(white, $color, $weight);
+}
+
+// Shade a color: mix a color with black
+@function shade-color($color, $weight) {
+  @return mix(black, $color, $weight);
 }

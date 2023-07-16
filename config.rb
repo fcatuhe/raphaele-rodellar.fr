@@ -62,14 +62,17 @@ end
 configure :development do
   config[:base_url] = ENV.fetch('BASE_URL', 'http://localhost:4567')
   config[:robots_content] = 'noindex, nofollow'
+  config[:newsletter_subscription_url] = 'http://localhost:3000/newsletters/3/subscribers'
 end
 
 configure :staging do
   config[:base_url] = ENV.fetch('BASE_URL', 'https://staging.raphaele-rodellar.fr')
   config[:robots_content] = 'noindex, nofollow'
+  config[:newsletter_subscription_url] = 'https://santé-vous.fr/newsletters/2/subscribers'
 end
 
 configure :production do
   config[:base_url] = ENV.fetch('BASE_URL', 'https://raphaele-rodellar.fr')
   config[:robots_content] = 'index, follow'
+  config[:newsletter_subscription_url] = 'https://santé-vous.fr/newsletters/1/subscribers'
 end

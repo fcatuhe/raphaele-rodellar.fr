@@ -6,27 +6,22 @@ on:
       - main
   workflow_dispatch:
 
+env:
+  ENVIRONMENT: ${{ vars.ENVIRONMENT }}
+
 jobs:
   build:
     runs-on: ubuntu-latest
-    environment: github-pages
-    env:
-      Test: 'test successful'
+    environment: build
     steps:
       - name: Checkout
         uses: actions/checkout@v3
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
         with:
-          bundler-cache: true # runs 'bundle install' and caches installed gems automatically
-      - name: Display Environment
+          bundler-cache: true
+      - name: Echo build environment
         run: echo "$ENVIRONMENT"
-      - name: Display Test variable
-        run: echo "$Test"
-      - name: Display Environment explicit
-        run: echo "$ENV_VAR"
-        env:
-          ENV_VAR: ${{ vars.ENVIRONMENT }}
       - name: Build with Middleman
         run: bundle exec middleman build -e $ENVIRONMENT
         env:

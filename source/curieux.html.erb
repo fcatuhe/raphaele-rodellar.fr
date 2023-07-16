@@ -1,0 +1,61 @@
+---
+title: Soyons curieux !
+---
+
+<div class="container content">
+  <h1>Restons en contact !</h1/>
+
+  <p>
+    Pour vous inscrire à ma newsletter, renseignez vos coordonnées ci-dessous.
+  </p>
+
+  <div class="my-4">
+    <form id="newsletterSubscriptionForm" class="row g-3 needs-validation" novalidate action="<%= config[:newsletter_subscription_url] %>" accept-charset="UTF-8" method="post">
+      <div class="col-12 col-md-6 col-lg-3">
+        <label for="subscriber_first_name" class="form-label">Prénom</label>
+        <input type="text" class="form-control" name="subscriber[first_name]" id="subscriber_first_name" required>
+        <div class="invalid-feedback">
+          Saisissez votre prénom
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-3">
+        <label for="subscriber_last_name" class="form-label">Nom</label>
+        <input type="text" class="form-control" name="subscriber[last_name]" id="subscriber_last_name" required>
+        <div class="invalid-feedback">
+          Saisissez votre nom
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-3">
+        <label for="subscriber_email" class="form-label">Email</label>
+        <input type="email" class="form-control" name="subscriber[email]" id="subscriber_email" required>
+        <div class="invalid-feedback">
+          Saisissez votre email
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-3 d-grid">
+        <div class='form-label d-none d-md-block'> </div>
+        <button class="btn btn-rr-primary" type="submit">S'inscrire</button>
+        <div class="valid-feedback">
+          <div class="d-none d-md-block"> </div>
+        </div>
+      </div>
+    </form>
+  </div>
+
+  <div id="subscriptionSuccessAlert" class="d-none alert alert-success alert-dismissible fade show" role="alert">
+    Merci, votre inscription a bien été prise en compte. A bientôt !
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
+      <i class="fa-solid fa-circle-xmark text-coral d-block"></i>
+    </button>
+  </div>
+
+  <p class="fst-italic">
+    Vos coordonnées ne seront utilisées pour rien d'autre.
+  </p>
+</div>
+
+<div class="py-5"></div>
+
+<% content_for :assets do %>
+  <%= javascript_include_tag 'curious', defer: true %>
+<% end %>

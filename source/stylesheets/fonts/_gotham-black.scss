@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'Gotham Black';
-  src: url('../fonts/gotham-black.woff2') format('woff2'), url('../fonts/gotham-black.otf') format('opentype');
+  src: url(font-path('gotham-black.woff2')) format('woff2'), url(font-path('gotham-black.otf')) format('opentype');
   unicode-range: U+0020-007E, U+00A0-00A3, U+00A5, U+00A7-00AB, U+00AE-00B1, U+00B4, U+00B6-00B8, U+00BA-00BB,
     U+00BF-0107, U+010A-011B, U+011E-0123, U+0126-0127, U+012A-0131, U+0136-0137, U+0139-0148, U+014C-015B, U+015E-0165,
     U+016A-017E, U+0192, U+01FA-01FF, U+0218-0219, U+0259, U+02C6-02C7, U+02D8-02DD, U+0326, U+1E80-1E85, U+1EF2-1EF3,

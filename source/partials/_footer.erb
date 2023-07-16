@@ -9,20 +9,19 @@
       <div class="col-12 col-md-4 col-lg-3">
         <ul class="list-unstyled lh-lg">
           <li>
-            <a class="text-reset text-decoration-none" aria-current="page" href="#section1">Philosophie</a>
+            <a class="text-reset text-decoration-none" aria-current="page" href="<%= site_url('#section1') %>">Philosophie</a>
           </li>
           <li>
-            <a class="text-reset text-decoration-none" aria-current="page" href="#section2">Principe</a>
+            <a class="text-reset text-decoration-none" aria-current="page" href="<%= site_url('#section2') %>">Principe</a>
           </li>
           <li>
-            <a class="text-reset text-decoration-none" aria-current="page" href="#section3">Pour qui ?</a>
-          </li>
-
-          <li>
-            <a class="text-reset text-decoration-none" aria-current="page" href="#section4">En pratique</a>
+            <a class="text-reset text-decoration-none" aria-current="page" href="<%= site_url('#section3') %>">Pour qui ?</a>
           </li>
           <li>
-            <a class="text-reset text-decoration-none" aria-current="page" href="#section5">À propos</a>
+            <a class="text-reset text-decoration-none" aria-current="page" href="<%= site_url('#section4') %>">En pratique</a>
+          </li>
+          <li>
+            <a class="text-reset text-decoration-none" aria-current="page" href="<%= site_url('#section5') %>">À propos</a>
           </li>
           <li>
             <a
@@ -30,8 +29,9 @@
               aria-current="page"
               href="https://santé-vous.fr/raphaële"
               target="sante-vous"
-              >Réserver</a
             >
+              Réserver
+            </a>
           </li>
           <li>
             <button
@@ -76,8 +76,9 @@
         <div class="d-flex justify-content-center align-items-center column-gap-2">
           <span>Copyright <%= Date.today.year %> • Raphaële Rodellar - Réflexologie plantaire thérapeutique</span> • </span>
           <a class="fs-5 text-pink-light" href="https://www.instagram.com/raphaelerodellar/" target="instagram"
-            ><i class="fa-brands fa-instagram"></i
-          ></a>
+          >
+            <i class="fa-brands fa-instagram"></i>
+          </a>
         </div>
       </div>
     </div>

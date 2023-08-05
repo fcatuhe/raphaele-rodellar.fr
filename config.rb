@@ -1,17 +1,9 @@
-require 'terser'
-
 # Activate and configure extensions
 # https://middlemanapp.com/advanced/configuration/#configuring-extensions
 
 activate :autoprefixer do |prefix|
   prefix.browsers = 'last 2 versions'
 end
-
-activate :directory_indexes
-page '/404.html', directory_index: false
-
-# activate :relative_assets
-# set :relative_links, true
 
 activate :livereload
 
@@ -52,11 +44,19 @@ page '/*.txt', layout: false
 #   end
 # end
 
+helpers do
+  def url_for(path_or_resource, options = {})
+    super(path_or_resource, options).delete_suffix('.html')
+  end
+end
+
 # Build-specific configuration
 # https://middlemanapp.com/advanced/configuration/#environment-specific-settings
 
 configure :build do
   activate :minify_css
+
+  require 'terser'
   activate :minify_javascript, compressor: Terser.new
 
   activate :asset_hash
@@ -66,8 +66,11 @@ end
 config[:robots_content] = 'noindex, nofollow'
 config[:newsletter_subscription_url] = 'https://santé-vous.fr/newsletters/2/subscribers'
 
-# Per environment variables and overrides
+# Environment specific configuration, variables and overrides
 configure :development do
+  require 'rack/middleman/optional_html'
+  use ::Rack::OptionalHtml, {}
+
   config[:base_url] = ENV.fetch('BASE_URL', 'http://localhost:4567')
 end
 

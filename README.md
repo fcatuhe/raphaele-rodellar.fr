@@ -2,8 +2,8 @@
 
 ## Staging
 
-Any push to staging will trigger the `deploy-staging` GitHub Action.
+Any push to staging will trigger the `middleman-deploy-staging` GitHub Action.
 
 ## Production
 
-`deploy` GitHub Action is restricted to the `main` branch.
+`middleman-deploy` GitHub Action is restricted to the `main` branch.

@@ -3,14 +3,14 @@ title: Restons en contact !
 ---
 
 <div class="container content">
-  <h1>Restons en contact !</h1/>
+  <h1>Restons en contact !</h1>
 
   <p>
     Pour vous inscrire à ma newsletter, renseignez vos coordonnées ci-dessous.
   </p>
 
   <div class="my-4">
-    <form id="newsletterSubscriptionForm" class="row g-3 needs-validation" novalidate action="<%= config[:newsletter_subscription_url] %>" accept-charset="UTF-8" method="post">
+    <form id="newsletterSubscriptionForm" class="row g-3 needs-validation" novalidate action="<%= config[:newsletter_subscription_url] %>" accept-charset="utf-8" method="post">
       <div class="col-12 col-md-6 col-lg-3">
         <label for="subscriber_first_name" class="form-label">Prénom</label>
         <input type="text" class="form-control" name="subscriber[first_name]" id="subscriber_first_name" required>

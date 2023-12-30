@@ -1,0 +1,27 @@
+---
+title: Voyage au cœur d'une séance
+---
+
+<div class="container content">
+  <h1>Voyage au cœur d'une séance</h1>
+
+  <p>Cliquez sur une scène pour la retourner</p>
+
+  <div class="row g-0">
+
+    <%- 24.downto(1).each do |day| %>
+      <div class="col-4">
+        <div class="flip-card" onclick="this.classList.toggle('flipped')">
+          <div class="front">
+            <img src="https://res.cloudinary.com/fcatuhe/image/upload/c_scale,w_512/v1703937406/raphaele-rodellar.fr/voyage/<%= '%02i' % day %>.jpg" class="img-fluid">
+          </div>
+          <div class="back">
+            <img src="https://res.cloudinary.com/fcatuhe/image/upload/c_scale,w_512/v1703937406/raphaele-rodellar.fr/voyage/<%= '%02i' % day %>.jpg" class="img-fluid opacity-10">
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
+
+  <div class="py-5"></div>
+</div>

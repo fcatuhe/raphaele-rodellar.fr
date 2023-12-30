@@ -280,3 +280,39 @@ h2,
     --bs-btn-close-bg: none;
   }
 }
+
+.opacity-10 {
+  opacity: 0.1 !important;
+}
+
+.flip-card {
+  transition: 0.5s;
+  transform-style: preserve-3d;
+  position: relative;
+
+  &.flipped {
+    transform: rotateY(180deg);
+  }
+
+  .front,
+  .back {
+    backface-visibility: hidden;
+    // Regression in iOS 17
+    -webkit-backface-visibility: hidden;
+  }
+
+  .front {
+    .over {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  .back {
+    position: absolute;
+    top: 0;
+    transform: rotateY(180deg);
+  }
+}

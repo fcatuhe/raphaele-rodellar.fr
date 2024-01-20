@@ -303,10 +303,7 @@ h2,
     backface-visibility: hidden;
     // Regression in iOS 17
     -webkit-backface-visibility: hidden;
-  }
-
-  .front {
-    .over {
+    .overlay {
       position: absolute;
       top: 50%;
       left: 50%;

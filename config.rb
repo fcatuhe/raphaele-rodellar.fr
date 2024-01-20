@@ -12,6 +12,8 @@ set :js_dir, 'javascripts'
 set :images_dir, 'images'
 set :fonts_dir, 'fonts'
 
+set :markdown_engine, :kramdown
+
 # Layouts
 # https://middlemanapp.com/basics/layouts/
 

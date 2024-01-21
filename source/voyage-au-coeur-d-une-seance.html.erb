@@ -11,27 +11,28 @@ title: Voyage au cœur d'une séance
 
   <div class="row g-0">
 
-    <%- 24.downto(1).each do |day| %>
+    <%- 24.downto(1).map { '%02i' % _1 }.each do |day| %>
       <div class="col-4">
         <div class="flip-card border border-white cursor-pointer user-select-none" onclick="this.classList.toggle('flipped')">
-          <div class="front" data-bs-toggle="modal" data-bs-target="#<%= '%02i' % day %>Modal">
-            <img src="https://res.cloudinary.com/fcatuhe/image/upload/c_scale,w_512/v1703937406/raphaele-rodellar.fr/voyage/<%= '%02i' % day %>.jpg" class="img-fluid">
+          <div class="front" data-bs-toggle="modal" data-bs-target="#<%= day %>Modal">
+            <img src="https://res.cloudinary.com/fcatuhe/image/upload/c_scale,w_512/v1703937406/raphaele-rodellar.fr/voyage/<%= day %>.jpg" class="img-fluid">
           </div>
           <div class="back">
-            <img src="https://res.cloudinary.com/fcatuhe/image/upload/c_scale,w_512/v1703937406/raphaele-rodellar.fr/voyage/<%= '%02i' % day %>.jpg" class="img-fluid opacity-10">
-            <div class="overlay text-justify">
-              <%= partial "partials/voyage/#{'%02i' % day}" %>
+            <img src="https://res.cloudinary.com/fcatuhe/image/upload/c_scale,w_512/v1703937406/raphaele-rodellar.fr/voyage/<%= day %>.jpg" class="img-fluid opacity-10">
+            <div class="overlay">
+              <h2><%= day %> - <%= data.voyage.title.send(day) %></h2>
             </div>
           </div>
         </div>
       </div>
 
-      <div class="modal fade" id="<%= '%02i' % day %>Modal" tabindex="-1" aria-labelledby="<%= '%02i' % day %>ModalLabel" aria-hidden="true">
+      <div class="modal fade" id="<%= day %>Modal" tabindex="-1" aria-labelledby="<%= day %>ModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered user-select-none">
           <div class="modal-content">
             <div class="modal-body">
               <div class="text-justify">
-                <%= partial "partials/voyage/#{'%02i' % day}" %>
+              <h2><%= day %> - <%= data.voyage.title.send(day) %></h2>
+                <%= partial "partials/voyage/#{day}" %>
               </div>
               <div class="text-end montserrat-semibold text-blue cursor-pointer text-small text-uppercase" data-bs-dismiss="modal">Fermer</div>
             </div>

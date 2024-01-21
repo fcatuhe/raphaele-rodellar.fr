@@ -2,7 +2,7 @@
 title: Voyage au cœur d'une séance
 ---
 
-<div class="container content">
+<div class="container content voyage">
   <h1>
     <span class="ranille-calt">V</span>o<span class="ranille-ss02">y</span><span class="ranille-salt">a</span><span class="ranille-ss03">g</span>e <span class="ranille-salt">a</span>u cœ<span class="ranille-ss01">u</span>r <span class="ranille-ss02">d</span>'une sé<span class="ranille-salt">a</span><span class="ranille-ss02">n</span>c<span class="ranille-calt">e</span>
   </h1>
@@ -29,11 +29,9 @@ title: Voyage au cœur d'une séance
       <div class="modal fade" id="<%= '%02i' % day %>Modal" tabindex="-1" aria-labelledby="<%= '%02i' % day %>ModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
           <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
             <div class="modal-body">
               <%= partial "partials/voyage/#{'%02i' % day}" %>
+              <div class="text-end montserrat-semibold text-blue" data-bs-dismiss="modal">Fermer</div>
             </div>
           </div>
         </div>

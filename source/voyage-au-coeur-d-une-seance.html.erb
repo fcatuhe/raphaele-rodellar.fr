@@ -17,7 +17,7 @@ title: Voyage au cœur d'une séance
     <%- 24.downto(1).map { '%02i' % _1 }.each do |day| %>
       <div class="col-4">
         <div class="flip-card border border-white cursor-pointer user-select-none" onclick="this.classList.toggle('flipped')">
-          <div class="front" data-bs-toggle="modal" data-bs-target="#<%= day %>Modal">
+          <div class="front" data-bs-toggle="modal" data-bs-target="#modal<%= day %>">
             <img src="https://res.cloudinary.com/fcatuhe/image/upload/c_scale,w_512/v1703937406/raphaele-rodellar.fr/voyage/<%= day %>.jpg"
               alt="<%= day %> - <%= data.voyage.title.send(day) %>" class="img-fluid">
           </div>
@@ -30,7 +30,7 @@ title: Voyage au cœur d'une séance
         </div>
       </div>
 
-      <div class="modal fade" id="<%= day %>Modal" tabindex="-1" aria-labelledby="<%= day %>ModalLabel" aria-hidden="true">
+      <div class="modal fade" id="modal<%= day %>" tabindex="-1" aria-labelledby="<%= day %>ModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered user-select-none">
           <div class="modal-content">
             <div class="modal-body">

@@ -18,12 +18,13 @@ title: Voyage au cœur d'une séance
       <div class="col-4">
         <div class="flip-card border border-white cursor-pointer user-select-none" onclick="this.classList.toggle('flipped')">
           <div class="front" data-bs-toggle="modal" data-bs-target="#<%= day %>Modal">
-            <img src="https://res.cloudinary.com/fcatuhe/image/upload/c_scale,w_512/v1703937406/raphaele-rodellar.fr/voyage/<%= day %>.jpg" class="img-fluid">
+            <img src="https://res.cloudinary.com/fcatuhe/image/upload/c_scale,w_512/v1703937406/raphaele-rodellar.fr/voyage/<%= day %>.jpg"
+              alt="<%= day %> - <%= data.voyage.title.send(day) %>" class="img-fluid">
           </div>
           <div class="back">
             <img src="https://res.cloudinary.com/fcatuhe/image/upload/c_scale,w_512/v1703937406/raphaele-rodellar.fr/voyage/<%= day %>.jpg" class="img-fluid opacity-10">
             <div class="overlay">
-              <h2 class="mb-0 text-center"><%= day %> - <%= data.voyage.title.send(day) %></h2>
+              <div class="h2 mb-0 text-center"><%= day %> - <%= data.voyage.title.send(day) %></div>
             </div>
           </div>
         </div>

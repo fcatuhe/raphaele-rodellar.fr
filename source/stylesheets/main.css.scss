@@ -55,13 +55,15 @@ h2,
   @include font-size(4rem);
 }
 .content {
-  h1 {
+  h1,
+  .h1 {
     margin: 1.5rem;
     text-align: center;
     @include font-size(3rem);
     color: color(blue);
   }
-  h2 {
+  h2,
+  .h2 {
     color: color(blue);
   }
 }
@@ -313,12 +315,13 @@ h2,
 }
 
 .voyage {
-  h2 {
+  h2,
+  .h2 {
     font-family: 'Montserrat SemiBold';
     text-transform: uppercase;
     @include font-size(1.25rem);
   }
-  .overlay h2 {
+  .overlay .h2 {
     font-size: calc(0.7rem + 0.5vw);
   }
   .modal-dialog h2 {

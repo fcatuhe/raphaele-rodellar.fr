@@ -75,6 +75,18 @@ h2,
   display: inline;
 }
 
+.text-small {
+  @include font-size(0.7rem);
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
 .btn-cta {
   display: inline-block;
   font-family: 'Gotham Black';
@@ -291,8 +303,11 @@ h2,
 
 .voyage {
   h2 {
+    margin-left: 0;
+    margin-right: 0;
     font-family: 'Montserrat SemiBold';
-    @include font-size(1.2rem);
+    @include font-size(0.9rem);
+    text-transform: uppercase;
     text-align: right;
   }
 }

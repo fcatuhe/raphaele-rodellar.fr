@@ -7,10 +7,13 @@ title: Voyage au cœur d'une séance
     <span class="ranille-calt">V</span>o<span class="ranille-ss02">y</span><span class="ranille-salt">a</span><span class="ranille-ss03">g</span>e <span class="ranille-salt">a</span>u cœ<span class="ranille-ss01">u</span>r <span class="ranille-ss02">d</span>'une sé<span class="ranille-salt">a</span><span class="ranille-ss02">n</span>c<span class="ranille-calt">e</span>
   </h1>
 
-  <p>Cliquez sur une scène pour la retourner</p>
+  <div class="row justify-content-center my-4 mb-last-p-0">
+    <div class="col-lg-10 col-xl-8">
+      <%= partial "partials/voyage/introduction" %>
+    </div>
+  </div>
 
   <div class="row g-0">
-
     <%- 24.downto(1).map { '%02i' % _1 }.each do |day| %>
       <div class="col-4">
         <div class="flip-card border border-white cursor-pointer user-select-none" onclick="this.classList.toggle('flipped')">
@@ -20,7 +23,7 @@ title: Voyage au cœur d'une séance
           <div class="back">
             <img src="https://res.cloudinary.com/fcatuhe/image/upload/c_scale,w_512/v1703937406/raphaele-rodellar.fr/voyage/<%= day %>.jpg" class="img-fluid opacity-10">
             <div class="overlay">
-              <h2 class="m-0 montserrat-semibold text-uppercase"><%= day %> - <%= data.voyage.title.send(day) %></h2>
+              <h2 class="mb-0 text-center"><%= day %> - <%= data.voyage.title.send(day) %></h2>
             </div>
           </div>
         </div>
@@ -31,7 +34,7 @@ title: Voyage au cœur d'une séance
           <div class="modal-content">
             <div class="modal-body">
               <div class="text-justify">
-              <h2 class="mt-0 mx-0 montserrat-semibold text-end text-uppercase"><%= day %> - <%= data.voyage.title.send(day) %></h2>
+              <h2 class="text-end"><%= day %> - <%= data.voyage.title.send(day) %></h2>
                 <%= partial "partials/voyage/#{day}" %>
               </div>
               <div class="text-end montserrat-semibold text-blue cursor-pointer text-small text-uppercase" data-bs-dismiss="modal">Fermer</div>
@@ -42,5 +45,9 @@ title: Voyage au cœur d'une séance
     <% end %>
   </div>
 
-  <div class="py-5"></div>
+  <div class="row justify-content-center my-4 mb-last-p-0">
+    <div class="col-lg-10 col-xl-8">
+      <%= partial "partials/voyage/conclusion" %>
+    </div>
+  </div>
 </div>

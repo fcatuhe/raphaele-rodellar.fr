@@ -303,13 +303,10 @@ h2,
 
 .voyage {
   h2 {
-    margin-top: 0;
-    margin-left: 0;
-    margin-right: 0;
-    font-family: 'Montserrat SemiBold';
     @include font-size(0.9rem);
-    text-transform: uppercase;
-    text-align: right;
+  }
+  .overlay h2 {
+    font-size: calc(0.7rem + 0.5vw);
   }
 }
 

@@ -20,7 +20,7 @@ title: Voyage au cœur d'une séance
           <div class="back">
             <img src="https://res.cloudinary.com/fcatuhe/image/upload/c_scale,w_512/v1703937406/raphaele-rodellar.fr/voyage/<%= day %>.jpg" class="img-fluid opacity-10">
             <div class="overlay">
-              <h2><%= day %> - <%= data.voyage.title.send(day) %></h2>
+              <h2 class="m-0 montserrat-semibold text-uppercase"><%= day %> - <%= data.voyage.title.send(day) %></h2>
             </div>
           </div>
         </div>
@@ -31,7 +31,7 @@ title: Voyage au cœur d'une séance
           <div class="modal-content">
             <div class="modal-body">
               <div class="text-justify">
-              <h2><%= day %> - <%= data.voyage.title.send(day) %></h2>
+              <h2 class="mt-0 mx-0 montserrat-semibold text-end text-uppercase"><%= day %> - <%= data.voyage.title.send(day) %></h2>
                 <%= partial "partials/voyage/#{day}" %>
               </div>
               <div class="text-end montserrat-semibold text-blue cursor-pointer text-small text-uppercase" data-bs-dismiss="modal">Fermer</div>

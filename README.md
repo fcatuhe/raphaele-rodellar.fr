@@ -1,5 +1,9 @@
 # raphaele-rodellar.fr
 
+## Editing in Markdown
+
+- Refer to the [Markdown Guide](https://www.markdownguide.org/basic-syntax) for syntax
+
 ## Development
 
 - `middleman` to start server

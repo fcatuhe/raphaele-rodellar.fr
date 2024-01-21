@@ -12,6 +12,8 @@ set :js_dir, 'javascripts'
 set :images_dir, 'images'
 set :fonts_dir, 'fonts'
 
+set :markdown_engine, :kramdown
+
 # Layouts
 # https://middlemanapp.com/basics/layouts/
 
@@ -64,7 +66,7 @@ end
 
 # Default variables
 config[:robots_content] = 'noindex, nofollow'
-config[:newsletter_subscription_url] = 'https://santé-vous.fr/newsletters/2/subscribers'
+config[:newsletter_subscription_url] = 'https://sante-vous.fr/newsletters/2/subscribers'
 
 # Environment specific configuration, variables and overrides
 configure :development do
@@ -81,5 +83,5 @@ end
 configure :production do
   config[:base_url] = ENV.fetch('BASE_URL', 'https://raphaele-rodellar.fr')
   config[:robots_content] = 'index, follow'
-  config[:newsletter_subscription_url] = 'https://santé-vous.fr/newsletters/1/subscribers'
+  config[:newsletter_subscription_url] = 'https://sante-vous.fr/newsletters/1/subscribers'
 end

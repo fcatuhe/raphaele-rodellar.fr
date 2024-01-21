@@ -53,12 +53,23 @@ h2,
 .h2 {
   font-family: 'Ranille';
   @include font-size(4rem);
-  .content & {
+}
+.content {
+  h1,
+  .h1 {
     margin: 1.5rem;
     text-align: center;
     @include font-size(3rem);
     color: color(blue);
   }
+  h2,
+  .h2 {
+    color: color(blue);
+  }
+}
+
+.text-wrap-balance {
+  text-wrap: balance;
 }
 
 .ls-2 {
@@ -69,6 +80,24 @@ h2,
   box-shadow: inset 0 -0.5em 0 color(pink-light);
   padding-bottom: 0;
   display: inline;
+}
+
+.mb-last-p-0 {
+  p:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.text-small {
+  @include font-size(0.7rem);
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.cursor-pointer {
+  cursor: pointer;
 }
 
 .btn-cta {
@@ -278,5 +307,52 @@ h2,
 
   .btn-close {
     --bs-btn-close-bg: none;
+  }
+}
+
+.opacity-10 {
+  opacity: 0.1 !important;
+}
+
+.voyage {
+  h2,
+  .h2 {
+    font-family: 'Montserrat SemiBold';
+    text-transform: uppercase;
+    @include font-size(1.25rem);
+  }
+  .overlay .h2 {
+    font-size: calc(0.7rem + 0.5vw);
+  }
+  .modal-dialog h2 {
+    @include font-size(0.9rem);
+  }
+}
+
+.flip-card {
+  transition: 0.5s;
+  transform-style: preserve-3d;
+  position: relative;
+
+  &.flipped {
+    transform: rotateY(180deg);
+  }
+
+  .front,
+  .back {
+    backface-visibility: hidden;
+    .overlay {
+      position: absolute;
+      top: calc(50% + 0.5rem);
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 90%;
+    }
+  }
+
+  .back {
+    position: absolute;
+    top: 0;
+    transform: rotateY(180deg);
   }
 }

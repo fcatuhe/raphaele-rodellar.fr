@@ -24,7 +24,7 @@
             <a
               class="nav-link gotham-black ls-2"
               aria-current="page"
-              href="https://santé-vous.fr/raphaële"
+              href="https://sante-vous.fr/raphaele"
               target="sante-vous"
             >
               Réserver
@@ -39,16 +39,16 @@
           </li>
 
           <li class="nav-item">
-            <a class="nav-link p-lg-0 mx-lg-2 mx-xl-3" aria-current="page" href="<%= site_url('#section2') %>"
+            <a class="nav-link p-lg-0 mx-lg-2 mx-xl-3" aria-current="page" href="<%= site_url('#section3') %>"
             >
-              Principe
+              Réflexologie
             </a>
           </li>
 
           <li class="nav-item">
-            <a class="nav-link p-lg-0 mx-lg-2 mx-xl-3" aria-current="page" href="<%= site_url('#section3') %>"
+            <a class="nav-link p-lg-0 mx-lg-2 mx-xl-3" aria-current="page" href="<%= site_url('#section4') %>"
             >
-              Pour qui ?
+              Lieu & tarif
             </a>
           </li>
 
@@ -62,24 +62,21 @@
           </li>
 
           <li class="nav-item">
-            <a class="nav-link p-lg-0 mx-lg-2 mx-xl-3" aria-current="page" href="<%= site_url('#section4') %>"
-            >
-              En pratique
-            </a>
-          </li>
-
-          <li class="nav-item">
             <a class="nav-link p-lg-0 mx-lg-2 mx-xl-3" aria-current="page" href="<%= site_url('#section5') %>"
             >
               À propos
             </a>
           </li>
 
+          <li class="nav-item">
+            <%= link_to 'Curieux ?', '/curieux', class: class_names('nav-link p-lg-0 mx-lg-2 mx-xl-3', active: current_page.url != '/') %>
+          </li>
+
           <li class="nav-item d-none d-lg-block mx-lg-2 mx-xl-3 ramps">
             <a
               class="nav-link no-scrollspy p-lg-0"
               aria-current="page"
-              href="https://santé-vous.fr/raphaële"
+              href="https://sante-vous.fr/raphaele"
               target="sante-vous"
             >
               Réserver

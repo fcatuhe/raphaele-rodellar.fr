@@ -242,7 +242,7 @@
             <p>
               <i class="fa-solid fa-map-pin text-coral"></i>
               Je vous reçois chez Maison Ose au
-              <a href="https://goo.gl/maps/1tRWcUkNcBFojexX8" target="maps">59 cours de Verdun, 33000 Bordeaux</a>,
+              <a href="https://goo.gl/maps/1tRWcUkNcBFojexX8" target="maps" class="text-blue">59 cours de Verdun, 33000 Bordeaux</a>,
               juste à côté du Jardin Public, des  Chartrons et de la place Paul Doumer.
             </p>
             <p>
@@ -348,7 +348,29 @@
       <%= image_tag('shape_green_light.png', class: 'section5-shape-green-light') %>
     </section>
 
-    <section id="section6" class="py-5 bg-green text-pink-light text-center">
+    <section id="section6" class="py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-lg-6 order-lg-last align-self-center text-end text-lg-start">
+            <h2 class="mb-4 me-4 m-lg-0 text-pink">
+              Curieu<span class="ranille-ss02">x</span> ?
+            </h2>
+          </div>
+
+          <div class="col-12 offset-lg-2 col-lg-4 order-lg-first">
+            <div class="my-3 me-lg-5">
+              Parce que, comme pour la réflexologie plantaire, j’aime <span class="montserrat-semibold"> explorer les
+              possibilités des méthodes douces</span> héritées d’un autre siècle...
+              <span class="highlight">venez fouiller dans mon </span>
+              <%= link_to 'blog', '/curieux', class: 'montserrat-semibold text-green' %>
+              <span class="highlight"> ! </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="section7" class="py-5 bg-blue text-pink-light text-center">
       <div class="container">
         <div class="row gy-4">
           <div class="col-12">

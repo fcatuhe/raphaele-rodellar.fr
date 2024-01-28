@@ -114,10 +114,20 @@ h2,
   background-color: color(blue);
   border-color: color(blue);
   transition: all 0.3s linear;
-
   &:hover {
     box-shadow: 0 0 color(pink);
     transition: all 0.3s linear;
+  }
+
+  &-shop {
+    color: color(cream);
+    border-radius: 3rem;
+    box-shadow: 0.25rem 0.25rem color(cream);
+    background-color: color(pink);
+    border-color: color(pink);
+  }
+  &:hover {
+    box-shadow: 0 0 color(cream);
   }
 }
 

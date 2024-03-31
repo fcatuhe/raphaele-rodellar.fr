@@ -7,3 +7,15 @@ title: Dans ma Bibliothèque
 <p>
   Dans ma Bibliothèque
 </p>
+
+<% blog.articles.group_by { _1.data.category}.each do |category, articles| %>
+  <h2><%= category %></h2>
+
+  <% articles.each do |article| %>
+    <article>
+      <h3>
+        <a href="<%= article.url %>"><%= article.title %></a>
+      </h3>
+    </article>
+  <% end %>
+<% end %>

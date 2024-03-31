@@ -1,9 +1,8 @@
 source 'https://rubygems.org'
 
-ruby file: '.ruby-version'
-
 gem 'middleman', '~> 4.5'
 gem 'middleman-autoprefixer', '~> 3.0'
+gem "middleman-blog"
 gem 'middleman-livereload'
 gem 'kramdown'
 gem 'terser'

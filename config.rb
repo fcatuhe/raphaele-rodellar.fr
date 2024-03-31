@@ -5,6 +5,13 @@ activate :autoprefixer do |prefix|
   prefix.browsers = 'last 2 versions'
 end
 
+activate :blog do |blog|
+  blog.name = 'Dans ma Bibliothèque'
+  blog.prefix = 'bibliotheque'
+  blog.sources = 'bibliotheque/{category}/{title}.html'
+  blog.permalink = 'bibliotheque/{category}/{title}.html'
+end
+
 activate :livereload
 
 set :css_dir, 'stylesheets'
@@ -23,7 +30,7 @@ page '/*.json', layout: false
 page '/*.txt', layout: false
 
 # With alternative layout
-# page '/path/to/file.html', layout: 'other_layout'
+page '/index.html', layout: 'home'
 
 # Proxy pages
 # https://middlemanapp.com/advanced/dynamic-pages/

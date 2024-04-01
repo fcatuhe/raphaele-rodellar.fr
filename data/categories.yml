@@ -10,3 +10,19 @@
   tag: anatomie-et-physiologie
   title_color: blue
   shelf_color: pink
+- title: Réflexologie
+  tag: reflexologie
+  title_color: green-light
+  shelf_color: blue
+- title: Médecine chinoise
+  tag: medecine-chinoise
+  title_color: pink
+  shelf_color: green-light
+- title: Histoire de la médecine
+  tag: histoire-de-la-medecine
+  title_color: blue
+  shelf_color: pink
+- title: Bibliographies
+  tag: bibliographies
+  title_color: green-light
+  shelf_color: blue

@@ -1,18 +1,20 @@
-require:
-  - rubocop-performance
-  - rubocop-rake
+inherit_gem:
+  rubocop-rails-omakase: rubocop.yml
+# require:
+#   - rubocop-performance
+#   - rubocop-rake
 
-AllCops:
-  NewCops: enable
-Layout/LineLength:
-  Max: 120
-Naming/VariableNumber:
-  EnforcedStyle: snake_case
-Style/ClassAndModuleChildren:
-  Enabled: false
-Style/Documentation:
-  Enabled: false
-Style/FrozenStringLiteralComment:
-  Enabled: false
-Style/SymbolArray:
-  MinSize: 4
+# AllCops:
+#   NewCops: enable
+# Layout/LineLength:
+#   Max: 120
+# Naming/VariableNumber:
+#   EnforcedStyle: snake_case
+# Style/ClassAndModuleChildren:
+#   Enabled: false
+# Style/Documentation:
+#   Enabled: false
+# Style/FrozenStringLiteralComment:
+#   Enabled: false
+# Style/SymbolArray:
+#   MinSize: 4

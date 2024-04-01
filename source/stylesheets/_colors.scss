@@ -19,6 +19,10 @@ $colors: (
   .bg-#{$name} {
     background-color: $color;
   }
+  .text-bg-#{$name} {
+    color: white;
+    background-color: $color;
+  }
 }
 
 // Tint a color: mix a color with white

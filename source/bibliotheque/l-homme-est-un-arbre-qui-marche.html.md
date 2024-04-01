@@ -8,6 +8,8 @@ date: 2024/03/29
 tags: reflexologie
 ---
 
+### 4<sup>ème</sup> de couverture
+
 Pour Gwenn Libouban, la réflexologie ne se réduit pas à appuyer sur tel ou tel point de la plante des pieds, pour débloquer un mal de dos ou un problème de digestion. En marchant pieds nus sur la grève du Mont-Saint-Michel ou en ouvrant ses sens à la forêt de Brocéliande, elle a développé une pratique qui permet à ses patients de redécouvrir une connexion à la terre et à l'écoute de soi.
 
 Les pieds sont nos racines, notre ancrage. Véritable miroir de notre santé, caisse de résonnance de nos énergies, ils parlent de tout notre corps, des énergies crispées, du mental et de ses nuages, mais aussi de ce qui fait notre identité et notre force, de nos émotions les plus secrètes.

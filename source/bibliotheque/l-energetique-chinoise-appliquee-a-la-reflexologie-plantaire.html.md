@@ -7,6 +7,8 @@ date: 2024/03/29
 tags: medecine-chinoise
 ---
 
+### 4<sup>ème</sup> de couverture
+
 _Née à Munich, Mireille Meunier a étudié la médecine naturelle en Allemagne. Elle a reçu son diplôme d'Etat de « Heilpraktikerin » du ministère de la Santé de Berlin en 1990. A partir de 1991, elle a été sollicitée par différentes écoles de Berlin pour enseigner la réflexologie, l'auriculothérapie, le bindegewebsmassage, le yoga, etc. En 1993, elle s'est installée en France, et a créé, puis dirigé le Centre de réflexologie, qui propose des formations et des consultations. Elle est l'auteur du Livre de la réflexologie plantaire et du Manuel approfondi de réflexologie plantaire parus chez Guy Trédaniel Editeur. A l'origine de la Fédération française des réflexologues, dont elle a assumé la présidence (1998-2000), elle est aujourd'hui membre fondateur de la Fédération francophone des praticiens et des enseignants de la réflexologie (FFPER)._
 
 En énergétique chinoise, l'organisme humain est considéré comme une entité fonctionnelle qui a une organisation identique à celle de l'univers : l'interaction dynamique des deux principes yin et yang crée un équilibre et une tendance vers une évolution. L'apparition des maladies est la conséquence d'un déséquilibre du yin et du yang et le traitement consiste à le restaurer. La santé n'est pas uniquement perçue comme la résultante d'échanges biochimiques, mais repose aussi sur un équilibre d'ordre énergétique.

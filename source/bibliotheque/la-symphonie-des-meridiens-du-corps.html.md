@@ -8,6 +8,8 @@ date: 2024/03/29
 tags: medecine-chinoise
 ---
 
+### 4<sup>ème</sup> de couverture
+
 Comment fonctionnent les méridiens du corps qui permettent la circulation de notre énergie vitale ?
 
 Ce livre unique explique comment, grâce à la science de l'acupuncture accessible à tous, nous pouvons stimuler l'énergie qui anime chacune de nos cellules pour soulager nos maux, développer nos ressources et vivre pleinement notre potentiel.

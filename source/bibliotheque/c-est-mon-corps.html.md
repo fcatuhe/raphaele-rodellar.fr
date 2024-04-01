@@ -8,6 +8,8 @@ date: 2024/03/29
 tags: anatomie-et-physiologie, cycles-feminins
 ---
 
+### 4<sup>ème</sup> de couverture
+
 La pilule peut-elle rendre stérile ?
 Comment soigne-t-on l'endométriose ?
 Quels types de soins est-on en droit de refuser...

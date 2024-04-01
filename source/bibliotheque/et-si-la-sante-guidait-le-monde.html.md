@@ -8,6 +8,8 @@ date: 2024/03/30
 tags: sante-et-societe
 ---
 
+### 4<sup>ème</sup> de couverture
+
 Et si la sante guidait le monde ?
 
 L'espérance de vie et la pleine santé doivent devenir nos boussoles communes dans ce nouveau siècle. Le bien-être humain et la vitalité des écosystèmes sont irrémédiablement entrelacés et projetés ensemble à toute allure dans une spirale de plus en plus vicieuse qu'il nous faut à tout prix inverser. Détruire la Nature est un suicide social et, accessoirement, une folle économique au-dessus de nos moyens. Être prospère aujourd'hui, c'est se donner les moyens de garantir la poursuite de l'aventure humaine dans vingt ou trente ans. Être prospère, c'est donc d'abord être en bonne santé.

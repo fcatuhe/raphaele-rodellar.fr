@@ -8,6 +8,8 @@ date: 2024/03/30
 tags: anatomie-et-physiologie
 ---
 
+### 4<sup>ème</sup> de couverture
+
 Découvrez, analysez et renforcez les acteurs principaux de votre organisme.
 
 Hugo Desmorat, étiopathe de formation, nous partage son expérience et ses connaissances sur la formidable machine qu'est le corps humain, pour le découvrir, le comprendre, et rester en bonne santé en se focalisant sur les symptômes afin de déterminer l'origine du problème.

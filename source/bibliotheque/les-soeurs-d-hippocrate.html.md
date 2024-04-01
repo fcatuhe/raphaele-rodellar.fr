@@ -8,6 +8,12 @@ date: 2024/03/29
 tags: histoire-de-la-medecine, bibliographies
 ---
 
+« Soigner et sauver des vies est un grand pouvoir que les hommes ont longtemps gardé pour eux en empêchant les femmes de pratiquer la médecine. Elles s'appellent Agnodice d'Athènes, Angélique du Coudray, Margaret Buckley, Marthe Gautier... Elles ont en commun d'avoir défié ou contourné l'autorité patriarcale de leur époque pour faire avancer l'histoire de la médecine. »
+
+Ce livre se lit comme un recueil de nouvelles, et est une façon ludique d'entrer dans l'histoire de la médecine tout en y redonnant leur place aux femmes. C'est probablement romancé et un peu simplifié, mais il nous rappelle à quel point nous pouvons être têtues (dans le bon sens du terme !), pleines de ressources et de piquant...
+
+### 4<sup>ème</sup> de couverture
+
 Une histoire féministe de la médecine
 
 Soigner et sauver des vies est un grand pouvoir que les hommes ont longtemps gardé pour eux en empêchant les femmes de pratiquer la médecine. Elles s'appellent Agnodice d'Athènes, Angélique du Coudray, Margaret Buckley, Marthe Gautier... Elles ont en commun d'avoir défié ou contourné l'autorité patriarcale de leur époque pour faire avancer l'histoire de la médecine.

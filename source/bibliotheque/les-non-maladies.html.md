@@ -8,6 +8,8 @@ date: 2024/03/29
 tags: sante-et-societe
 ---
 
+### 4<sup>ème</sup> de couverture
+
 _Luc Perino est docteur en médecine, diplômé de médecine tropicale et d'épidémiologie. Il enseigne à la faculté de médecine de Lyon où il a créé le diplôme universitaire « Biologie de l'évolution et médecine ». Fort de sa longue pratique de clinicien, il mène une très remarquable activité de partage des connaissances médicales notamment grâce à son site www.lucperino.com._
 
 La médecine moderne a indubitablement accompli de grands progrès. Mais nous sommes entrés dans un dangereux processus de surmédicalisation, entraînant une dérive des capacités prédictives vers des soins injustifiés et parfois délétères.

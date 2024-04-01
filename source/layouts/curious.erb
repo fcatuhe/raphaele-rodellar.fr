@@ -1,5 +1,8 @@
 <% wrap_layout :layout do %>
-  <%= breadcrumbs(current_page) %>
+  <small class="text-green fst-italic">
+    <i class="fa-solid fa-arrow-left"></i>
+    <%= curious_breadcrumbs(current_page) %>
+  </small>
 
   <%= yield %>
 <% end %>

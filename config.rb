@@ -8,8 +8,9 @@ end
 activate :blog do |blog|
   blog.name = 'Dans ma Bibliothèque'
   blog.prefix = 'bibliotheque'
-  blog.sources = '{category}/{title}.html'
-  blog.permalink = '{category}/{title}.html'
+  blog.sources = '{slug}.html'
+  blog.permalink = '{slug}.html'
+  blog.layout = 'book'
 end
 
 activate :livereload
@@ -33,7 +34,6 @@ page '/*.txt', layout: false
 page '/index.html', layout: 'home'
 page '/voyage-au-coeur-d-une-seance.html', layout: 'curious'
 page '/bibliotheque.html', layout: 'curious'
-page '/bibliotheque/*', layout: 'curious'
 
 # Proxy pages
 # https://middlemanapp.com/advanced/dynamic-pages/

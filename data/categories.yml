@@ -1,0 +1,12 @@
+- title: Santé et société
+  tag: sante-et-societe
+  title_color: green-light
+  shelf_color: blue
+- title: Cycles Féminins
+  tag: cycles-feminins
+  title_color: pink
+  shelf_color: green-light
+- title: Anatomie et physiologie
+  tag: anatomie-et-physiologie
+  title_color: blue
+  shelf_color: pink

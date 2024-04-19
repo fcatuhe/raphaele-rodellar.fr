@@ -19,12 +19,16 @@ GEM
     autoprefixer-rails (10.4.16.0)
       execjs (~> 2)
     backports (3.25.0)
+    base64 (0.2.0)
+    bigdecimal (3.1.7)
+    builder (3.2.4)
     coffee-script (2.4.1)
       coffee-script-source
       execjs
     coffee-script-source (1.12.2)
     concurrent-ruby (1.2.3)
     contracts (0.17)
+    csv (3.3.0)
     dotenv (3.1.0)
     em-websocket (0.5.3)
       eventmachine (>= 0.12.9)
@@ -33,7 +37,7 @@ GEM
     eventmachine (1.2.7)
     execjs (2.9.1)
     fast_blank (1.0.1)
-    fastimage (2.3.0)
+    fastimage (2.3.1)
     ffi (1.16.3)
     haml (6.3.0)
       temple (>= 0.8.2)
@@ -45,7 +49,7 @@ GEM
     http_parser.rb (0.8.0)
     i18n (1.6.0)
       concurrent-ruby (~> 1.0)
-    json (2.7.1)
+    json (2.7.2)
     kramdown (2.4.0)
       rexml
     language_server-protocol (3.17.0.3)
@@ -98,6 +102,7 @@ GEM
       middleman-core (>= 3.3)
       rack-livereload (~> 0.3.15)
     minitest (5.22.3)
+    mutex_m (0.2.0)
     padrino-helpers (0.15.3)
       i18n (>= 0.6.7, < 2)
       padrino-support (= 0.15.3)
@@ -108,7 +113,7 @@ GEM
       ast (~> 2.4.1)
       racc
     parslet (2.0.0)
-    public_suffix (5.0.4)
+    public_suffix (5.0.5)
     racc (1.7.3)
     rack (2.2.9)
     rack-livereload (0.3.17)
@@ -119,7 +124,7 @@ GEM
       ffi (~> 1.0)
     regexp_parser (2.9.0)
     rexml (3.2.6)
-    rubocop (1.62.1)
+    rubocop (1.63.2)
       json (~> 2.3)
       language_server-protocol (>= 3.17.0)
       parallel (~> 1.10)
@@ -155,7 +160,7 @@ GEM
       ffi (~> 1.9)
     servolux (0.13.0)
     temple (0.10.3)
-    terser (1.2.1)
+    terser (1.2.2)
       execjs (>= 0.3.0, < 3)
     thor (1.3.1)
     tilt (2.0.11)
@@ -173,15 +178,20 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
+  base64
+  bigdecimal
+  builder
+  csv
   kramdown
   middleman (~> 4.5)
   middleman-autoprefixer (~> 3.0)
   middleman-blog
   middleman-livereload
+  mutex_m
   optional_html!
   rubocop-rails-omakase
   rubocop-rake
   terser
 
 BUNDLED WITH
-   2.5.6
+   2.5.9

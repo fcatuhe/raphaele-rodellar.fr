@@ -4,7 +4,7 @@ author: Mireille Meunier
 publisher: Guy Trédaniel
 cover_url: https://res.cloudinary.com/fcatuhe/image/upload/c_scale,w_512/v1711899163/raphaele-rodellar.fr/bibliotheque/9782813204653.jpg
 date: 2024/03/29
-tags: medecine-chinoise
+tags: medecine-chinoise, reflexologie
 ---
 
 ### 4<sup>ème</sup> de couverture

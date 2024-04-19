@@ -5,7 +5,7 @@ author: Roger Dachez
 publisher: Texto
 cover_url: https://res.cloudinary.com/fcatuhe/image/upload/c_scale,w_512/v1711899163/raphaele-rodellar.fr/bibliotheque/9791021046962.jpg
 date: 2024/03/30
-tags: sante-et-societe
+tags: histoire-de-la-medecine
 ---
 
 ### 4<sup>ème</sup> de couverture

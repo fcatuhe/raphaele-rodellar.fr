@@ -1,6 +1,7 @@
 ---
 title: Atlas d’anatomie
 subtitle: 3<sup>ème</sup> édition
+author: Anne M. Gilroy et Brian R. MacPherson
 publisher: Maloine
 cover_url: https://res.cloudinary.com/fcatuhe/image/upload/c_scale,w_512/v1711899163/raphaele-rodellar.fr/bibliotheque/9782224034894.jpg
 date: 2024/03/30

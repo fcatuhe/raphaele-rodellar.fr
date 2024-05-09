@@ -4,7 +4,7 @@ subtitle: Stories the Feet Have Told Thru Reflexology
 author: Eunice D. Ingham
 publisher: Ingham Publishing Inc.
 cover_url: https://res.cloudinary.com/fcatuhe/image/upload/c_scale,w_512/v1711899163/raphaele-rodellar.fr/bibliotheque/9780961180430.jpg
-date: 2024/03/30
+date: 2017/01/10
 tags: reflexologie
 ---
 

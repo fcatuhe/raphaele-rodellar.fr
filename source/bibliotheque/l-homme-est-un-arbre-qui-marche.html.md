@@ -4,7 +4,7 @@ subtitle: Soignez votre corps et votre esprit grâce à la réflexologie
 author: Gwenn Libouban
 publisher: Marabout
 cover_url: https://res.cloudinary.com/fcatuhe/image/upload/c_scale,w_512/v1711899163/raphaele-rodellar.fr/bibliotheque/9782501134088.jpg
-date: 2024/03/29
+date: 2017/06/05
 tags: reflexologie
 ---
 

@@ -3,7 +3,7 @@ title: 'Reflexology : Art, Science & History'
 author: Christine Issel
 publisher: New Frontier Publishing
 cover_url: https://res.cloudinary.com/fcatuhe/image/upload/c_scale,w_512/v1711899163/raphaele-rodellar.fr/bibliotheque/97809615861913.jpg
-date: 2024/03/30
+date: 2017/05/05
 tags: reflexologie
 ---
 

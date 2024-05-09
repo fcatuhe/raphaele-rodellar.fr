@@ -3,7 +3,7 @@ title: L'énergétique chinoise appliquée à la réflexologie plantaire
 author: Mireille Meunier
 publisher: Guy Trédaniel
 cover_url: https://res.cloudinary.com/fcatuhe/image/upload/c_scale,w_512/v1711899163/raphaele-rodellar.fr/bibliotheque/9782813204653.jpg
-date: 2024/03/29
+date: 2017/04/05
 tags: medecine-chinoise, reflexologie
 ---
 

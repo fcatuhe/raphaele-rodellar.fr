@@ -4,7 +4,7 @@ subtitle: Le 6<sup>ème<sup> sens féminin révélé. Comment les hormones guide
 author: Martie Haselton
 publisher: Quanto
 cover_url: https://res.cloudinary.com/fcatuhe/image/upload/c_scale,w_512/v1711899163/raphaele-rodellar.fr/bibliotheque/9782889152445.jpg
-date: 2024/03/30
+date: 2020/04/15
 tags: anatomie-et-physiologie, cycles-feminins
 ---
 

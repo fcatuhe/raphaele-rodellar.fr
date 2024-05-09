@@ -3,7 +3,7 @@ title: L’incroyable histoire de la psychologie
 author: Jean-François Marmion et Pascal Magnat
 publisher: Les Arènes BD
 cover_url: https://res.cloudinary.com/fcatuhe/image/upload/c_scale,w_512/v1711899163/raphaele-rodellar.fr/bibliotheque/9791037508447.jpg
-date: 2024/03/30
+date: 2019/06/05
 tags: histoire-de-la-medecine, psychologie-et-neurosciences
 ---
 

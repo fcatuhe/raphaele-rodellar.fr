@@ -3,7 +3,7 @@ title: Manuel approfondi de Réflexologie plantaire
 author: Mireille Meunier
 publisher: Guy Trédaniel Editeur
 cover_url: https://res.cloudinary.com/fcatuhe/image/upload/c_scale,w_512/v1711899163/raphaele-rodellar.fr/bibliotheque/9782813206282.jpg
-date: 2024/03/30
+date: 2017/02/10
 tags: reflexologie
 ---
 

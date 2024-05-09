@@ -4,7 +4,7 @@ subtitle: L’anatomie expérimentale du Body-Mind Centering
 author: Bonnie Bainbridge Cohen
 publisher: Nouvelles de Danse
 cover_url: https://res.cloudinary.com/fcatuhe/image/upload/c_scale,w_512/v1711899163/raphaele-rodellar.fr/bibliotheque/9782930146201.jpg
-date: 2024/03/30
+date: 2015/02/05
 tags: autres-pratiques
 ---
 

@@ -4,7 +4,7 @@ subtitle: Une présence à l'intime
 author: Jean-Noël Fabiani-Salmon
 publisher: Les Arènes
 cover_url: https://res.cloudinary.com/fcatuhe/image/upload/c_scale,w_512/v1711899163/raphaele-rodellar.fr/bibliotheque/9791037510532.jpg
-date: 2024/03/29
+date: 2022/06/05
 tags: histoire-de-la-medecine, bibliographies
 ---
 

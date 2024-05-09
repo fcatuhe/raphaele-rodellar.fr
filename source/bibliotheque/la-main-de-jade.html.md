@@ -4,7 +4,7 @@ subtitle: Une ostéopathie énergétique
 author: Guy Le Merrer
 publisher: g.f.l.m.
 cover_url: https://res.cloudinary.com/fcatuhe/image/upload/c_scale,w_512/v1711899163/raphaele-rodellar.fr/bibliotheque/9791069915039.jpg
-date: 2024/03/30
+date: 2015/04/25
 tags: autres-pratiques
 ---
 

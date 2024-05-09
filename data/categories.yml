@@ -2,22 +2,6 @@
   tag: sante-et-societe
   title_color: green-light
   shelf_color: blue
-- title: Cycles Féminins
-  tag: cycles-feminins
-  title_color: pink
-  shelf_color: green-light
-- title: Anatomie et physiologie
-  tag: anatomie-et-physiologie
-  title_color: blue
-  shelf_color: pink
-- title: Réflexologie
-  tag: reflexologie
-  title_color: green-light
-  shelf_color: blue
-- title: Médecine chinoise
-  tag: medecine-chinoise
-  title_color: pink
-  shelf_color: green-light
 - title: Histoire de la médecine
   tag: histoire-de-la-medecine
   title_color: blue
@@ -26,15 +10,31 @@
   tag: bibliographies
   title_color: green-light
   shelf_color: blue
-- title: Autres pratiques
-  tag: autres-pratiques
-  title_color: green-light
-  shelf_color: blue
+- title: Anatomie et physiologie
+  tag: anatomie-et-physiologie
+  title_color: blue
+  shelf_color: pink
+- title: Cycles Féminins
+  tag: cycles-feminins
+  title_color: pink
+  shelf_color: green-light
 - title: Psychologie et neurosciences
   tag: psychologie-et-neurosciences
   title_color: green-light
   shelf_color: blue
+- title: Médecine chinoise
+  tag: medecine-chinoise
+  title_color: pink
+  shelf_color: green-light
+- title: Réflexologie
+  tag: reflexologie
+  title_color: green-light
+  shelf_color: blue
 - title: Yoga
   tag: yoga
+  title_color: green-light
+  shelf_color: blue
+- title: Autres pratiques
+  tag: autres-pratiques
   title_color: green-light
   shelf_color: blue

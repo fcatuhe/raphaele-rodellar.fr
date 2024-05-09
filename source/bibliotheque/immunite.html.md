@@ -4,7 +4,7 @@ subtitle: Voyage au cœur du système immunitaire, notre allié santé
 author: Philipp Dettmer
 publisher: GuyTrédaniel
 cover_url: https://res.cloudinary.com/fcatuhe/image/upload/c_scale,w_512/v1711899163/raphaele-rodellar.fr/bibliotheque/9782813226297.jpg
-date: 2024/03/30
+date: 2021/05/20
 tags: anatomie-et-physiologie
 ---
 

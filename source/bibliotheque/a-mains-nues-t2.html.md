@@ -3,7 +3,7 @@ title: A mains nues - Tome 2 (1922-1954)
 author: Leïla Slimani et Clément Oubrerie
 publisher: Les Arènes BD
 cover_url: https://res.cloudinary.com/fcatuhe/image/upload/c_scale,w_512/v1711899163/raphaele-rodellar.fr/bibliotheque/9791037504661.jpg
-date: 2024/03/30
+date: 2022/09/20
 tags: histoire-de-la-medecine, bibliographies
 ---
 

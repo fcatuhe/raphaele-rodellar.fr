@@ -4,7 +4,7 @@ subtitle: Quand gynécologie et naturopathie se complètent pour optimiser votre
 author: Laurène Sindicic et Jean-Pierre Andine
 publisher: Hachette Pratique
 cover_url: https://res.cloudinary.com/fcatuhe/image/upload/c_scale,w_512/v1711899163/raphaele-rodellar.fr/bibliotheque/9782017165163.jpg
-date: 2020/08/05
+date: 2020/08/20
 tags: anatomie-et-physiologie, cycles-feminins
 ---
 

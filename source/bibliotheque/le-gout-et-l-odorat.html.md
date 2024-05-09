@@ -4,7 +4,7 @@ subtitle: Stimulez les sentinelles de votre santé
 author: P<sup>r<sup> Henri Joyeux
 publisher: Rocher
 cover_url: https://res.cloudinary.com/fcatuhe/image/upload/c_scale,w_512/v1711899163/raphaele-rodellar.fr/bibliotheque/9782268105482.jpg
-date: 2024/03/30
+date: 2021/10/10
 tags: anatomie-et-physiologie
 ---
 

@@ -4,7 +4,7 @@ subtitle: Selon la tradition chinoise
 author: Mireille Meunier
 publisher: Guy Trédaniel
 cover_url: https://res.cloudinary.com/fcatuhe/image/upload/c_scale,w_512/v1711899163/raphaele-rodellar.fr/bibliotheque/9782813228673.jpg
-date: 2024/03/30
+date: 2017/04/10
 tags: reflexologie, cycles-feminins, medecine-chinoise
 ---
 

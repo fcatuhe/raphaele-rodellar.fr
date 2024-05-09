@@ -4,7 +4,7 @@ subtitle: Histoires inversées de la médecine
 author: Luc Perino
 publisher: La Découverte
 cover_url: https://res.cloudinary.com/fcatuhe/image/upload/c_scale,w_512/v1711899163/raphaele-rodellar.fr/bibliotheque/9782348058646.jpg
-date: 2024/03/30
+date: 2022/10/10
 tags: histoire-de-la-medecine
 ---
 

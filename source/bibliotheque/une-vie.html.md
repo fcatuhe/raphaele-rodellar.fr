@@ -4,7 +4,7 @@ author: Simone Veil
 publisher: Le livre de poche
 cover_url: https://res.cloudinary.com/fcatuhe/image/upload/c_scale,w_512/v1711899163/raphaele-rodellar.fr/bibliotheque/9782253127765.jpg
 date: 2022/10/10
-tags: bibliographies, sante-et-societe
+tags: bibliographies
 ---
 
 ### 4<sup>ème</sup> de couverture

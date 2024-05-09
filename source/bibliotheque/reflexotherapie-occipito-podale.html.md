@@ -3,7 +3,7 @@ title: Réflexothérapie occipito-podale
 author: Guy Boitout et Jean-Pierre Vadala
 publisher: Elsevier Masson
 cover_url: https://res.cloudinary.com/fcatuhe/image/upload/c_scale,w_512/v1711899163/raphaele-rodellar.fr/bibliotheque/9782294743818.jpg
-date: 2024/03/30
+date: 2017/03/05
 tags: reflexologie
 ---
 

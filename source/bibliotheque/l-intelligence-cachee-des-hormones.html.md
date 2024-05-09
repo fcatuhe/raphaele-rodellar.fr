@@ -5,7 +5,7 @@ author: Martie Haselton
 publisher: Quanto
 cover_url: https://res.cloudinary.com/fcatuhe/image/upload/c_scale,w_512/v1711899163/raphaele-rodellar.fr/bibliotheque/9782889152445.jpg
 date: 2024/03/30
-tags: anatomie-et-physiologie
+tags: anatomie-et-physiologie, cycles-feminins
 ---
 
 ### 4<sup>ème</sup> de couverture

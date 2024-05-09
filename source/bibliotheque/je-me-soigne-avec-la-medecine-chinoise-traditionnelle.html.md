@@ -3,7 +3,7 @@ title: Je me soigne avec la médecine traditionnelle chinoise
 author: Dr Philippe Maslo et Marie Borrel
 publisher: Leduc.s
 cover_url: https://res.cloudinary.com/fcatuhe/image/upload/c_scale,w_512/v1711899163/raphaele-rodellar.fr/bibliotheque/9791028512286.jpg
-date: 2024/03/30
+date: 2018/07/05
 tags: medecine-chinoise
 ---
 

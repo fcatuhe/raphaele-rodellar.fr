@@ -4,7 +4,7 @@ subtitle: Du Moyen Age à nos jours
 author: Jean-Noël Fabiani
 publisher: Pocket
 cover_url: https://res.cloudinary.com/fcatuhe/image/upload/c_scale,w_512/v1711899163/raphaele-rodellar.fr/bibliotheque/9782266282772.jpg
-date: 2024/03/30
+date: 2023/06/15
 tags: histoire-de-la-medecine
 ---
 

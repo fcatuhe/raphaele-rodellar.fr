@@ -4,7 +4,7 @@ subtitle: Bien respirer, bien voir, bien entendre
 author: P<sup>r<sup> Henri Joyeux et Jean Joyeux
 publisher: Rocher
 cover_url: https://res.cloudinary.com/fcatuhe/image/upload/c_scale,w_512/v1711899163/raphaele-rodellar.fr/bibliotheque/9782268108773.jpg
-date: 2024/03/30
+date: 2021/08/10
 tags: anatomie-et-physiologie
 ---
 

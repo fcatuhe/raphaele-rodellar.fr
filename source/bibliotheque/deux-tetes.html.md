@@ -4,7 +4,7 @@ subtitle: Deux stars de neurosciences explorent les relations de nos cerveaux en
 author: Uta Frith, Chris Frith et Alex Frith
 publisher: Denoël Graphic
 cover_url: https://res.cloudinary.com/fcatuhe/image/upload/c_scale,w_512/v1711899163/raphaele-rodellar.fr/bibliotheque/9782207164822.jpg
-date: 2024/03/30
+date: 2019/04/05
 tags: psychologie-et-neurosciences
 ---
 

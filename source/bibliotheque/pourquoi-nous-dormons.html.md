@@ -4,7 +4,7 @@ subtitle: Ce que la science nous révèle pour mieux dormir
 author: Dr Matthew Walker
 publisher: La Découverte
 cover_url: https://res.cloudinary.com/fcatuhe/image/upload/c_scale,w_512/v1711899163/raphaele-rodellar.fr/bibliotheque/9782348037429.jpg
-date: 2024/03/29
+date: 2021/10/20
 tags: anatomie-et-physiologie
 ---
 

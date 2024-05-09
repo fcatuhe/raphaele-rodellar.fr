@@ -4,8 +4,8 @@ subtitle: Une présence à l'intime
 author: Jean-Noël Fabiani-Salmon
 publisher: Les Arènes
 cover_url: https://res.cloudinary.com/fcatuhe/image/upload/c_scale,w_512/v1711899163/raphaele-rodellar.fr/bibliotheque/9791037510532.jpg
-date: 2022/06/05
-tags: histoire-de-la-medecine, bibliographies
+date: 2023/06/05
+tags: histoire-de-la-medecine
 ---
 
 « Soigner et sauver des vies est un grand pouvoir que les hommes ont longtemps gardé pour eux en empêchant les femmes de pratiquer la médecine. Elles s'appellent Agnodice d'Athènes, Angélique du Coudray, Margaret Buckley, Marthe Gautier... Elles ont en commun d'avoir défié ou contourné l'autorité patriarcale de leur époque pour faire avancer l'histoire de la médecine. »

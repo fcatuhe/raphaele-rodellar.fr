@@ -4,7 +4,7 @@ subtitle: Histoire et pratiques des médecines traditionnelles
 author: Claudine Brelet
 publisher: Robert Laffont
 cover_url: https://res.cloudinary.com/fcatuhe/image/upload/c_scale,w_512/v1711899163/raphaele-rodellar.fr/bibliotheque/9782221089132.jpg
-date: 2024/03/30
+date: 2023/04/10
 tags: histoire-de-la-medecine
 ---
 

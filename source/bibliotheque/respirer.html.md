@@ -4,7 +4,7 @@ subtitle: Le pouvoir extraordinaire de la respiration
 author: James Nestor
 publisher: Solar
 cover_url: https://res.cloudinary.com/fcatuhe/image/upload/c_scale,w_512/v1711899163/raphaele-rodellar.fr/bibliotheque/9782263150852.jpg
-date: 2024/03/30
+date: 2021/10/15
 tags: anatomie-et-physiologie
 ---
 

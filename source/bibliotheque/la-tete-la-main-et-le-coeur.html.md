@@ -4,7 +4,7 @@ subtitle: La lutte pour la dignité et le statut social au XXIe siècle
 author: David Goodhart
 publisher: Les Arènes
 cover_url: https://res.cloudinary.com/fcatuhe/image/upload/c_scale,w_512/v1711899163/raphaele-rodellar.fr/bibliotheque/9791037502490.jpg
-date: 2024/09/10
+date: 2024/03/20
 tags: sante-et-societe
 ---
 

@@ -3,7 +3,7 @@ title: L’Homme qui aimait les plantes
 author: S. Piatzszek et B. Blary
 publisher: Quadrants
 cover_url: https://res.cloudinary.com/fcatuhe/image/upload/c_scale,w_512/v1711899163/raphaele-rodellar.fr/bibliotheque/9782302095731.jpg
-date: 2024/03/30
+date: 2015/06/05
 tags: bibliographies, autres-pratiques
 ---
 

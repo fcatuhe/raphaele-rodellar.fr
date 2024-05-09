@@ -4,36 +4,36 @@
   shelf_color: blue
 - title: Histoire de la médecine
   tag: histoire-de-la-medecine
-  title_color: blue
-  shelf_color: pink
+  title_color: pink
+  shelf_color: green-light
 - title: Bibliographies
   tag: bibliographies
-  title_color: green-light
-  shelf_color: blue
-- title: Anatomie et physiologie
-  tag: anatomie-et-physiologie
   title_color: blue
   shelf_color: pink
+- title: Anatomie et physiologie
+  tag: anatomie-et-physiologie
+  title_color: green-light
+  shelf_color: blue
 - title: Cycles Féminins
   tag: cycles-feminins
   title_color: pink
   shelf_color: green-light
 - title: Psychologie et neurosciences
   tag: psychologie-et-neurosciences
-  title_color: green-light
-  shelf_color: blue
+  title_color: blue
+  shelf_color: pink
 - title: Médecine chinoise
   tag: medecine-chinoise
-  title_color: pink
-  shelf_color: green-light
+  title_color: green-light
+  shelf_color: blue
 - title: Réflexologie
   tag: reflexologie
-  title_color: green-light
-  shelf_color: blue
+  title_color: pink
+  shelf_color: green-light
 - title: Yoga
   tag: yoga
-  title_color: green-light
-  shelf_color: blue
+  title_color: blue
+  shelf_color: pink
 - title: Autres pratiques
   tag: autres-pratiques
   title_color: green-light

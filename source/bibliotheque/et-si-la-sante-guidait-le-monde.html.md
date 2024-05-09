@@ -4,7 +4,7 @@ subtitle: L'espérance de vie vaut mieux que la croissance
 author: Eloi Laurent
 publisher: Les Liens qui Libèrent
 cover_url: https://res.cloudinary.com/fcatuhe/image/upload/c_scale,w_512/v1711899163/raphaele-rodellar.fr/bibliotheque/9791020910615.jpg
-date: 2024/03/30
+date: 2024/08/10
 tags: sante-et-societe
 ---
 

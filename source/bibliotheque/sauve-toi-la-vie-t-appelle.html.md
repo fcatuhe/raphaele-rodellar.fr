@@ -3,7 +3,7 @@ title: 'Sauve-toi, la vie t’appelle'
 author: Boris Cyrulnik
 publisher: Odile Jacob
 cover_url: https://res.cloudinary.com/fcatuhe/image/upload/c_scale,w_512/v1711899163/raphaele-rodellar.fr/bibliotheque/9782738131188.jpg
-date: 2024/03/30
+date: 2019/02/05
 tags: psychologie-et-neurosciences,bibliographies
 ---
 

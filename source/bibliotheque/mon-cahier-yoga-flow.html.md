@@ -4,7 +4,7 @@ subtitle: Le yoga power et rythmé !
 author: Hélène Duval
 publisher: Solar
 cover_url: https://res.cloudinary.com/fcatuhe/image/upload/c_scale,w_512/v1711899163/raphaele-rodellar.fr/bibliotheque/9782263149108.jpg
-date: 2024/03/30
+date: 2016/03/15
 tags: yoga
 ---
 

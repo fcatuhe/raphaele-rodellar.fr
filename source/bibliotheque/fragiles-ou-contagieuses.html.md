@@ -4,7 +4,7 @@ subtitle: Le pouvoir médical et le corps des femmes
 author: Barbara Ehrenreich et Deirdre English
 publisher: Cambourakis
 cover_url: https://res.cloudinary.com/fcatuhe/image/upload/c_scale,w_512/v1711899163/raphaele-rodellar.fr/bibliotheque/9782366241853.jpg
-date: 2024/03/30
+date: 2023/09/10
 tags: histoire-de-la-medecine
 ---
 

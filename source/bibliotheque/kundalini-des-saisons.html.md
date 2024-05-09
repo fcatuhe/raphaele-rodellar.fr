@@ -4,7 +4,7 @@ subtitle: Le yoga du vivant, Postures – Méditations – Rituels
 author: Marion Sebih
 publisher: Flammarion
 cover_url: https://res.cloudinary.com/fcatuhe/image/upload/c_scale,w_512/v1711899163/raphaele-rodellar.fr/bibliotheque/9782081512948.jpg
-date: 2024/03/30
+date: 2016/05/05
 tags: yoga
 ---
 

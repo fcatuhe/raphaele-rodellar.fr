@@ -4,7 +4,7 @@ subtitle: Mélatonine, progestérone, œstrogène… découvrez comment en faire
 author: Franca Parianen
 publisher: Pocket
 cover_url: https://res.cloudinary.com/fcatuhe/image/upload/c_scale,w_512/v1711899163/raphaele-rodellar.fr/bibliotheque/9782266332262.jpg
-date: 2024/03/30
+date: 2020/04/05
 tags: anatomie-et-physiologie, cycles-feminins
 ---
 

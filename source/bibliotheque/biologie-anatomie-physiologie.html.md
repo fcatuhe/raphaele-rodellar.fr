@@ -4,7 +4,7 @@ subtitle: 6<sup>ème</sup> édition
 author: Nicole Menche
 publisher: Maloine
 cover_url: https://res.cloudinary.com/fcatuhe/image/upload/c_scale,w_512/v1711899163/raphaele-rodellar.fr/bibliotheque/9782224034924.jpg
-date: 2024/03/30
+date: 2021/06/20
 tags: anatomie-et-physiologie
 ---
 

@@ -4,7 +4,7 @@ subtitle: La médecine au défi
 author: Luc Perino
 publisher: Seuil
 cover_url: https://res.cloudinary.com/fcatuhe/image/upload/c_scale,w_512/v1711899163/raphaele-rodellar.fr/bibliotheque/9782021517620.jpg
-date: 2024/03/29
+date: 2024/10/10
 tags: sante-et-societe
 ---
 

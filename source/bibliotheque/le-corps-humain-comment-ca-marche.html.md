@@ -4,7 +4,7 @@ subtitle: Les faits clairement expliqués
 author: Virginia Smith
 publisher: Courrier du Livre
 cover_url: https://res.cloudinary.com/fcatuhe/image/upload/c_scale,w_512/v1711899163/raphaele-rodellar.fr/bibliotheque/9782702912850.jpg
-date: 2024/03/30
+date: 2021/07/20
 tags: anatomie-et-physiologie
 ---
 

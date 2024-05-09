@@ -4,7 +4,7 @@ subtitle: Rencontre avec Eva Ruchpaul, une yogini impertinente
 author: Colette Poggi
 publisher: Almora
 cover_url: https://res.cloudinary.com/fcatuhe/image/upload/c_scale,w_512/v1711899163/raphaele-rodellar.fr/bibliotheque/9782351184073.jpg
-date: 2024/03/30
+date: 2016/06/05
 tags: yoga
 ---
 

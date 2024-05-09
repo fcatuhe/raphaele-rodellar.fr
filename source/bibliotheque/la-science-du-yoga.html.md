@@ -4,7 +4,7 @@ subtitle: Comprendre les postures pour optimise leurs bienfaits
 author: Ann Swanson
 publisher: Marabout
 cover_url: https://res.cloudinary.com/fcatuhe/image/upload/c_scale,w_512/v1711899163/raphaele-rodellar.fr/bibliotheque/9782501144285.jpg
-date: 2024/03/30
+date: 2016/02/01
 tags: yoga
 ---
 

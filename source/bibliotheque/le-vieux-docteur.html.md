@@ -4,7 +4,7 @@ subtitle: A. T. Still, pionnoer de l’ostéopathie
 author: S. Piatzszek et B. Blary
 publisher: Quadrants
 cover_url: https://res.cloudinary.com/fcatuhe/image/upload/c_scale,w_512/v1711899163/raphaele-rodellar.fr/bibliotheque/9782302081796.jpg
-date: 2024/03/30
+date: 2015/04/15
 tags: bibliographies, autres-pratiques
 ---
 

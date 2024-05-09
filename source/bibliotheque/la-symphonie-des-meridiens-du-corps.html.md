@@ -4,7 +4,7 @@ subtitle: Le guide pratique d'acupuncture et de sagesse pour stimuler l'énergie
 author: Dr Nadia Volf
 publisher: Guy Trédaniel
 cover_url: https://res.cloudinary.com/fcatuhe/image/upload/c_scale,w_512/v1711899163/raphaele-rodellar.fr/bibliotheque/9782813222480.jpg
-date: 2024/03/29
+date: 2018/07/15
 tags: medecine-chinoise
 ---
 

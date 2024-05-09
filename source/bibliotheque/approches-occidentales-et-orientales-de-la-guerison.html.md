@@ -3,7 +3,7 @@ title: Approches occidentales et orientales de la guérison
 author: Paul U. Unshuld
 publisher: Springer
 cover_url: https://res.cloudinary.com/fcatuhe/image/upload/c_scale,w_512/v1711899163/raphaele-rodellar.fr/bibliotheque/9782817803296.jpg
-date: 2024/03/30
+date: 2018/08/05
 tags: medecine-chinoise, histoire-de-la-medecine
 ---
 

@@ -3,7 +3,7 @@ title: Réflexologie pour les mains et les pieds
 author: Barbara & Kevin Kuntz
 publisher: Le Courrier du Livre
 cover_url: https://res.cloudinary.com/fcatuhe/image/upload/c_scale,w_512/v1711899163/raphaele-rodellar.fr/bibliotheque/9782702911051.jpg
-date: 2024/03/30
+date: 2017/02/15
 tags: reflexologie
 ---
 

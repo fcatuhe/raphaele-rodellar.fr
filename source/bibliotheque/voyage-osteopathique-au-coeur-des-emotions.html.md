@@ -4,7 +4,7 @@ subtitle: La chair de l’esprit
 author: Bruno Conjeaud
 publisher: Sully
 cover_url: https://res.cloudinary.com/fcatuhe/image/upload/c_scale,w_512/v1711899163/raphaele-rodellar.fr/bibliotheque/9782354321383.jpg
-date: 2024/03/30
+date: 2015/04/10
 tags: autres-pratiques
 ---
 

@@ -4,7 +4,7 @@ subtitle: Vivre ses cycles en harmonie grâce à la naturopathie
 author: Marion Pezard
 publisher: La Plage
 cover_url: https://res.cloudinary.com/fcatuhe/image/upload/c_scale,w_512/v1711899163/raphaele-rodellar.fr/bibliotheque/9782383380108.jpg
-date: 2024/03/30
+date: 2020/08/15
 tags: cycles-feminins
 ---
 

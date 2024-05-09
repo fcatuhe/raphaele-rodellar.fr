@@ -4,7 +4,7 @@ subtitle: Théorie et Pratique - Une approche entièrement nouvelle basée sur l
 author: Inge Dougans et Suzanne Ellis
 publisher: Libraire de Médicis
 cover_url: https://res.cloudinary.com/fcatuhe/image/upload/c_scale,w_512/v1711899163/raphaele-rodellar.fr/bibliotheque/9782853270854.jpg
-date: 2024/03/30
+date: 2017/02/05
 tags: reflexologie
 ---
 

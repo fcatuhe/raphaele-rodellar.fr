@@ -3,7 +3,7 @@ title: Les Cinq Saisons de l’Energie
 author: Isabelle Laading
 publisher: DésIris
 cover_url: https://res.cloudinary.com/fcatuhe/image/upload/c_scale,w_512/v1711899163/raphaele-rodellar.fr/bibliotheque/9782907653503.jpg
-date: 2024/03/30
+date: 2018/07/08
 tags: medecine-chinoise
 ---
 

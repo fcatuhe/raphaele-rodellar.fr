@@ -4,7 +4,7 @@ subtitle: L’expropriation de la santé
 author: Ivan Illich
 publisher: Points
 cover_url: https://res.cloudinary.com/fcatuhe/image/upload/c_scale,w_512/v1711899163/raphaele-rodellar.fr/bibliotheque/9782757890608.jpg
-date: 2024/07/10
+date: 2024/02/05
 tags: sante-et-societe
 ---
 

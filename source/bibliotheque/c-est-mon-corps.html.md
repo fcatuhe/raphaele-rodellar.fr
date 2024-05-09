@@ -4,7 +4,7 @@ subtitle: Toutes les questions que se posent les femmes sur leur santé
 author: Martin Winckler
 publisher: L'Iconoclaste
 cover_url: https://res.cloudinary.com/fcatuhe/image/upload/c_scale,w_512/v1711899163/raphaele-rodellar.fr/bibliotheque/9782378801267.jpg
-date: 2024/03/29
+date: 2020/10/05
 tags: anatomie-et-physiologie, cycles-feminins
 ---
 

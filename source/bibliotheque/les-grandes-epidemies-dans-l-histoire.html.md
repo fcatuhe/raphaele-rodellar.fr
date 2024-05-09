@@ -4,7 +4,7 @@ subtitle: Quand peste, grippe espagnole, coronavirus… façonnent nos société
 author: Henri Deleersnijder
 publisher: Mardaga
 cover_url: https://res.cloudinary.com/fcatuhe/image/upload/c_scale,w_512/v1711899163/raphaele-rodellar.fr/bibliotheque/9782894709426.jpg
-date: 2024/03/30
+date: 2023/07/20
 tags: histoire-de-la-medecine, sante-et-societe
 ---
 

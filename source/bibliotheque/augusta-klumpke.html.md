@@ -4,7 +4,7 @@ subtitle: Pionnière de la médecine
 author: Laurence Plévert
 publisher: Les Audacieuses
 cover_url: https://res.cloudinary.com/fcatuhe/image/upload/c_scale,w_512/v1711899163/raphaele-rodellar.fr/bibliotheque/9791025205860.jpg
-date: 2024/03/30
+date: 2022/08/05
 tags: histoire-de-la-medecine, bibliographies
 ---
 

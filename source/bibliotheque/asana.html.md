@@ -4,7 +4,7 @@ subtitle: Voyage au cœur des postures
 author: Colette Poggi
 publisher: Almora
 cover_url: https://res.cloudinary.com/fcatuhe/image/upload/c_scale,w_512/v1711899163/raphaele-rodellar.fr/bibliotheque/9782351185049.jpg
-date: 2024/03/30
+date: 2016/04/05
 tags: yoga
 ---
 

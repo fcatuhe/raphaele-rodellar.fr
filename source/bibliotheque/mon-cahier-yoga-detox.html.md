@@ -4,7 +4,7 @@ subtitle: Régénérez votre corps en profondeur
 author: Annie Casamayou
 publisher: Solar
 cover_url: https://res.cloudinary.com/fcatuhe/image/upload/c_scale,w_512/v1711899163/raphaele-rodellar.fr/bibliotheque/9782263162381.jpg
-date: 2024/03/30
+date: 2016/03/10
 tags: yoga
 ---
 

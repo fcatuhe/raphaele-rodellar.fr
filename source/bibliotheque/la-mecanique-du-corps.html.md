@@ -4,7 +4,7 @@ subtitle: Comprendre le corps pour mieux le soigner, Agir sur les causes pour su
 author: Hugo Desmorat
 publisher: Hachette
 cover_url: https://res.cloudinary.com/fcatuhe/image/upload/c_scale,w_512/v1711899163/raphaele-rodellar.fr/bibliotheque/9782017165484.jpg
-date: 2024/03/30
+date: 2021/07/25
 tags: anatomie-et-physiologie
 ---
 

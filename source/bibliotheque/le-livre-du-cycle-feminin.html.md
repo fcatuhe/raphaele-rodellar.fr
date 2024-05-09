@@ -4,7 +4,7 @@ subtitle: A mettre entre toutes les mains
 author: Raïssa Blankoff
 publisher: Amyris
 cover_url: https://res.cloudinary.com/fcatuhe/image/upload/c_scale,w_512/v1711899163/raphaele-rodellar.fr/bibliotheque/9782875520715.jpg
-date: 2024/03/30
+date: 2020/08/05
 tags: cycles-feminins
 ---
 

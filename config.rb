@@ -76,6 +76,7 @@ end
 
 # Default variables
 config[:robots_content] = 'noindex, nofollow'
+config[:robots_partial] = 'robots_staging'
 config[:newsletter_subscription_url] = 'https://sante-vous.fr/newsletters/2/subscribers'
 
 # Environment specific configuration, variables and overrides
@@ -93,5 +94,6 @@ end
 configure :production do
   config[:base_url] = ENV.fetch('BASE_URL', 'https://raphaele-rodellar.fr')
   config[:robots_content] = 'index, follow'
+  config[:robots_partial] = 'robots_production'
   config[:newsletter_subscription_url] = 'https://sante-vous.fr/newsletters/1/subscribers'
 end

@@ -19,4 +19,4 @@ Une étoile du berger nous indique cependant la nouvelle direction, vers l'unit�
 
 Un livre d'une richesse exceptionnelle, conjuguant tout le savoir le plus récent de l'éthologie, de la préhistoire, des neurosciences. Une méditation profonde sur la condition humaine et sur l'avenir de nos sociétés.
 
-Boris Cyrulnik est neuropsychiatre. Il est l’auteur de nombreux ouvrages qui ont tous été d’immenses succès, notamment Un merveilleux malheur, Les Vilains Petits Canards, et, plus récemment, Sauve-toi, la vie t’appelle, Psychothérapie de Dieu et La nuit, j’écrirai des soleils.
+Boris Cyrulnik est neuropsychiatre. Il est l’auteur de nombreux ouvrages qui ont tous été d’immenses succès, notamment _Un merveilleux malheur, Les Vilains Petits Canards,_ et, plus récemment, _Sauve-toi, la vie t’appelle_, _Psychothérapie de Dieu_ et _La nuit, j’écrirai des soleils_.

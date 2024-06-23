@@ -4,7 +4,7 @@ subtitle: Et sauvez votre peau
 author: Fabrice Midal
 publisher: Flammarion
 cover_url: https://res.cloudinary.com/fcatuhe/image/upload/c_scale,w_512/v1711899163/raphaele-rodellar.fr/bibliotheque/9782266287463.jpg
-date: 2019/06/05
+date: 2019/01/10
 tags: psychologie-et-neurosciences
 ---
 

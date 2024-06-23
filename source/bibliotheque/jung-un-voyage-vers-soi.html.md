@@ -4,7 +4,7 @@ subtitle: Un voyage vers soi
 author: Férdéric Lenoir
 publisher: Albin Michel
 cover_url: https://res.cloudinary.com/fcatuhe/image/upload/c_scale,w_512/v1711899163/raphaele-rodellar.fr/bibliotheque/9782226438195.jpg
-date: 2019/04/02
+date: 2019/03/08
 tags: psychologie-et-neurosciences
 ---
 

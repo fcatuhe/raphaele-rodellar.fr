@@ -4,7 +4,7 @@ author: Françoise Dolto
 publisher: Editions du Seuil
 cover_url: https://res.cloudinary.com/fcatuhe/image/upload/c_scale,w_512/v1711899163/raphaele-rodellar.fr/bibliotheque/9782757868379.jpg
 date: 2019/03/10
-tags: histoire-de-la-medecine, psychologie-et-neurosciences
+tags: psychologie-et-neurosciences
 ---
 
 ### 4<sup>ème</sup> de couverture

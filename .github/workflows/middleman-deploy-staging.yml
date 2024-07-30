@@ -41,7 +41,7 @@ jobs:
           BASE_URL: ${{ steps.pages.outputs.base_url }}
           NO_CONTRACTS: true
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v2
+        uses: actions/upload-pages-artifact@v4
         with:
           path: ./build
       - name: Deploy to GitHub Pages

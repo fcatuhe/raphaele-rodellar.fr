@@ -1,5 +1,9 @@
+# Ignore bundler config.
 .bundle
+
 .cache
-.DS_Store
 .sass-cache
 build/
+
+# Ignore MacOS Desktop Services Store files
+.DS_Store

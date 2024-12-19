@@ -155,8 +155,6 @@ GEM
       rubocop-minitest
       rubocop-performance
       rubocop-rails
-    rubocop-rake (0.6.0)
-      rubocop (~> 1.0)
     ruby-progressbar (1.13.0)
     sassc (2.4.0)
       ffi (~> 1.9)
@@ -193,8 +191,7 @@ DEPENDENCIES
   mutex_m
   optional_html!
   rubocop-rails-omakase
-  rubocop-rake
   terser
 
 BUNDLED WITH
-   2.5.16
+   2.6.1

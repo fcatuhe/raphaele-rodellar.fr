@@ -10,6 +10,8 @@
 <meta property="og:site_name" content="raphaele-rodellar">
 <meta property="og:url" content="<%= site_url %>">
 
+<link rel="canonical" href="<%= URI.join(site_url, current_page.url.delete_suffix('.html').delete_suffix('/')) %>">
+
 <%= favicon_tag('favicon.ico') %>
 
 <meta name="robots" content="<%= config[:robots_content] %>">

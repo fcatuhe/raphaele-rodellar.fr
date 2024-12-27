@@ -38,8 +38,7 @@ GEM
     execjs (2.9.1)
     fast_blank (1.0.1)
     fastimage (2.3.1)
-    ffi (1.17.0-arm64-darwin)
-    ffi (1.17.0-x86_64-linux-gnu)
+    ffi (1.17.0)
     haml (6.3.0)
       temple (>= 0.8.2)
       thor
@@ -194,4 +193,4 @@ DEPENDENCIES
   terser
 
 BUNDLED WITH
-   2.6.1
+   2.6.2

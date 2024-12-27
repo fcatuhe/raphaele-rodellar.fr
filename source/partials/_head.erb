@@ -1,16 +1,16 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title><%= "#{current_page.data.title} | " if current_page.data.title %>Raphaële Rodellar Thérapeute Réflexologue Bordeaux</title>
-<meta name="title" property="og:title" content="Raphaële Rodellar Thérapeute Réflexologue Bordeaux">
-<meta name="description" property="og:description" content="Se mettre à l'écoute de son corps, se relâcher, se relaxer, se recharger, ... Venez profiter de tous les bienfaits de la réflexologie plantaire !">
+<title><%= title %></title>
+<meta name="title" property="og:title" content="<%= title %>">
+<meta name="description" property="og:description" content="<%= description %>">
 <meta name="image" property="og:image" content="<%= image_url('og_image.jpg') %>">
 <meta name="author" content="Raphaële Rodellar">
 <meta property="og:type" content="website">
-<meta property="og:site_name" content="raphaele-rodellar">
-<meta property="og:url" content="<%= site_url %>">
+<meta property="og:site_name" content="Raphaële Rodellar">
+<meta property="og:url" content="<%= current_page_canonical_url %>">
 
-<link rel="canonical" href="<%= URI.join(site_url, current_page.url.delete_suffix('.html').delete_suffix('/')) %>">
+<link rel="canonical" href="<%= current_page_canonical_url %>">
 
 <%= favicon_tag('favicon.ico') %>
 

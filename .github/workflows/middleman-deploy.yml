@@ -20,7 +20,7 @@ env:
 
 jobs:
   deploy:
-    if: github.repository == 'fcatuhe/raphaele-rodellar.fr'
+    if: ${{ vars.ENVIRONMENT == 'production'}}
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}

@@ -6,7 +6,7 @@
 
 ## Development
 
-- `middleman` to start server
+- `middleman` (or `dev`) to start server
 - `middleman build -e production` to build as Production environment
   - `middleman build -e production --verbose`
 

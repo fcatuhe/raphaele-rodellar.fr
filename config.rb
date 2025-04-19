@@ -76,7 +76,7 @@ end
 
 # Default variables
 config[:robots_content] = 'noindex, nofollow'
-config[:robots_partial] = 'robots_staging'
+config[:robots_partial] = 'robots_disallow'
 config[:newsletter_subscription_url] = 'https://patoumatic.fr/newsletters/4/subscribers'
 
 # Environment specific configuration, variables and overrides

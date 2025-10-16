@@ -1,0 +1,118 @@
+<footer>
+  <div class="pt-4 pb-5 bg-pink-light">
+    <div class="container">
+      <div class="row row-gap-4">
+        <div class="col-12">
+          <div class="text-center">
+            <%= image_tag "logo_raphaele_rodellar.png", class: "img-fluid height-logo", alt: "Raphaële Rodellar" %>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-4 col-lg-3">
+          <ul class="list-unstyled lh-lg">
+            <li>
+              <a class="text-reset text-decoration-none" aria-current="page" href="<%= site_url('#section1') %>">Philosophie</a>
+            </li>
+            <li>
+              <a class="text-reset text-decoration-none" aria-current="page" href="<%= site_url('#section3') %>">Réflexologie</a>
+            </li>
+            <li>
+              <a class="text-reset text-decoration-none" aria-current="page" href="<%= site_url('#section4') %>">Lieu & tarifs</a>
+            </li>
+            <li>
+              <a class="text-reset text-decoration-none" aria-current="page" href="<%= site_url('#section5') %>">À propos</a>
+            </li>
+            <li>
+              <%= link_to "Curieux ?", page_path("curieux"), class: "text-reset text-decoration-none" %>
+            </li>
+            <li>
+              <a
+                class="text-reset text-decoration-none"
+                aria-current="page"
+                href="https://patoumatic.fr/raphaele"
+                target="patoumatic"
+              >
+                Réserver
+              </a>
+            </li>
+            <li>
+              <button
+                type="button"
+                class="btn btn-link p-0 text-reset text-decoration-none"
+                data-bs-toggle="modal"
+                data-bs-target="#termsModal"
+              >
+                Mentions légales
+              </button>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-12 col-md-8 col-lg-9">
+          <div class="row row-gap-4 mb-5">
+            <div class="col-12 col-xl-6">
+              <div class="text-center">
+                <a href="https://patoumatic.fr/raphaele" target="patoumatic" class="btn-cta">Réservez votre séance</a>
+              </div>
+            </div>
+            <div class="col-12 col-xl-6">
+              <div class="text-center">
+                <a href="https://soyonscurieux.etsy.com" target="shop" class="btn-cta btn-cta-shop">Visitez ma boutique</a>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <p>
+              La réflexologie plantaire ne pose pas de diagnostic, ne se substitue pas au traitement prescrit par votre
+              médecin, ne remplace pas une consultation médicale.
+            </p>
+            <p>Ici, pas de cookies déposés, on préfère les manger <i class="fa-solid fa-cookie-bite text-coral"></i>.</p>
+            <p class="mb-0">
+              Ce site est une histoire de famille <i class="fa-solid fa-heart text-coral"></i>. Conçu et développé avec
+              amour, patience, créativité et enthousiasme par
+              <a class="text-green text-decoration-none" href="https://iloveweb.fr" target="iloveweb">Carine</a>, ma
+              cousine, et François, mon conjoint. Un grand merci à eux pour cela et pour tout le reste !
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="bg-coral">
+    <div class="py-2 container text-pink-light text-center">
+      <div class="row">
+        <div class="col-12">
+          <div class="d-flex justify-content-center align-items-center column-gap-2">
+            <span>Copyright <%= Time.current.year %> • Raphaële Rodellar - Réflexologie plantaire thérapeutique • </span>
+            <a class="fs-5 text-pink-light" href="https://www.instagram.com/raphaelerodellar/" target="instagram">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="termsModal" tabindex="-1" aria-labelledby="termsModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header d-flex justify-content-between align-items-center">
+          <h5 class="modal-title fs-5" id="termsModalLabel">Mentions légales</h5>
+          <button type="button" class="btn btn-link" data-bs-dismiss="modal" aria-label="Close">
+            <i class="fa-solid fa-circle-xmark text-coral"></i>
+          </button>
+        </div>
+
+        <div class="modal-body">
+          <div>Raphaële Rodellar</div>
+          <div>23 cours de Verdun, 33000 Bordeaux</div>
+          <div>raphaele@hey.com</div>
+
+          <div class="pt-3">Hébergé par GitHub Pages</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>

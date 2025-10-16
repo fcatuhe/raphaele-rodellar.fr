@@ -1,0 +1,25 @@
+---
+title: Dans ma Bibliothèque
+layout: curious
+---
+
+<h1><span class="ranille-calt">D</span>ans <span class="ranille-ss01">m</span>a <span class="ranille-calt">B</span>ibliothèqu<span class="ranille-calt">e</span></h1>
+
+<div class="bookcase">
+
+  <% library_categories.each do |category| %>
+    <div class="mt-5">
+      <h2 class="text-<%= category.title_color %> mb-3"><%= category.title %></h2>
+      <div class="scrolling-wrapper">
+        <% books_for_category(category).each do |book| %>
+          <div class="book">
+            <%= link_to book_path(book.slug) do %>
+              <img src="<%= book.cover_url %>" class="book-cover" alt="<%= book.title %>">
+            <% end %>
+          </div>
+        <% end %>
+      </div>
+      <div class="w-100 py-2 bg-<%= category.shelf_color %>"></div>
+    </div>
+  <% end %>
+</div>

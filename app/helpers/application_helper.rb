@@ -58,7 +58,7 @@ module ApplicationHelper
   alias site_url absolute_url
 
   def root_url_or_scroll_to_top
-    @page&.slug == "index" ? site_url("#") : site_url
+    @page&.slug == "index" ? "#" : root_path
   end
 
   def newsletter_subscription_url

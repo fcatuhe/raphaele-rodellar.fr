@@ -1,5 +1,3 @@
-require "date"
-
 Book = Decant.define(dir: "content/books", ext: "html.md") do
   frontmatter :title
   frontmatter :subtitle

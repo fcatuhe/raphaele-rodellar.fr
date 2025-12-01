@@ -14,8 +14,8 @@ class ApplicationController < ActionController::Base
       !ActionController::AllowBrowser::BrowserBlocker.new(request, versions: :modern).blocked?
     end
 
-  def render_not_found
-    @page = Page.find("404")
-    render "pages/show", status: :not_found
-  end
+    def render_not_found
+      @page = Page.find("404")
+      render "pages/show", status: :not_found
+    end
 end

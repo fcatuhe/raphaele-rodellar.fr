@@ -14,7 +14,7 @@ permissions:
   id-token: write
 
 env:
-  STAGING: ${{ vars.STAGING }}
+  STAGING: ${{ vars.STAGING || 'false' }}
 
 jobs:
   build:

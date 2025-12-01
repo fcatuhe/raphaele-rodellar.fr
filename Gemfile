@@ -26,7 +26,6 @@ gem "decant"
 gem "kramdown"
 gem "kramdown-parser-gfm"
 gem "parklife-rails"
-gem "rouge"
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem

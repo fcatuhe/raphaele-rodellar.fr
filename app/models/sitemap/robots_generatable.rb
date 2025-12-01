@@ -20,14 +20,24 @@ module Sitemap::RobotsGeneratable
   end
 
   def robots_content
-    [ robots_directives, sitemap_references ].join("\n\n")
+    [ robots_directives, sitemap_references ].compact.join("\n\n")
   end
 
   def robots_directives
-    "User-agent: *\nAllow: /"
+    if disallow_all?
+      "User-agent: *\nDisallow: /"
+    else
+      "User-agent: *\nDisallow:"
+    end
   end
 
   def sitemap_references
+    return if disallow_all?
+
     "Sitemap: #{sitemap_url(compressed: true)}\nSitemap: #{sitemap_url}\n"
+  end
+
+  def disallow_all?
+    respond_to?(:disallow_all) && ActiveModel::Type::Boolean.new.cast(disallow_all)
   end
 end

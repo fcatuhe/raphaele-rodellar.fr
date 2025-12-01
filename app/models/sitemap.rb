@@ -11,6 +11,7 @@ class Sitemap
   attribute :base_url, :string
   attribute :build_dir, :string
   attribute :generate_robots, :boolean, default: false
+  attribute :disallow_all, :boolean, default: false
 
   validates :base_url, presence: true, format: { with: URI.regexp(%w[http https]) }
   validates :build_dir, presence: true

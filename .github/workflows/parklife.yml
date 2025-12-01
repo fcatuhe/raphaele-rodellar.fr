@@ -13,14 +13,11 @@ permissions:
   pages: write
   id-token: write
 
-env:
-  STAGING: ${{ vars.STAGING }}
-
 jobs:
   build:
     if: |
-      (github.event_name != 'pull_request' && (github.ref == 'refs/heads/main' || env.STAGING)) ||
-      (github.event_name == 'pull_request' && !env.STAGING)
+      (github.event_name != 'pull_request' && (github.ref == 'refs/heads/main' || vars.STAGING)) ||
+      (github.event_name == 'pull_request' && !vars.STAGING)
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -41,14 +38,14 @@ jobs:
           BASE_URL: ${{ steps.pages.outputs.base_url }}
 
       - name: Upload artifact
-        if: github.event_name != 'pull_request' && (github.ref == 'refs/heads/main' || env.STAGING)
+        if: github.event_name != 'pull_request' && (github.ref == 'refs/heads/main' || vars.STAGING)
         uses: actions/upload-pages-artifact@v3
         with:
           path: build/
 
   deploy:
     needs: build
-    if: github.event_name != 'pull_request' && (github.ref == 'refs/heads/main' || env.STAGING)
+    if: github.event_name != 'pull_request' && (github.ref == 'refs/heads/main' || vars.STAGING)
     runs-on: ubuntu-latest
     environment:
       name: github-pages

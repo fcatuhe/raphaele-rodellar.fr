@@ -4,8 +4,6 @@ module ApplicationHelper
   SITE_NAME = "Raphaële Rodellar · Réflexologie plantaire thérapeutique".freeze
   SITE_AUTHOR = "Raphaële Rodellar".freeze
   DEFAULT_DESCRIPTION = "Se mettre à l'écoute de son corps, se relâcher, se relaxer, se recharger, ... Venez profiter de tous les bienfaits de la réflexologie plantaire !".freeze
-  NEWSLETTER_PRODUCTION_URL = "https://patoumatic.fr/newsletters/1/subscribers".freeze
-  NEWSLETTER_DEFAULT_URL = "https://patoumatic.fr/newsletters/4/subscribers".freeze
 
   def render_content_from(page)
     render inline: page.content, layout: false
@@ -48,10 +46,6 @@ module ApplicationHelper
 
   def root_path_or_scroll_to_top
     current_page?(root_path) ? "#" : root_path
-  end
-
-  def newsletter_subscription_url
-    production_live? ? ENV.fetch("NEWSLETTER_SUBSCRIPTION_URL", NEWSLETTER_PRODUCTION_URL) : ENV.fetch("NEWSLETTER_SUBSCRIPTION_URL", NEWSLETTER_DEFAULT_URL)
   end
 
   def main_tag_class

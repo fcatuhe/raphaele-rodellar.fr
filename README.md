@@ -32,7 +32,6 @@ All pages keep their original HTML so very little rewriting is required when edi
 - Styles are bundled in `app/assets/stylesheets/application.css` (compiled from the legacy SCSS)
 - Images live in `app/assets/images`
 - Custom fonts are served from `app/assets/fonts`
-- Newsletter form behaviour is handled by the Stimulus controller in `app/javascript/controllers/curious_controller.js`
 
 ## Building the static site
 

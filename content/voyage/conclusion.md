@@ -1,6 +1,7 @@
 ---
 title: Genèse
 ---
+
 ## Genèse
 
 Cette idée est née au cours du mois de novembre 2023. D'ordinaire, c'est le moment de l'année où je me mets à confectionner un calendrier de l'Avent personnalisé pour quelques-uns de mes proches.

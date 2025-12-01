@@ -16,7 +16,7 @@ layout: curious
 
   <div class="row justify-content-center mt-4 mb-last-p-0">
     <div class="col-lg-10 col-xl-8">
-      <%= render_voyage_step("introduction") %>
+      <%= render_voyage("introduction") %>
     </div>
 
     <div class="col-12">
@@ -75,7 +75,7 @@ layout: curious
             <div class="modal-content">
               <div class="modal-body">
                 <h2 class="text-end"><%= day %> - <%= voyage_title(day) %></h2>
-                <%= render_voyage_step(day) %>
+                <%= render_voyage(day) %>
 
                 <div class="d-flex justify-content-end">
                   <div
@@ -108,7 +108,7 @@ layout: curious
     </div>
 
     <div class="col-lg-10 col-xl-8">
-      <%= render_voyage_step("conclusion") %>
+      <%= render_voyage("conclusion") %>
     </div>
   </div>
 </div>

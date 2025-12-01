@@ -1,15 +1,9 @@
-require "yaml"
-
 module VoyageHelper
-  def voyage_titles
-    @voyage_titles ||= YAML.load_file(Rails.root.join("config", "voyage.yml"))
-  end
-
   def voyage_title(day)
-    voyage_titles.fetch("title").fetch(day.to_s)
+    Voyage.find(day).title
   end
 
-  def render_voyage_step(day)
-    render_markdown(VoyageStep.find(day).content)
+  def render_voyage(day)
+    render_markdown(Voyage.find(day).content)
   end
 end

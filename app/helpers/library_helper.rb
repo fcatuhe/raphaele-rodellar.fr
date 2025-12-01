@@ -6,7 +6,7 @@ module LibraryHelper
 
   def library_categories
     @library_categories ||= begin
-      data = YAML.load_file(Rails.root.join("config", "categories.yml"))
+      data = YAML.load_file(Rails.root.join("data", "categories.yml"))
       data.map { |attributes| Category.new(attributes.symbolize_keys) }
     end
   end

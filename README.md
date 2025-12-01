@@ -23,7 +23,7 @@ bin/dev
 - `content/pages/*.html.erb` — Static pages rendered with ERB (home, curieux, bibliotheque, voyage…)
 - `content/books/*.html.md` — Library articles written in Markdown front matter, rendered through `Book` records
 - `content/voyage/*.md` — Markdown snippets used for the *Voyage au cœur d'une séance* modals
-- `config/categories.yml` — Category metadata (title, tag and colors) used by the library
+- `data/categories.yml` — Category metadata (title, tag and colors) used by the library
 
 All pages keep their original HTML so very little rewriting is required when editing content.
 

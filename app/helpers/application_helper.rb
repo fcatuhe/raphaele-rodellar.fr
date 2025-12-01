@@ -6,9 +6,6 @@ module ApplicationHelper
   DEFAULT_DESCRIPTION = "Se mettre à l'écoute de son corps, se relâcher, se relaxer, se recharger, ... Venez profiter de tous les bienfaits de la réflexologie plantaire !".freeze
   NEWSLETTER_PRODUCTION_URL = "https://patoumatic.fr/newsletters/1/subscribers".freeze
   NEWSLETTER_DEFAULT_URL = "https://patoumatic.fr/newsletters/4/subscribers".freeze
-  DEFAULT_BASE_URL = "http://localhost:3000".freeze
-  STAGING_BASE_URL = "https://staging.raphaele-rodellar.fr".freeze
-  PRODUCTION_BASE_URL = "https://raphaele-rodellar.fr".freeze
 
   def render_content_from(page)
     render inline: page.content, layout: false
@@ -31,7 +28,7 @@ module ApplicationHelper
   end
 
   def canonical_url
-    site_base_url + request.path
+    url_for(only_path: false)
   end
 
   def robots_content
@@ -49,8 +46,8 @@ module ApplicationHelper
     end
   end
 
-  def root_url_or_scroll_to_top
-    @page&.slug == "index" ? "#" : root_path
+  def root_path_or_scroll_to_top
+    current_page?(root_path) ? "#" : root_path
   end
 
   def newsletter_subscription_url
@@ -129,16 +126,6 @@ module ApplicationHelper
   end
 
   private
-
-  def site_base_url
-    @site_base_url ||= begin
-      if Rails.env.production?
-        staging? ? ENV.fetch("BASE_URL", STAGING_BASE_URL) : ENV.fetch("BASE_URL", PRODUCTION_BASE_URL)
-      else
-        ENV.fetch("BASE_URL", DEFAULT_BASE_URL)
-      end
-    end
-  end
 
   def staging?
     ActiveModel::Type::Boolean.new.cast(ENV["STAGING"])

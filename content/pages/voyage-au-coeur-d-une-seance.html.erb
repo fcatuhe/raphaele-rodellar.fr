@@ -77,15 +77,14 @@ layout: curious
                 <h2 class="text-end"><%= day %> - <%= voyage_title(day) %></h2>
                 <%= render_voyage_step(day) %>
 
-                <div
-                  class="
-                    text-end montserrat-semibold text-blue cursor-pointer
-                    text-small text-uppercase
-                  "
-                  data-action="click->flip-card#hideModal"
-                  data-bs-dismiss="modal"
-                >
-                  Fermer
+                <div class="d-flex justify-content-end">
+                  <div
+                    class="montserrat-semibold text-blue cursor-pointer text-small text-uppercase"
+                    data-action="click->flip-card#hideModal"
+                    data-bs-dismiss="modal"
+                  >
+                    Fermer
+                  </div>
                 </div>
               </div>
             </div>

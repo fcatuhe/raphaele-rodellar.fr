@@ -2,12 +2,21 @@ require "kramdown"
 require "uri"
 
 module ApplicationHelper
+  SITE_NAME = "Raphaële Rodellar · Réflexologie plantaire thérapeutique".freeze
+  SITE_AUTHOR = "Raphaële Rodellar".freeze
+  DEFAULT_DESCRIPTION = "Se mettre à l'écoute de son corps, se relâcher, se relaxer, se recharger, ... Venez profiter de tous les bienfaits de la réflexologie plantaire !".freeze
+  NEWSLETTER_PRODUCTION_URL = "https://patoumatic.fr/newsletters/1/subscribers".freeze
+  NEWSLETTER_DEFAULT_URL = "https://patoumatic.fr/newsletters/4/subscribers".freeze
+  DEFAULT_BASE_URL = "http://localhost:3000".freeze
+  STAGING_BASE_URL = "https://staging.raphaele-rodellar.fr".freeze
+  PRODUCTION_BASE_URL = "https://raphaele-rodellar.fr".freeze
+
   def render_content_from(page)
     render inline: page.content, layout: false
   end
 
   def site_name
-    site_config.name
+    SITE_NAME
   end
 
   def title
@@ -15,11 +24,11 @@ module ApplicationHelper
   end
 
   def description
-    @page&.description.presence || site_config.default_description
+    @page&.description.presence || DEFAULT_DESCRIPTION
   end
 
   def author
-    site_config.author
+    SITE_AUTHOR
   end
 
   def canonical_url
@@ -27,7 +36,7 @@ module ApplicationHelper
   end
 
   def robots_content
-    site_config.robots_content || default_robots_content
+    production_live? ? "index, follow" : "noindex, nofollow"
   end
 
   def og_meta_tag(key, content)
@@ -42,9 +51,9 @@ module ApplicationHelper
   end
 
   def absolute_url(path = nil)
-    return site_config.base_url if path.blank?
+    return site_base_url if path.blank?
 
-    URI.join("#{site_config.base_url}/", path.delete_prefix("/")).to_s
+    URI.join("#{site_base_url}/", path.delete_prefix("/")).to_s
   end
   alias site_url absolute_url
 
@@ -53,7 +62,7 @@ module ApplicationHelper
   end
 
   def newsletter_subscription_url
-    site_config.newsletter_subscription_url
+    production_live? ? ENV.fetch("NEWSLETTER_SUBSCRIPTION_URL", NEWSLETTER_PRODUCTION_URL) : ENV.fetch("NEWSLETTER_SUBSCRIPTION_URL", NEWSLETTER_DEFAULT_URL)
   end
 
   def class_names(*args)
@@ -129,11 +138,21 @@ module ApplicationHelper
 
   private
 
-  def site_config
-    Rails.application.config.x.site
+  def site_base_url
+    @site_base_url ||= begin
+      if Rails.env.production?
+        staging? ? ENV.fetch("BASE_URL", STAGING_BASE_URL) : ENV.fetch("BASE_URL", PRODUCTION_BASE_URL)
+      else
+        ENV.fetch("BASE_URL", DEFAULT_BASE_URL)
+      end
+    end
   end
 
-  def default_robots_content
-    Rails.env.production? ? "index, follow" : "noindex, nofollow"
+  def staging?
+    ActiveModel::Type::Boolean.new.cast(ENV["STAGING"])
+  end
+
+  def production_live?
+    Rails.env.production? && !staging?
   end
 end

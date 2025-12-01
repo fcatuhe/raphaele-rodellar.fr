@@ -58,8 +58,4 @@ Rails.application.configure do
   #
   # Skip DNS rebinding protection for the default health check endpoint.
   # config.host_authorization = { exclude: ->(request) { request.path == "/up" } }
-
-  config.x.site.base_url = ENV.fetch("BASE_URL", "https://raphaele-rodellar.fr")
-  config.x.site.newsletter_subscription_url = ENV.fetch("NEWSLETTER_SUBSCRIPTION_URL", "https://patoumatic.fr/newsletters/1/subscribers")
-  config.x.site.robots_content = "index, follow"
 end

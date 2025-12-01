@@ -36,6 +36,7 @@ jobs:
         run: bin/static-build --base "${{ steps.pages.outputs.base_url }}"
         env:
           BASE_URL: ${{ steps.pages.outputs.base_url }}
+          STAGING: ${{ vars.STAGING }}
 
       - name: Upload artifact
         if: github.event_name != 'pull_request' && (github.ref == 'refs/heads/main' || vars.STAGING)

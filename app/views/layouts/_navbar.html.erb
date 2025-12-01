@@ -62,7 +62,7 @@
           </li>
 
           <li class="nav-item">
-            <%= link_to "Curieux ?", page_path("curieux"), class: class_names("nav-link p-lg-0 mx-lg-2 mx-xl-3", active: @page&.slug != "index") %>
+            <%= link_to "Curieux ?", page_path("curieux"), class: class_names("nav-link p-lg-0 mx-lg-2 mx-xl-3", active: !current_page?(root_path)) %>
           </li>
 
           <li class="nav-item d-none d-lg-block mx-lg-2 mx-xl-3 ramps">

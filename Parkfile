@@ -1,39 +1,13 @@
 # Load your application, this activates the Parklife/Rails integration and gives
 # you access to route helpers and models in this file.
-require_relative "config/environment"
-
-staging = ActiveModel::Type::Boolean.new.cast(ENV["STAGING"])
-live_production = Rails.env.production? && !staging
-
-base_url =
-  if Rails.env.production?
-    staging ? ENV.fetch("BASE_URL", "https://staging.raphaele-rodellar.fr") : ENV.fetch("BASE_URL", "https://raphaele-rodellar.fr")
-  else
-    ENV.fetch("BASE_URL", "http://localhost:3000")
-  end
+require_relative 'config/environment'
 
 Parklife.application.configure do |config|
   # Serve trailing slash-less URLs from GitHub Pages.
   config.nested_index = false
 
-  config.base = base_url
-  config.build_dir = Rails.root.join("build").to_s
-
   # See configuration options here:
   # https://github.com/benpickles/parklife#configuration
-end
-
-Parklife.application.after_build do |application|
-  sitemap = Sitemap.new(
-    base_url: application.config.base,
-    build_dir: application.config.build_dir,
-    generate_robots: true,
-    disallow_all: !live_production
-  )
-
-  return Rails.logger.error("Error generating sitemap: #{sitemap.errors.full_messages.join(', ')}") unless sitemap.valid?
-
-  sitemap.generate!
 end
 
 Parklife.application.routes do
@@ -47,4 +21,20 @@ Parklife.application.routes do
 
   # Services typically allow a custom 404 page.
   # get '/404.html'
+end
+
+Parklife.application.after_build do |application|
+  staging = ActiveModel::Type::Boolean.new.cast(ENV["STAGING"])
+  production_live = Rails.env.production? && !staging
+
+  sitemap = Sitemap.new(
+    base_url: application.config.base,
+    build_dir: application.config.build_dir,
+    generate_robots: true,
+    disallow_all: !production_live
+  )
+
+  return Rails.logger.error("Error generating sitemap: #{sitemap.errors.full_messages.join(', ')}") unless sitemap.valid?
+
+  sitemap.generate!
 end

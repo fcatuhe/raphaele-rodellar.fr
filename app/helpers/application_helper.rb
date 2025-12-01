@@ -54,24 +54,6 @@ module ApplicationHelper
     production_live? ? ENV.fetch("NEWSLETTER_SUBSCRIPTION_URL", NEWSLETTER_PRODUCTION_URL) : ENV.fetch("NEWSLETTER_SUBSCRIPTION_URL", NEWSLETTER_DEFAULT_URL)
   end
 
-  def class_names(*args)
-    classes = []
-
-    args.each do |arg|
-      case arg
-      when Hash
-        arg.each { |key, value| classes << key.to_s if value }
-      when Array
-        nested = class_names(*arg)
-        classes << nested if nested.present?
-      else
-        classes << arg.to_s if arg.present?
-      end
-    end
-
-    classes.compact_blank.join(" ")
-  end
-
   def main_tag_class
     classes = []
     if @page&.layout == "home"
@@ -99,9 +81,9 @@ module ApplicationHelper
     if defined?(@book) && @book.present?
       items << { label: "Dans ma Bibliothèque", path: page_path("bibliotheque") }
       items << { label: @book.title, path: nil }
-    elsif @page&.slug == "bibliotheque"
+    elsif current_page?(page_path("bibliotheque"))
       items << { label: @page.title, path: nil }
-    elsif @page&.slug.present? && @page.slug != "curieux"
+    elsif @page.present? && !current_page?(page_path("curieux"))
       items << { label: @page.title, path: nil }
     end
 

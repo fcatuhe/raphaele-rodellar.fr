@@ -1,5 +1,4 @@
 require "kramdown"
-require "uri"
 
 module ApplicationHelper
   SITE_NAME = "Raphaële Rodellar · Réflexologie plantaire thérapeutique".freeze
@@ -32,7 +31,7 @@ module ApplicationHelper
   end
 
   def canonical_url
-    absolute_url(request.fullpath)
+    site_base_url + request.path
   end
 
   def robots_content
@@ -49,13 +48,6 @@ module ApplicationHelper
       tag(:meta, property: "og:#{key}", content: content)
     end
   end
-
-  def absolute_url(path = nil)
-    return site_base_url if path.blank?
-
-    URI.join("#{site_base_url}/", path.delete_prefix("/")).to_s
-  end
-  alias site_url absolute_url
 
   def root_url_or_scroll_to_top
     @page&.slug == "index" ? "#" : root_path

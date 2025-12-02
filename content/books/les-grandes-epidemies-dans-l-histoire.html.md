@@ -1,5 +1,5 @@
 ---
-title: Les grandes épidémies dans l’histoire
+title: Les grandes épidémies dans l'histoire
 subtitle: Quand peste, grippe espagnole, coronavirus… façonnent nos sociétés
 author: Henri Deleersnijder
 publisher: Mardaga
@@ -16,4 +16,4 @@ Dans cet ouvrage, Henri Deleersnijder retrace l'histoire de ces grandes épidém
 
 Une compréhension historique des grandes épidémies et de leur fonctionnement, pour mieux aborder les jours à venir.
 
-_Henri Deleersnijder est professeur d’histoire et collaborateur à l’université de Liège. Il est spécialisé en histoire des idées, ainsi qu’en science politique et des médias. Dernier ouvrage paru chez Mardaga : L’Europe, du mythe à la réalité. Histoire d’une idée._
+_Henri Deleersnijder est professeur d'histoire et collaborateur à l'université de Liège. Il est spécialisé en histoire des idées, ainsi qu'en science politique et des médias. Dernier ouvrage paru chez Mardaga : L'Europe, du mythe à la réalité. Histoire d'une idée._

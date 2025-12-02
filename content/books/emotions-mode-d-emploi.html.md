@@ -1,5 +1,5 @@
 ---
-title: Emotions, mode d’emploi
+title: Emotions, mode d'emploi
 subtitle: Les utiliser de manière positive
 author: Christel Petitcollin
 publisher: Jouvence

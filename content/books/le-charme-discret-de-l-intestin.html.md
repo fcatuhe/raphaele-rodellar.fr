@@ -1,5 +1,5 @@
 ---
-title: Le charme discret de l’intestin
+title: Le charme discret de l'intestin
 subtitle: Tout sur un organe mal aimé
 author: Giulia Enders
 publisher: Actes Sud

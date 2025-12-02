@@ -17,5 +17,5 @@ Partant de ses recherches étendues sur les sources orientales et de sa profonde
 
 Dans cette double approche, l'auteur explique de façon innovante et originale les causes des changements des théories médicales.
 
-_Paul U. Unshuld, Ph.D., M.P.H. est professeur et directeur du Horst-Goertz-Institute pour la théorie, l’histoire et l’éthique des sciences de la vie chinoises à Berlin en Allemagne. Il est l’auteur d’une trentaine de publications sur l’histoire de la médecine chinoise, sur la santé publique associée à la médecine alternative et sur l’histoire de la médecine occidentale._
+_Paul U. Unshuld, Ph.D., M.P.H. est professeur et directeur du Horst-Goertz-Institute pour la théorie, l'histoire et l'éthique des sciences de la vie chinoises à Berlin en Allemagne. Il est l'auteur d'une trentaine de publications sur l'histoire de la médecine chinoise, sur la santé publique associée à la médecine alternative et sur l'histoire de la médecine occidentale._
 

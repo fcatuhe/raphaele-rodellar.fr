@@ -16,4 +16,4 @@ La réflexologie, comme nombre de méthodes de soins complémentaires, a connu u
 
 Cette théorie part du principe que le corps humain possède son propre système de canaux d'énergie - ou méridiens d'acupuncture - et que tout blocage venant à rompre son équilibre peut engendrer troubles et maladies. Ce guide pratique montre comment identifier et traiter les zones réflexes sur les pieds, en rapport avec toutes les parties du corps, afin de rétablir l'équilibre, tant dans un but préventif que pour induire un état de relaxation.
 
-Inge Dougans, qui dirige l’International School of Reflexology and Meridien Therapy, nous offer, à l’aide de schémas clairs et précis, une méthode progressive pour appréhender les bases de la réflexologie, ainsi que des techniques plus élaborées destinées à traiter un grand nombre d’affections et de troubles divers.
+Inge Dougans, qui dirige l'International School of Reflexology and Meridien Therapy, nous offer, à l'aide de schémas clairs et précis, une méthode progressive pour appréhender les bases de la réflexologie, ainsi que des techniques plus élaborées destinées à traiter un grand nombre d'affections et de troubles divers.

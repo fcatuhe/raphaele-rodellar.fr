@@ -1,5 +1,5 @@
 ---
-title: Atlas d’anatomie
+title: Atlas d'anatomie
 subtitle: 3<sup>ème</sup> édition
 author: Anne M. Gilroy et Brian R. MacPherson
 publisher: Maloine
@@ -22,4 +22,4 @@ Cette troisième édition a été entièrement mise à jour et enrichie notammen
 
 L'Atlas d'anatomie fournit ainsi une perspective clinique de l'ensemble des structures anatomiques du corps humain. L'abondance de détails et la précision des illustrations en font l'un des ouvrages d'anatomie les plus significatifs depuis ces 50 dernières années, et permettent d'aborder l'anatomie telle qu'elle est enseignée au XXIe siècle.
 
-Contributeur(s) : Editeur scientifique (ou intellectuel) : Anne M. Gilroy - Editeur scientifique (ou intellectuel) : Brian R. MacPherson - Auteur de l’idée originale : Michael Schünke - Auteur de l’idée originale : Erik Schulte - Auteur de l’idée originale : Udo Schumacher - Illustrateur : Markus Voll - Illustrateur : Karl Wesker
+Contributeur(s) : Editeur scientifique (ou intellectuel) : Anne M. Gilroy - Editeur scientifique (ou intellectuel) : Brian R. MacPherson - Auteur de l'idée originale : Michael Schünke - Auteur de l'idée originale : Erik Schulte - Auteur de l'idée originale : Udo Schumacher - Illustrateur : Markus Voll - Illustrateur : Karl Wesker

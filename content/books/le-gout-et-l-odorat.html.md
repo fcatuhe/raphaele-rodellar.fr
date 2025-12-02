@@ -1,5 +1,5 @@
 ---
-title: Le goût et l’odorat
+title: Le goût et l'odorat
 subtitle: Stimulez les sentinelles de votre santé
 author: P<sup>r<sup> Henri Joyeux
 publisher: Rocher

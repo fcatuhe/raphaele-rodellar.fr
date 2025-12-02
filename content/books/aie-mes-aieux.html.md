@@ -15,4 +15,4 @@ En langage courant, ceci signifie que nous sommes un maillon dans la chaîne des
 
 Ce livre passionnant et truffé d'exemples s'inscrit parmi les toutes récentes recherches en psychothérapie intégrative. Il met particulièrement en évidence les liens transgénérationnels, le syndrome d'anniversaire, le non-dit-secret et sa transformation en un «impensé dévastateur».
 
-Anne Ancelin Schützenberger, psychothérapeute, groupe-analyste et psychodramatiste de renommée internationale, est professeur émérite des Universités et a été directeur pendant une vingtaine d’année du Laboratoire de psychologie sociale et clinique de l’Université de Nice.
+Anne Ancelin Schützenberger, psychothérapeute, groupe-analyste et psychodramatiste de renommée internationale, est professeur émérite des Universités et a été directeur pendant une vingtaine d'année du Laboratoire de psychologie sociale et clinique de l'Université de Nice.

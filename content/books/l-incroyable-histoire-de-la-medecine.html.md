@@ -1,5 +1,5 @@
 ---
-title: L’incroyable histoire de la médecine
+title: L'incroyable histoire de la médecine
 author: Pr Jean-Noël Fabiani et Philippe Bercovici
 publisher: Les Arènes BD
 cover_url: https://res.cloudinary.com/fcatuhe/image/upload/c_scale,w_512/v1711899163/raphaele-rodellar.fr/bibliotheque/9791037501165.jpg

@@ -22,4 +22,4 @@ David Goodhart prône un rééquilibrage en faveur des métiers qui privilégien
 
 La Tête, la Main et le Coeur est l'histoire de cette nouvelle lutte sociale du XXIe siècle.
 
-Ancien journaliste au Financial Times et fondateur du magazine d’idées Prospect, David Goodhart est aujourd’hui un essayiste très écouté outre-Manche, notamment pour avoir prévu le Brexit dans Les Deux Clans (Les Arènes, 2019). La Tête, la Main et le Cœur sort simultanément en Grande-Bretagne, aux Etats-Unis, en Allemagne et en France.
+Ancien journaliste au Financial Times et fondateur du magazine d'idées Prospect, David Goodhart est aujourd'hui un essayiste très écouté outre-Manche, notamment pour avoir prévu le Brexit dans Les Deux Clans (Les Arènes, 2019). La Tête, la Main et le Cœur sort simultanément en Grande-Bretagne, aux Etats-Unis, en Allemagne et en France.

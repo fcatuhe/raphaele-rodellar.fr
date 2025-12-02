@@ -1,6 +1,6 @@
 ---
-title: De l’assurance maladie au partenaire bien-être
-subtitle: Le livre très optimiste d’une meilleure santé pour le monde
+title: De l'assurance maladie au partenaire bien-être
+subtitle: Le livre très optimiste d'une meilleure santé pour le monde
 author: Jean-Charles Samuelian-Werve
 publisher: Storylab Editions
 cover_url: https://res.cloudinary.com/fcatuhe/image/upload/c_scale,w_512/v1711899163/raphaele-rodellar.fr/bibliotheque/9782381582528.jpg

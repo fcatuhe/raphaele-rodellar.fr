@@ -1,5 +1,5 @@
 ---
-title: Séminaire de psychanalyse d’enfants · 1
+title: Séminaire de psychanalyse d'enfants · 1
 author: Françoise Dolto
 publisher: Editions du Seuil
 cover_url: https://res.cloudinary.com/fcatuhe/image/upload/c_scale,w_512/v1711899163/raphaele-rodellar.fr/bibliotheque/9782757868379.jpg
@@ -16,4 +16,4 @@ L'analyse d'enfants requiert l'écoute d'un langage qui n'est pas toujours verba
 L'on comprend alors qu'un enfant, même très jeune, a déjà un long passé : le sien, plus celui de ses parents.
 
 Françoise Dolto (1908-1988)
-Psychanalyste française travaillant dans le sillage de Jacques Lacan, elle n’a cessé de défendre la « cause des enfants ». Elle est notamment l’auteur de _Lorsque l’enfant paraît_ (Seuil, 1977, 1978, 1979) et du _Cas Dominique_ (Seuil, 1971).
+Psychanalyste française travaillant dans le sillage de Jacques Lacan, elle n'a cessé de défendre la « cause des enfants ». Elle est notamment l'auteur de _Lorsque l'enfant paraît_ (Seuil, 1977, 1978, 1979) et du _Cas Dominique_ (Seuil, 1971).

@@ -22,4 +22,4 @@ Le lecteur y trouvera entre autres :
 •	des précisions sur la mise en pratique du Shiatsu, la prévention et la limitation des lésions du praticien et un examen des différentes techniques permettant de traiter les diverses parties du corps (avec leur signification dans la théorie traditionnelle) ;
 •	un chapitre sur les affections les plus courantes, leurs causes, comment les comprendre dans le cadre des fondamentaux du Shiatsu, la meilleure méthode pour les traiter et des recommandations d'hygiène de vie.
 
-_Carola Beresford-Cooke est un professeur renommé de Shiatsu et un praticien ayant de nombreuses années d’expérience profesionnelle._
+_Carola Beresford-Cooke est un professeur renommé de Shiatsu et un praticien ayant de nombreuses années d'expérience profesionnelle._

@@ -1,5 +1,5 @@
 ---
-title: La fabuleuse histoire de l’hôpital
+title: La fabuleuse histoire de l'hôpital
 subtitle: Du Moyen Age à nos jours
 author: Jean-Noël Fabiani
 publisher: Pocket

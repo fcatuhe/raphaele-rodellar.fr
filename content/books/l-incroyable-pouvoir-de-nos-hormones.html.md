@@ -1,5 +1,5 @@
 ---
-title: L’incroyable pouvoir de nos hormones
+title: L'incroyable pouvoir de nos hormones
 subtitle: Mélatonine, progestérone, œstrogène… découvrez comment en faire des amies.
 author: Franca Parianen
 publisher: Pocket

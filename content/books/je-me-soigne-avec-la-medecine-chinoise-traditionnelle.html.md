@@ -20,5 +20,5 @@ Découvrez dans ce guide malin :
 
 
 _Le Dr Philippe Maslo est médecin généraliste, ostéopathe et acupuncteur.
-Marie Borrel, journaliste santé, est l’auteure de nombreux livres santé, bien-être, cuisine.
+Marie Borrel, journaliste santé, est l'auteure de nombreux livres santé, bien-être, cuisine.
 Ensemble ils ont publié Ma bible du corps humain._

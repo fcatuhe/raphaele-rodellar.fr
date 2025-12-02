@@ -16,4 +16,4 @@ Parmi ces « cas », certains sont célèbres, comme le petit Joseph Meister, qu
 
 Des origines foraines de l'anesthésie générale aux recherches génétiques ou neurobiologiques les plus actuelles en passant par les premières expériences de réassignation sexuelle, il tente de rendre justice aux miraculés, aux cobayes ou aux martyrs dont la contribution au progrès de la connaissance et du soin a été aussi importante que celle de leurs médecins, illustres ou non.
 
-_Luc Perino est médecin, diplômé de médecine tropicale et d’épidémiologie. Il est l’auteur de plusieurs ouvrages, dont Carnets de santé (Calmann-Lévy, 2003), Pour une médecine évolutionniste (Seuil, 2017) et Darwin et les sciences de l’évolution pour les nuls (First, 2018)._
+_Luc Perino est médecin, diplômé de médecine tropicale et d'épidémiologie. Il est l'auteur de plusieurs ouvrages, dont Carnets de santé (Calmann-Lévy, 2003), Pour une médecine évolutionniste (Seuil, 2017) et Darwin et les sciences de l'évolution pour les nuls (First, 2018)._

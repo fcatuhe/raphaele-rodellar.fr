@@ -1,6 +1,6 @@
 ---
 title: Histoire de la médecine
-subtitle: De l’Antiquité à nos jours
+subtitle: De l'Antiquité à nos jours
 author: Roger Dachez
 publisher: Texto
 cover_url: https://res.cloudinary.com/fcatuhe/image/upload/c_scale,w_512/v1711899163/raphaele-rodellar.fr/bibliotheque/9791021046962.jpg
@@ -16,4 +16,4 @@ Depuis ses balbutiements, 3500 ans avant notre ère, jusqu'à la révolution du 
 
 « Dans la médecine, chaque génération, chaque civilisation, a projeté ses espoirs, ses craintes, ses aveuglements et parfois ses fulgurantes intuitions. » Roger Dachez
 
-_Médecin, Roger Dachez a enseigné l’histoire de la médecine à l’université Paris-Diderot (Paris-7). Il est également l’auteur de nombreux ouvrages sur la franc-maçonnerie, dont notamment une Nouvelle histoire des francs-maçons en France (Texto, 2020)._
+_Médecin, Roger Dachez a enseigné l'histoire de la médecine à l'université Paris-Diderot (Paris-7). Il est également l'auteur de nombreux ouvrages sur la franc-maçonnerie, dont notamment une Nouvelle histoire des francs-maçons en France (Texto, 2020)._

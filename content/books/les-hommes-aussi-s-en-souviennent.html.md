@@ -1,6 +1,6 @@
 ---
 title: Les hommes aussi s'en souviennent
-subtitle: Une loi pour l’Histoire
+subtitle: Une loi pour l'Histoire
 author: Simone Veil
 publisher: Le livre de poche
 cover_url: https://res.cloudinary.com/fcatuhe/image/upload/c_scale,w_512/v1711899163/raphaele-rodellar.fr/bibliotheque/9782253091684.jpg

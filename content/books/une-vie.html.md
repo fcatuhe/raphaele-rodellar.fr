@@ -9,5 +9,5 @@ tags: bibliographies
 
 ### 4<sup>ème</sup> de couverture
 
-Personnage au destin exceptionnel, elle était la femme politique dont la légitimité était la moins contestée, en France et à l’étranger.
-Dans son autobiographie, elle se montre telle qu’elle est : libre, véhémente, sereine.
+Personnage au destin exceptionnel, elle était la femme politique dont la légitimité était la moins contestée, en France et à l'étranger.
+Dans son autobiographie, elle se montre telle qu'elle est : libre, véhémente, sereine.

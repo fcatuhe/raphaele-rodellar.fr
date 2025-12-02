@@ -9,15 +9,15 @@ tags: reflexologie
 
 ### 4<sup>ème</sup> de couverture
 
-Cet ouvrage fondateur énonce les bases scientifiques et l’originalité de la réflexothérapie occipito-podale.
+Cet ouvrage fondateur énonce les bases scientifiques et l'originalité de la réflexothérapie occipito-podale.
 
-Le potentiel réflexogène récepteur et émetteur de la peau du pied et d’une partie de l’occiput est abordé en première partie.
+Le potentiel réflexogène récepteur et émetteur de la peau du pied et d'une partie de l'occiput est abordé en première partie.
 
-S’appuyant sur l’embryologie et la neurophysiologie, les auteurs démontrent comment, dès qu’un organe innervé est en dysfonction, les informations sont réceptionnées et enregistrées de manière topique sur les centres nerveux supérieurs qui les « réverbèrent » sur l’écran occipital, témoin de l’activité de la formation réticulaire, et sur l’écran podal, prolongement embryologique de notre cerveau archaïque.
+S'appuyant sur l'embryologie et la neurophysiologie, les auteurs démontrent comment, dès qu'un organe innervé est en dysfonction, les informations sont réceptionnées et enregistrées de manière topique sur les centres nerveux supérieurs qui les « réverbèrent » sur l'écran occipital, témoin de l'activité de la formation réticulaire, et sur l'écran podal, prolongement embryologique de notre cerveau archaïque.
 
 Les zones réflexes sont objectivables à la palpation par une modification de la texture de la peau, dont la vasomotricité et la trophicité sont régulées par le système orthosympathique.
 
-Une fois les zones réflexes de toutes les régions anatomiques du corps reformatées, l’image globale est celle d’un nouveau-né en siège décomplété. Cette représentation tridimensionnelle du corps sur les pieds prenant la forme d’un nouveau-né en siège décomplété constitue une découverte majeure.
+Une fois les zones réflexes de toutes les régions anatomiques du corps reformatées, l'image globale est celle d'un nouveau-né en siège décomplété. Cette représentation tridimensionnelle du corps sur les pieds prenant la forme d'un nouveau-né en siège décomplété constitue une découverte majeure.
 
 La deuxième partie est consacrée aux zones réflexes occipitales et podales. Chaque région anatomique est visualisée avec une iconographie originale modélisée.
 

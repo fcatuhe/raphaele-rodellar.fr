@@ -1,5 +1,5 @@
 ---
-title: L’intelligence cachée des hormones
+title: L'intelligence cachée des hormones
 subtitle: Le 6<sup>ème<sup> sens féminin révélé. Comment les hormones guident nos désirs, construisent nos relations, nous aident à prendre les meilleures décisions.
 author: Martie Haselton
 publisher: Quanto

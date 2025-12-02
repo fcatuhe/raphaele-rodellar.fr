@@ -1,6 +1,6 @@
 ---
 title: Voyage ostéopathique au cœur des émotions
-subtitle: La chair de l’esprit
+subtitle: La chair de l'esprit
 author: Bruno Conjeaud
 publisher: Sully
 cover_url: https://res.cloudinary.com/fcatuhe/image/upload/c_scale,w_512/v1711899163/raphaele-rodellar.fr/bibliotheque/9782354321383.jpg

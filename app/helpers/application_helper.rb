@@ -1,10 +1,6 @@
 require "kramdown"
 
 module ApplicationHelper
-  SITE_NAME = "Raphaële Rodellar · Réflexologie plantaire thérapeutique".freeze
-  SITE_AUTHOR = "Raphaële Rodellar".freeze
-  DEFAULT_DESCRIPTION = "Se mettre à l'écoute de son corps, se relâcher, se relaxer, se recharger, ... Venez profiter de tous les bienfaits de la réflexologie plantaire !".freeze
-
   def render_content_from(page)
     render inline: page.content, layout: false
   end
@@ -13,28 +9,8 @@ module ApplicationHelper
     Kramdown::Document.new(markdown, input: "GFM").to_html.html_safe
   end
 
-  def site_name
-    SITE_NAME
-  end
-
-  def title
-    [ @page&.title.presence, site_name ].compact_blank.join(" · ")
-  end
-
-  def description
-    @page&.description.presence || DEFAULT_DESCRIPTION
-  end
-
-  def author
-    SITE_AUTHOR
-  end
-
   def canonical_url
     url_for(only_path: false)
-  end
-
-  def robots_content
-    production_live? ? "index, follow" : "noindex, nofollow"
   end
 
   def og_meta_tag(key, content)
@@ -52,19 +28,8 @@ module ApplicationHelper
     current_page?(root_path) ? "#" : root_path
   end
 
-  def main_tag_class
-    classes = []
-    if @page&.layout == "home"
-      classes << "home"
-    else
-      classes << "container mb-5"
-    end
-    classes << @page&.body_class
-    class_names(*classes)
-  end
-
   def curious_breadcrumbs
-    return [] unless %w[curious book].include?(@page&.layout) || @book.present?
+    return [] unless Meta.curious_layout? || @book.present?
     return [] if current_page?(page_path("curieux"))
 
     [
@@ -83,15 +48,5 @@ module ApplicationHelper
 
   def breadcrumb_link(label, page)
     link_to(label, page_path(page), class: "text-green text-decoration-none")
-  end
-
-  private
-
-  def staging?
-    ActiveModel::Type::Boolean.new.cast(ENV["STAGING"])
-  end
-
-  def production_live?
-    Rails.env.production? && !staging?
   end
 end

@@ -9,6 +9,10 @@ module ApplicationHelper
     render inline: page.content, layout: false
   end
 
+  def render_markdown(markdown)
+    Kramdown::Document.new(markdown, input: "GFM").to_html.html_safe
+  end
+
   def site_name
     SITE_NAME
   end
@@ -59,46 +63,26 @@ module ApplicationHelper
     class_names(*classes)
   end
 
-  def render_markdown(markdown)
-    Kramdown::Document.new(markdown, input: "GFM", syntax_highlighter: :rouge).to_html.html_safe
-  end
+  def curious_breadcrumbs
+    return [] unless %w[curious book].include?(@page&.layout) || @book.present?
+    return [] if current_page?(page_path("curieux"))
 
-  def curious_layout_context?
-    %w[curious book].include?(@page&.layout) || defined?(@book)
-  end
-
-  def curious_breadcrumbs_items
-    return [] unless curious_layout_context?
-
-    items = [ { label: "Curieux ?", path: page_path("curieux") } ]
-
-    if defined?(@book) && @book.present?
-      items << { label: "Dans ma Bibliothèque", path: page_path("bibliotheque") }
-      items << { label: @book.title, path: nil }
-    elsif current_page?(page_path("bibliotheque"))
-      items << { label: @page.title, path: nil }
-    elsif @page.present? && !current_page?(page_path("curieux"))
-      items << { label: @page.title, path: nil }
-    end
-
-    items
+    [
+      breadcrumb_link("Curieux ?", "curieux"),
+      (@book.present? ? breadcrumb_link("Dans ma Bibliothèque", "bibliotheque") : nil)
+    ].compact
   end
 
   def curious_breadcrumbs?
-    curious_breadcrumbs_items.any?
+    curious_breadcrumbs.any?
   end
 
   def render_curious_breadcrumbs
-    safe_join(
-      curious_breadcrumbs_items.map do |item|
-        if item[:path].present?
-          link_to item[:label], item[:path], class: "text-green text-decoration-none"
-        else
-          content_tag(:span, item[:label], class: "text-green")
-        end
-      end,
-      " · ".html_safe
-    )
+    safe_join(curious_breadcrumbs, " · ".html_safe)
+  end
+
+  def breadcrumb_link(label, page)
+    link_to(label, page_path(page), class: "text-green text-decoration-none")
   end
 
   private

@@ -24,14 +24,11 @@ Parklife.application.routes do
 end
 
 Parklife.application.after_build do |application|
-  staging = ActiveModel::Type::Boolean.new.cast(ENV["STAGING"])
-  production_live = Rails.env.production? && !staging
-
   sitemap = Sitemap.new(
     base_url: application.config.base,
     build_dir: application.config.build_dir,
     generate_robots: true,
-    disallow_all: !production_live
+    disallow_all: Meta.disallow_all?
   )
 
   return Rails.logger.error("Error generating sitemap: #{sitemap.errors.full_messages.join(', ')}") unless sitemap.valid?

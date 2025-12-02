@@ -28,6 +28,10 @@ module ApplicationHelper
     end.join("\n").html_safe
   end
 
+  def main_class
+    Current.page_type == "home" ? "home" : "container mb-5"
+  end
+
   def root_path_or_scroll_to_top
     current_page?(root_path) ? "#" : root_path
   end

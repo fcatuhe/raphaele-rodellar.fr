@@ -25,8 +25,9 @@ Book = Decant.define(dir: "content/books", ext: "html.md") do
     Date.parse(date)
   end
 
-  def set_meta
+  def set_meta_and_breadcrumbs
     Meta.title = title
     Meta.description = subtitle
+    Current.breadcrumbs = "book"
   end
 end

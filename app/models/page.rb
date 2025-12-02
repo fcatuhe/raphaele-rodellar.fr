@@ -7,10 +7,13 @@ Page = Decant.define(dir: "content/pages", ext: "html.erb") do
   def initialize(...)
     super
     set_meta
+    Current.page_type = page_type
+    Current.breadcrumbs = breadcrumbs
   end
 
-  def set_meta
-    Meta.title = title
-    Meta.description = description
-  end
+  private
+    def set_meta
+      Meta.title = title
+      Meta.description = description
+    end
 end

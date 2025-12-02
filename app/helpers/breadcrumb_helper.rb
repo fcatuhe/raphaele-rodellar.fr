@@ -1,9 +1,9 @@
 module BreadcrumbHelper
   def breadcrumbs
-    return [] unless @page&.breadcrumbs == "curious" || @book
+    return [] unless Current.breadcrumbs.in?(%w[curious book])
 
     crumbs = [ { label: "Curieux ?", path: page_path("curieux") } ]
-    crumbs << { label: "Dans ma Bibliothèque", path: page_path("bibliotheque") } if @book
+    crumbs << { label: "Dans ma Bibliothèque", path: page_path("bibliotheque") } if Current.breadcrumbs == "book"
     crumbs
   end
 

@@ -1,0 +1,28 @@
+/* Hero section background images */
+#raphaele {
+  background-image: url("/pages/index/raphaele_rodellar_reflexologie_plantaire_bordeaux.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+  min-height: 80vw;
+}
+@media (min-width: 992px) {
+  #raphaele {
+    min-height: 50vh;
+  }
+}
+
+#practice {
+  background-image: url("/pages/index/raphaele_rodellar_therapeute_reflexologue_bordeaux.jpg");
+  background-size: cover;
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  height: 100%;
+  min-height: 80vw;
+}
+@media (min-width: 992px) {
+  #practice {
+    min-height: 50vh;
+  }
+}

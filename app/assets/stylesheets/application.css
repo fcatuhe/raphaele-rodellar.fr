@@ -1,0 +1,44 @@
+html {
+  scrollbar-gutter: stable;
+}
+body {
+  font-family: "Montserrat";
+}
+main {
+  padding-top: 3.5rem;
+  overflow-x: hidden;
+}
+section {
+  scroll-margin-top: 3.5rem;
+}
+.height-navbar {
+  height: 3.5rem;
+}
+.height-logo {
+  height: calc(1.825rem + 6.9vw);
+}
+@media (min-width: 1200px) {
+  .height-logo {
+    height: 7rem;
+  }
+}
+@media (min-width: 576px) {
+  .height-logo {
+    height: calc(1.625rem + 4.5vw);
+  }
+}
+@media (min-width: 576px) and (min-width: 1200px) {
+  .height-logo {
+    height: 5rem;
+  }
+}
+@media (min-width: 992px) {
+  .height-logo {
+    height: calc(1.525rem + 3.3vw);
+  }
+}
+@media (min-width: 992px) and (min-width: 1200px) {
+  .height-logo {
+    height: 4rem;
+  }
+}

@@ -1,0 +1,82 @@
+---
+title: Voyage au cœur d'une séance
+breadcrumbs: curious
+---
+
+<div class="voyage">
+  <h1>
+    <span class="ranille-calt">V</span>o<span class="ranille-ss02">y</span><span class="ranille-salt">a</span><span class="ranille-ss03">g</span>e
+    <span class="ranille-salt">a</span>u
+    cœ<span class="ranille-ss01">u</span>r
+    <span class="ranille-ss02">d</span>'une
+    sé<span class="ranille-salt">a</span><span class="ranille-ss02">n</span>c<span class="ranille-calt">e</span>
+  </h1>
+
+  <div class="row justify-content-center mt-4 mb-5 mb-last-p-0">
+    <div class="col-lg-10 col-xl-8">
+      <%= render_markdown(Voyage.find("introduction").content) %>
+    </div>
+  </div>
+
+  <div class="row g-0">
+    <% Voyage.advent.each do |voyage| %>
+      <div class="col-4" data-controller="flip-card">
+        <div
+          class="flip-card border border-white cursor-pointer user-select-none"
+          data-flip-card-target="card"
+          data-action="click->flip-card#toggle"
+        >
+          <div class="front" data-flip-card-target="front">
+            <%= image_tag "https://res.cloudinary.com/fcatuhe/image/upload/c_scale,w_512/v1703937406/raphaele-rodellar.fr/voyage/#{voyage.slug}.jpg",
+                          alt: "#{voyage.slug} - #{voyage.title}", class: "img-fluid" %>
+          </div>
+
+          <div class="back">
+            <%= image_tag "https://res.cloudinary.com/fcatuhe/image/upload/c_scale,w_512/v1703937406/raphaele-rodellar.fr/voyage/#{voyage.slug}.jpg",
+                          class: "img-fluid opacity-10", alt: "" %>
+
+            <div class="overlay">
+              <div class="h2 mb-0 text-center">
+                <%= voyage.slug %> - <%= voyage.title %>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="modal fade"
+          id="modal<%= voyage.slug %>"
+          tabindex="-1"
+          data-flip-card-target="modal"
+          aria-labelledby="<%= voyage.slug %>ModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-dialog-centered user-select-none">
+            <div class="modal-content">
+              <div class="modal-body">
+                <h2 class="text-end"><%= voyage.slug %> - <%= voyage.title %></h2>
+                <%= render_markdown(voyage.content) %>
+
+                <div class="d-flex justify-content-end">
+                  <div
+                    class="montserrat-semibold text-blue cursor-pointer text-small text-uppercase"
+                    data-action="click->flip-card#hideModal"
+                    data-bs-dismiss="modal"
+                  >
+                    Fermer
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
+
+  <div class="row justify-content-center mt-5 mb-last-p-0">
+    <div class="col-lg-10 col-xl-8">
+      <%= render_markdown(Voyage.find("conclusion").content) %>
+    </div>
+  </div>
+</div>

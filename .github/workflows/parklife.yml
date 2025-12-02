@@ -1,0 +1,60 @@
+name: Parklife
+
+on:
+  push:
+  pull_request:
+    branches:
+      - main
+    types: [opened, synchronize, reopened]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  build:
+    if: |
+      (github.event_name != 'pull_request' && (github.ref == 'refs/heads/main' || vars.STAGING)) ||
+      (github.event_name == 'pull_request' && !vars.STAGING)
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          bundler-cache: true
+
+      - name: Setup GitHub Pages
+        id: pages
+        uses: actions/configure-pages@v5
+
+      - name: Build static site
+        run: bin/static-build --base "${{ steps.pages.outputs.base_url }}"
+        env:
+          BASE_URL: ${{ steps.pages.outputs.base_url }}
+          STAGING: ${{ vars.STAGING }}
+
+      - name: Upload artifact
+        if: github.event_name != 'pull_request' && (github.ref == 'refs/heads/main' || vars.STAGING)
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: build/
+
+  deploy:
+    needs: build
+    if: github.event_name != 'pull_request' && (github.ref == 'refs/heads/main' || vars.STAGING)
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    concurrency:
+      group: pages
+      cancel-in-progress: true
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

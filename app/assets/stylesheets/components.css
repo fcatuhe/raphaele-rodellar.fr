@@ -1,0 +1,77 @@
+/* Bookcase */
+.bookcase h2 {
+  font-family: "Gotham Black";
+  text-transform: uppercase;
+  font-size: calc(1.2625rem + 0.15vw);
+}
+@media (min-width: 1200px) {
+  .bookcase h2 {
+    font-size: 1.375rem;
+  }
+}
+.bookcase .scrolling-wrapper {
+  overflow-x: auto;
+  white-space: nowrap;
+  position: relative;
+  scrollbar-width: thin;
+}
+.bookcase .book {
+  display: inline-block;
+  height: 18rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 0.5rem;
+  vertical-align: bottom;
+}
+.bookcase .book .book-cover {
+  height: 100%;
+  width: auto;
+  border-radius: 0.25rem;
+}
+
+/* Voyage section */
+.voyage h2,
+.voyage .h2 {
+  font-family: "Montserrat SemiBold";
+  text-transform: uppercase;
+  font-size: 1.25rem;
+}
+.voyage .overlay .h2 {
+  font-size: calc(0.7rem + 0.5vw);
+}
+.voyage .modal-dialog h2 {
+  font-size: 0.9rem;
+}
+
+/* Flip card */
+.flip-card {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  position: relative;
+}
+.flip-card.flipped {
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+.flip-card .front,
+.flip-card .back {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.flip-card .front .overlay,
+.flip-card .back .overlay {
+  position: absolute;
+  top: calc(50% + 0.5rem);
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 90%;
+}
+.flip-card .back {
+  position: absolute;
+  top: 0;
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}

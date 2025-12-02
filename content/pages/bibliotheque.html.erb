@@ -9,14 +9,14 @@ layout: curious
 </h1>
 
 <div class="bookcase">
-  <% library_categories.each do |category| %>
+  <% BookCategory.all.each do |category| %>
     <div class="mt-5">
       <h2 class="text-<%= category.title_color %> mb-3">
         <%= category.title %>
       </h2>
 
       <div class="scrolling-wrapper">
-        <% books_for_category(category).each do |book| %>
+        <% category.books.each do |book| %>
           <div class="book">
             <%= link_to book_path(book.slug) do %>
               <img

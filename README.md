@@ -47,11 +47,12 @@ The output goes to the `build/` directory and includes an auto-generated `sitema
 
 Parklife is already configured to target `https://raphaele-rodellar.fr`. Once the build is produced, push the contents of `build/` to GitHub Pages (or the hosting of your choice).
 
-## Notable helpers
+## Notable patterns
 
-- `ApplicationHelper` exposes `site_url`, `render_markdown`, and breadcrumb helpers for the “Curieux ?” section
-- `LibraryHelper` loads categories and organizes books by tag
-- `VoyageHelper` renders the 24 voyage snippets from Markdown
+- `ApplicationHelper` exposes `render_erb`, `render_markdown`, and breadcrumb helpers
+- `BookCategory` model loads categories from YAML and provides `books` association
+- `Book.for_category(category)` filters books by category tag
+- `Voyage` model provides content for the 24 voyage snippets
 
 ## Updating content
 

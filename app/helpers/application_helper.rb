@@ -1,8 +1,8 @@
 require "kramdown"
 
 module ApplicationHelper
-  def render_content_from(page)
-    render inline: page.content, layout: false
+  def render_erb(content)
+    render inline: content, layout: false
   end
 
   def render_markdown(markdown)

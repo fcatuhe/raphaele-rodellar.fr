@@ -7,13 +7,14 @@ Book = Decant.define(dir: "content/books", ext: "html.md") do
   frontmatter :date
   frontmatter :tags
 
-  def published_on
-    raw = frontmatter[:date]
-    raw.present? ? Date.parse(raw.to_s) : nil
+  def self.with_tag(tag)
+    all.select { it.has_tag?(tag) }.sort_by(&:published_on).reverse
   end
 
-  def tags_list
-    Array(tags).flat_map { |value| value.to_s.split(/\s*,\s*/) }.reject(&:blank?)
+  def published_on
+    return Date.new(1900) unless date
+
+    Date.parse(date)
   end
 
   def set_meta
@@ -22,4 +23,13 @@ Book = Decant.define(dir: "content/books", ext: "html.md") do
     Meta.layout = "book"
     Meta.body_class = "book"
   end
+
+  private
+    def has_tag?(tag)
+      tags_list.include?(tag)
+    end
+
+    def tags_list
+      tags.to_s.split(/\s*,\s*/)
+    end
 end

@@ -18,7 +18,7 @@
 
       <div class="col-12 col-lg-6 text-lg-end">
         <% @book.tags_list.each do |tag| %>
-          <% if (category = book_category_for(tag)) %>
+          <% if (category = BookCategory.find_by_tag(tag)) %>
             <span class="badge rounded-pill text-bg-<%= category.title_color %>"><%= category.title %></span>
           <% else %>
             <span class="badge rounded-pill bg-secondary"><%= tag %></span>

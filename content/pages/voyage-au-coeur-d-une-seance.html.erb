@@ -14,7 +14,7 @@ layout: curious
 
   <div class="row justify-content-center mt-4 mb-last-p-0">
     <div class="col-lg-10 col-xl-8">
-      <%= render_voyage("introduction") %>
+      <%= render_markdown(Voyage.find("introduction").content) %>
     </div>
 
     <div class="col-12">
@@ -31,7 +31,7 @@ layout: curious
   </div>
 
   <div class="row g-0">
-    <%- 24.downto(1).map { '%02i' % _1 }.each do |day| %>
+    <% Voyage.advent.each do |voyage| %>
       <div class="col-4" data-controller="flip-card">
         <div
           class="flip-card border border-white cursor-pointer user-select-none"
@@ -40,22 +40,22 @@ layout: curious
         >
           <div class="front" data-flip-card-target="front">
             <img
-              src="https://res.cloudinary.com/fcatuhe/image/upload/c_scale,w_512/v1703937406/raphaele-rodellar.fr/voyage/<%= day %>.jpg"
-              alt="<%= day %> - <%= voyage_title(day) %>"
+              src="https://res.cloudinary.com/fcatuhe/image/upload/c_scale,w_512/v1703937406/raphaele-rodellar.fr/voyage/<%= voyage.slug %>.jpg"
+              alt="<%= voyage.slug %> - <%= voyage.title %>"
               class="img-fluid"
             >
           </div>
 
           <div class="back">
             <img
-              src="https://res.cloudinary.com/fcatuhe/image/upload/c_scale,w_512/v1703937406/raphaele-rodellar.fr/voyage/<%= day %>.jpg"
+              src="https://res.cloudinary.com/fcatuhe/image/upload/c_scale,w_512/v1703937406/raphaele-rodellar.fr/voyage/<%= voyage.slug %>.jpg"
               class="img-fluid opacity-10"
               alt=""
             >
 
             <div class="overlay">
               <div class="h2 mb-0 text-center">
-                <%= day %> - <%= voyage_title(day) %>
+                <%= voyage.slug %> - <%= voyage.title %>
               </div>
             </div>
           </div>
@@ -63,17 +63,17 @@ layout: curious
 
         <div
           class="modal fade"
-          id="modal<%= day %>"
+          id="modal<%= voyage.slug %>"
           tabindex="-1"
           data-flip-card-target="modal"
-          aria-labelledby="<%= day %>ModalLabel"
+          aria-labelledby="<%= voyage.slug %>ModalLabel"
           aria-hidden="true"
         >
           <div class="modal-dialog modal-dialog-centered user-select-none">
             <div class="modal-content">
               <div class="modal-body">
-                <h2 class="text-end"><%= day %> - <%= voyage_title(day) %></h2>
-                <%= render_voyage(day) %>
+                <h2 class="text-end"><%= voyage.slug %> - <%= voyage.title %></h2>
+                <%= render_markdown(voyage.content) %>
 
                 <div class="d-flex justify-content-end">
                   <div
@@ -106,7 +106,7 @@ layout: curious
     </div>
 
     <div class="col-lg-10 col-xl-8">
-      <%= render_voyage("conclusion") %>
+      <%= render_markdown(Voyage.find("conclusion").content) %>
     </div>
   </div>
 </div>

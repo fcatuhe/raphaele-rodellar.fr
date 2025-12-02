@@ -3,7 +3,7 @@
     <h1><%= @book.title %></h1>
 
     <% if @book.subtitle.present? %>
-      <h2><%= @book.subtitle.html_safe %></h2>
+      <h2><%= sanitize(@book.subtitle, tags: %w[sup sub em strong]) %></h2>
     <% end %>
 
     <div class="row">

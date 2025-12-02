@@ -6,7 +6,7 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="mobile-web-app-capable" content="yes">
 
-    <%= render "layouts/og_meta_tags", tags: {
+    <%= og_meta_tags(
       title: Meta.title,
       description: Meta.description,
       image: image_url(Meta.image),
@@ -14,7 +14,7 @@
       type: Meta.type,
       site_name: Meta.site_name,
       url: canonical_url
-    } %>
+    ) %>
 
     <%= tag.link rel: "canonical", href: canonical_url %>
 

@@ -84,6 +84,9 @@ GEM
     brakeman (7.1.1)
       racc
     builder (3.3.0)
+    bundler-audit (0.9.3)
+      bundler (>= 1.2.0)
+      thor (~> 1.0)
     concurrent-ruby (1.3.5)
     connection_pool (2.5.5)
     crass (1.0.6)
@@ -318,6 +321,7 @@ PLATFORMS
 DEPENDENCIES
   bootsnap
   brakeman
+  bundler-audit
   debug
   decant
   hotwire-spark

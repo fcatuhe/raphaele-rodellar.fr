@@ -21,6 +21,7 @@ Parklife.application.routes do
 
   # Services typically allow a custom 404 page.
   # get '/404.html'
+  get not_found_path
 end
 
 Parklife.application.after_build do |application|

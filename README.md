@@ -4,15 +4,13 @@ This repository contains the static version of [raphaele-rodellar.fr](https://ra
 
 ## Requirements
 
-- Ruby 3.3+
-- Bundler 2.7.x (`gem install bundler -v 2.7.1` if needed)
-- Node.js is **not** required
+- Ruby 3.4+
+- Rails 8.1+
 
 ## Getting started
 
 ```bash
 bundle install
-bin/setup
 bin/dev
 ```
 
@@ -29,7 +27,7 @@ All pages keep their original HTML so very little rewriting is required when edi
 
 ### Assets
 
-- Styles are bundled in `app/assets/stylesheets/application.css` (compiled from the legacy SCSS)
+- Styles are included from `app/assets/stylesheets`
 - Images live in `app/assets/images`
 - Custom fonts are served from `app/assets/fonts`
 
@@ -38,21 +36,51 @@ All pages keep their original HTML so very little rewriting is required when edi
 We use [Parklife](https://parklife.dev) to crawl the Rails app and emit a static build.
 
 ```bash
-bundle exec parklife build
+bin/static-build
 ```
 
-The output goes to the `build/` directory and includes an auto-generated `sitemap.xml(.gz)` plus `robots.txt` pointing to it.
+This script precompiles assets, runs Parklife, and copies public files to the `build/` directory. It also generates `sitemap.xml(.gz)` and `robots.txt`.
+
+For local testing, you can also run `bundle exec parklife build` directly.
 
 ## Deployment
 
-Parklife is already configured to target `https://raphaele-rodellar.fr`. Once the build is produced, push the contents of `build/` to GitHub Pages (or the hosting of your choice).
+### Production
+
+Pushing to `main` triggers GitHub Actions to automatically build and deploy to GitHub Pages at `https://raphaele-rodellar.fr`.
+
+### Staging
+
+To preview changes before production, push your branch to the `staging` remote:
+
+```bash
+git push staging
+```
+
+The staging site has a separate GitHub repository with `STAGING=true` configured. This:
+- Generates `robots.txt` with `Disallow: /` to block search engines
+- Adds `noindex, nofollow` meta tags to all pages
+
+To set up staging for the first time:
+
+```bash
+git remote add staging git@github.com:fcatuhe/staging.raphaele-rodellar.fr.git
+```
+
+## Code quality
+
+```bash
+bin/rubocop        # Lint Ruby code (Rails Omakase style)
+bin/brakeman       # Security vulnerability scan
+```
 
 ## Notable patterns
 
-- `ApplicationHelper` exposes `render_erb`, `render_markdown`, and breadcrumb helpers
+- `ApplicationHelper` exposes `render_erb`, `render_markdown`, `canonical_url`, `og_meta_tags`, and `main_class` helpers
 - `BookCategory` model loads categories from YAML and provides `books` association
-- `Book.for_category(category)` filters books by category tag
-- `Voyage` model provides content for the 24 voyage snippets
+- `Book.with_tag(tag)` filters books by category tag
+- `Voyage` model provides content for the voyage snippets (24 numbered + intro/conclusion)
+- `Meta` and `Current` use `CurrentAttributes` for request-scoped state (SEO metadata, breadcrumbs)
 
 ## Updating content
 
@@ -61,5 +89,3 @@ Parklife is already configured to target `https://raphaele-rodellar.fr`. Once th
 - **Library index**: `content/pages/bibliotheque.html.erb`
 - **Library articles**: files in `content/books/` (front matter controls title, subtitle, author, publisher, tags)
 - **Voyage modals**: Markdown files in `content/voyage/`
-
-After editing, rebuild with `bundle exec parklife build` so the sitemap and robots files stay in sync.

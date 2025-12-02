@@ -13,6 +13,9 @@
 .mb-last-p-0 p:last-child {
   margin-bottom: 0;
 }
+.max-w-45rem {
+  max-width: 45rem;
+}
 .min-vh-100 {
   min-height: 100vh;
 }

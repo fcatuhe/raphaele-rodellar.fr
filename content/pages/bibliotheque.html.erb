@@ -19,11 +19,7 @@ layout: curious
         <% category.books.each do |book| %>
           <div class="book">
             <%= link_to book_path(book.slug) do %>
-              <img
-                src="<%= book.cover_url %>"
-                class="book-cover"
-                alt="<%= book.title %>"
-              >
+              <%= image_tag book.cover_url, class: "book-cover", alt: book.title %>
             <% end %>
           </div>
         <% end %>

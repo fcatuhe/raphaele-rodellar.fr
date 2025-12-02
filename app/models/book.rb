@@ -11,6 +11,14 @@ Book = Decant.define(dir: "content/books", ext: "html.md") do
     all.select { it.has_tag?(tag) }.sort_by(&:published_on).reverse
   end
 
+  def has_tag?(tag)
+    tags_list.include?(tag)
+  end
+
+  def tags_list
+    tags.to_s.split(/\s*,\s*/)
+  end
+
   def published_on
     return Date.new(1900) unless date
 
@@ -23,13 +31,4 @@ Book = Decant.define(dir: "content/books", ext: "html.md") do
     Meta.layout = "book"
     Meta.body_class = "book"
   end
-
-  private
-    def has_tag?(tag)
-      tags_list.include?(tag)
-    end
-
-    def tags_list
-      tags.to_s.split(/\s*,\s*/)
-    end
 end

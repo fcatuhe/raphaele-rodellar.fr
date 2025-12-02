@@ -39,19 +39,13 @@ layout: curious
           data-action="click->flip-card#toggle"
         >
           <div class="front" data-flip-card-target="front">
-            <img
-              src="https://res.cloudinary.com/fcatuhe/image/upload/c_scale,w_512/v1703937406/raphaele-rodellar.fr/voyage/<%= voyage.slug %>.jpg"
-              alt="<%= voyage.slug %> - <%= voyage.title %>"
-              class="img-fluid"
-            >
+            <%= image_tag "https://res.cloudinary.com/fcatuhe/image/upload/c_scale,w_512/v1703937406/raphaele-rodellar.fr/voyage/#{voyage.slug}.jpg",
+                          alt: "#{voyage.slug} - #{voyage.title}", class: "img-fluid" %>
           </div>
 
           <div class="back">
-            <img
-              src="https://res.cloudinary.com/fcatuhe/image/upload/c_scale,w_512/v1703937406/raphaele-rodellar.fr/voyage/<%= voyage.slug %>.jpg"
-              class="img-fluid opacity-10"
-              alt=""
-            >
+            <%= image_tag "https://res.cloudinary.com/fcatuhe/image/upload/c_scale,w_512/v1703937406/raphaele-rodellar.fr/voyage/#{voyage.slug}.jpg",
+                          class: "img-fluid opacity-10", alt: "" %>
 
             <div class="overlay">
               <div class="h2 mb-0 text-center">

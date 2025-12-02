@@ -1,0 +1,138 @@
+/* Header shapes */
+.header-shape-pink-light {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 15vw;
+}
+.header-dot-coral {
+  position: absolute;
+  bottom: 3.5vw;
+  left: 10vw;
+  width: 8vw;
+}
+.header-shape-blue {
+  position: absolute;
+  bottom: -8vw;
+  left: 0;
+  width: 25vw;
+  -webkit-transform: rotateY(0.5turn);
+  transform: rotateY(0.5turn);
+}
+
+/* Section 4 shapes */
+.section4-shape-green-light {
+  position: absolute;
+  top: -13.5vw;
+  right: -7vw;
+  width: 18vw;
+  -webkit-transform: rotateX(0.5turn) rotate(-65deg);
+  transform: rotateX(0.5turn) rotate(-65deg);
+}
+.section4-shape-blue {
+  position: absolute;
+  top: -11vw;
+  right: -1vw;
+  width: 25vw;
+  -webkit-transform: rotate(-5deg);
+  transform: rotate(-5deg);
+}
+.section4-dot-coral {
+  position: absolute;
+  top: 0.5vw;
+  right: 6.5vw;
+  width: 8vw;
+}
+.section4-shapelet-pink-light {
+  position: absolute;
+  top: 0;
+  right: -3vw;
+  width: 12vw;
+  -webkit-transform: rotate(20deg);
+  transform: rotate(20deg);
+}
+@media (min-width: 576px) {
+  .section4-shape-green-light {
+    top: -9.5vw;
+  }
+  .section4-shape-blue {
+    top: -7vw;
+  }
+  .section4-dot-coral {
+    top: 4.5vw;
+  }
+  .section4-shapelet-pink-light {
+    top: 4vw;
+  }
+}
+@media (min-width: 992px) {
+  .section4-shape-green-light {
+    top: -13.5vw;
+  }
+  .section4-shape-blue {
+    top: -11vw;
+  }
+  .section4-dot-coral {
+    top: 0.5vw;
+  }
+  .section4-shapelet-pink-light {
+    top: 0;
+  }
+}
+
+/* Section 5 shapes */
+.section5-shape-blue {
+  position: absolute;
+  bottom: -8vw;
+  left: -3vw;
+  width: 25vw;
+  -webkit-transform: rotate(155deg);
+  transform: rotate(155deg);
+}
+.section5-dot-coral {
+  position: absolute;
+  bottom: -5vw;
+  left: 15vw;
+  width: 8vw;
+}
+.section5-shape-green-light {
+  position: absolute;
+  bottom: -13vw;
+  left: -3vw;
+  width: 18vw;
+  -webkit-transform: rotateX(0.5turn) rotate(130deg);
+  transform: rotateX(0.5turn) rotate(130deg);
+}
+@media (min-width: 576px) {
+  .section5-shape-blue {
+    bottom: -13vw;
+  }
+  .section5-dot-coral {
+    bottom: -10vw;
+  }
+  .section5-shape-green-light {
+    bottom: -18vw;
+  }
+}
+@media (min-width: 992px) {
+  .section5-shape-blue {
+    bottom: -4vw;
+  }
+  .section5-dot-coral {
+    bottom: -1vw;
+  }
+  .section5-shape-green-light {
+    bottom: -9vw;
+  }
+}
+@media (min-width: 1400px) {
+  .section5-shape-blue {
+    bottom: -8vw;
+  }
+  .section5-dot-coral {
+    bottom: -5vw;
+  }
+  .section5-shape-green-light {
+    bottom: -13vw;
+  }
+}

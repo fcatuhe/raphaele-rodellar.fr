@@ -1,0 +1,39 @@
+.btn-cta {
+  display: inline-block;
+  font-family: "Gotham Black";
+  padding: 1rem calc(1.275rem + 0.3vw);
+  font-size: 1rem;
+  letter-spacing: 0.25rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #f08a8d;
+  border-radius: 3rem;
+  -webkit-box-shadow: 0.25rem 0.25rem #f08a8d;
+  box-shadow: 0.25rem 0.25rem #f08a8d;
+  background-color: #3056a3;
+  border-color: #3056a3;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+@media (min-width: 1200px) {
+  .btn-cta {
+    padding: 1rem 1.5rem;
+  }
+}
+.btn-cta:hover {
+  -webkit-box-shadow: 0 0 #f08a8d;
+  box-shadow: 0 0 #f08a8d;
+}
+
+.btn-cta-shop {
+  color: #f7efdc;
+  border-radius: 3rem;
+  -webkit-box-shadow: 0.25rem 0.25rem #f7efdc;
+  box-shadow: 0.25rem 0.25rem #f7efdc;
+  background-color: #f08a8d;
+  border-color: #f08a8d;
+}
+.btn-cta-shop:hover {
+  -webkit-box-shadow: 0 0 #f7efdc;
+  box-shadow: 0 0 #f7efdc;
+}

@@ -54,13 +54,8 @@
   <body class="d-flex flex-column min-vh-100">
     <%= render "layouts/navbar" %>
 
-    <main class="<%= Meta.main_class %>">
-      <% if curious_breadcrumbs? %>
-        <small class="text-green fst-italic d-block mb-3">
-          <i class="fa-solid fa-arrow-left"></i>
-          <%= render_curious_breadcrumbs %>
-        </small>
-      <% end %>
+    <main class="<%= main_class %>">
+      <%= render "layouts/breadcrumbs" %>
 
       <%= yield %>
     </main>

@@ -28,7 +28,5 @@ Book = Decant.define(dir: "content/books", ext: "html.md") do
   def set_meta
     Meta.title = title
     Meta.description = subtitle
-    Meta.layout = "book"
-    Meta.body_class = "book"
   end
 end

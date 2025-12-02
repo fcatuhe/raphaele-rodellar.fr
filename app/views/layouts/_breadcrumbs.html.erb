@@ -1,0 +1,8 @@
+<% if breadcrumbs.any? %>
+  <nav aria-label="Fil d'Ariane" class="text-green fst-italic mb-3">
+    <small>
+      <i class="fa-solid fa-arrow-left"></i>
+      <%= breadcrumb_links(link_class: "text-green text-decoration-none") %>
+    </small>
+  </nav>
+<% end %>

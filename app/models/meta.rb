@@ -6,7 +6,6 @@ class Meta < ActiveSupport::CurrentAttributes
   SITE_NAME = "Raphaële Rodellar".freeze
   DEFAULT_TYPE = "website".freeze
 
-  attribute :layout, :body_class
   attr_writer :title, :description, :image, :type
 
   def title
@@ -35,21 +34,6 @@ class Meta < ActiveSupport::CurrentAttributes
 
   def robots_content
     production_live? ? "index, follow" : "noindex, nofollow"
-  end
-
-  def main_class
-    classes = []
-    if layout == "home"
-      classes << "home"
-    else
-      classes << "container mb-5"
-    end
-    classes << body_class
-    classes.compact_blank.join(" ")
-  end
-
-  def curious_layout?
-    %w[curious book].include?(layout)
   end
 
   def disallow_all?

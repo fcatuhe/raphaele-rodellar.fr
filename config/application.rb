@@ -39,6 +39,6 @@ module RailsStatic
     # Don't generate system test files.
     config.generators.system_tests = nil
 
-    config.assets.paths << Rails.root.join("content")
+    config.assets.paths << Rails.root.join("content_images")
   end
 end

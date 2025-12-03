@@ -8,7 +8,7 @@ class Sitemap::Entry
   attribute :base_url, :string
 
   def canonical_url
-    "#{base_url}#{url}"
+    "#{base_url}#{url}".delete_suffix("/")
   end
 
   def last_modified

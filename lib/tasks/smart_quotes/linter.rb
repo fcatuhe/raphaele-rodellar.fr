@@ -12,7 +12,9 @@ module SmartQuotes
 
     EXTENSIONS = %w[.css .erb .html .js .md .rb .scss .slim .yml].freeze
     EXCLUDED_PATTERNS = [
+      "build/**/*",
       "log/**/*",
+      "public/assets/**/*",
       "storage/**/*",
       "tmp/**/*",
       "vendor/**/*",

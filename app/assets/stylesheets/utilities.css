@@ -23,9 +23,9 @@
   opacity: 0.1 !important;
 }
 @media (min-width: 992px) {
-  .py-lg-5-5 {
-    padding-top: 4.5rem !important;
-    padding-bottom: 4.5rem !important;
+  .py-lg-4rem {
+    padding-top: 4rem !important;
+    padding-bottom: 4rem !important;
   }
 }
 @media (min-width: 992px) {

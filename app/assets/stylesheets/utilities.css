@@ -23,6 +23,12 @@
   opacity: 0.1 !important;
 }
 @media (min-width: 992px) {
+  .py-lg-4rem {
+    padding-top: 4rem !important;
+    padding-bottom: 4rem !important;
+  }
+}
+@media (min-width: 992px) {
   .py-lg-6 {
     padding-top: 6rem !important;
     padding-bottom: 6rem !important;
